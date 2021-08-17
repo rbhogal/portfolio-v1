@@ -1,0 +1,25 @@
+.header,
+.navbar {
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.navbar-item {
+  &__container {
+    width: 100%;
+    display: flex;
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &__about {
+    margin-left: auto;
+  }
+}

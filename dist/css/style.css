@@ -11,14 +11,19 @@ html {
 
 body {
   background-color: #171717;
+  color: #e3dede;
   margin: 0;
   padding: 0;
-  font-family: "Heebo", sans-serif;
-  color: #e3dede;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: mono45-headline, monospace;
+  font-style: normal;
 }
 
 p {
-  color: #e3dede;
+  font-family: "Heebo", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -36,44 +41,111 @@ html {
 
 body {
   background-color: #171717;
+  color: #e3dede;
   margin: 0;
   padding: 0;
-  font-family: "Heebo", sans-serif;
-  color: #e3dede;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: mono45-headline, monospace;
+  font-style: normal;
 }
 
 p {
-  color: #e3dede;
+  font-family: "Heebo", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
 }
 
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
 .number {
   font-family: mono45-headline, monospace;
-  font-weight: 500;
   font-style: normal;
-  font-size: 4.5rem;
+}
+
+.number__01 {
+  font-size: 19rem;
   margin: 0;
+  font-weight: 500;
+}
+
+.number__02 {
+  font-weight: 300;
+}
+
+.number__03 {
+  font-size: 4.5rem;
 }
 
 .name {
-  font-size: 4.5rem;
-}
-
-.name h1 {
   margin: 0;
   line-height: 0.8;
+  font-size: 19rem;
 }
 
 .name__first {
-  font-family: mono45-headline, monospace;
   font-weight: 500;
-  font-style: normal;
 }
 
 .name__last {
-  font-family: mono45-headline, monospace;
   font-weight: 300;
-  font-style: normal;
+}
+
+.projects__btn a {
+  color: inherit;
+}
+
+.header,
+.navbar {
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.navbar-item__container {
+  width: 100%;
+  display: flex;
+}
+
+.navbar-item__container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar-item__about {
+  margin-left: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.contacts {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.contacts li {
+  list-style: none;
+}
+
+.contacts li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

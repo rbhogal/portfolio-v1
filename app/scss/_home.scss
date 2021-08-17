@@ -1,30 +1,47 @@
 @import "globals";
 
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
 .number {
-  font-family: mono45-headline, monospace;
-  font-weight: 500;
+  font-family: $font-heading;
   font-style: normal;
-  font-size: 4.5rem;
-  margin: 0;
+
+  &__01 {
+    font-size: 19rem;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  &__02 {
+    font-weight: 300;
+  }
+
+  &__03 {
+    font-size: 4.5rem;
+  }
 }
 
 .name {
-  font-size: 4.5rem;
-
-  & h1 {
-    margin: 0;
-    line-height: 0.8;
-  }
+  margin: 0;
+  line-height: 0.8;
+  font-size: 19rem;
 
   &__first {
-    font-family: mono45-headline, monospace;
     font-weight: 500;
-    font-style: normal;
   }
 
   &__last {
-    font-family: mono45-headline, monospace;
     font-weight: 300;
-    font-style: normal;
   }
+}
+
+.projects__btn {
+
+   & a {
+     color: inherit;
+   }
+  
 }
