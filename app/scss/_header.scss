@@ -1,11 +1,9 @@
-.header,
-.navbar {
-  width: 100%;
-}
-
-.navbar {
+.header {
+  padding: 2.5rem 0;
   position: fixed;
   top: 0;
+  right: 5rem;
+  width: 100%;
 }
 
 .navbar-item {

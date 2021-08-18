@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%; // 100% of base font size set in browser (16px by default)
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -15,6 +16,12 @@ body {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh 100vh;
+  grid-template-columns: 3vw 1fr 3vw;
 }
 
 h1 {
