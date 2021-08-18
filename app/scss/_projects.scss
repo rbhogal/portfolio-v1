@@ -24,3 +24,19 @@
   border-bottom: 5px solid $color-light-grey;
   width: min-content;
 }
+
+.scroll-top {
+  width: min-content;
+
+  &__btn {
+    text-align: center;
+  }
+
+  &__p {
+    margin: 0;
+  }
+
+  &--arrow-up {
+    width: 1.6rem;
+  }
+}

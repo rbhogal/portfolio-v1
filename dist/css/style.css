@@ -100,6 +100,9 @@ p {
   font-weight: 300;
   line-height: 0.8;
   padding-bottom: 0rem;
+  border-bottom: 5px solid #e3dede;
+  width: min-content;
+  padding-bottom: 5rem;
 }
 
 .name {
@@ -215,5 +218,21 @@ p {
   margin-bottom: 5rem;
   border-bottom: 5px solid #e3dede;
   width: min-content;
+}
+
+.scroll-top {
+  width: min-content;
+}
+
+.scroll-top__btn {
+  text-align: center;
+}
+
+.scroll-top__p {
+  margin: 0;
+}
+
+.scroll-top--arrow-up {
+  width: 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */
