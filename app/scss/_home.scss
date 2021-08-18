@@ -9,7 +9,8 @@
 }
 
 .content {
-  padding-left: 15%;
+  padding-left: 55%;
+  padding-top: 5rem;
 
   &__subheading {
     padding-left: 0.7rem;
@@ -30,21 +31,17 @@
     border-bottom: 5px solid $color-light-grey;
     width: min-content;
     padding-bottom: 5rem;
-    // margin-bottom: 2.5rem;
   }
-
-  // font-size: 19rem;
-  // font-weight: 300;
-  // margin: 0;
-  // margin-bottom: 5rem;
-  // border-bottom: 5px solid $color-light-grey;
-  // width: min-content;
 }
 
 .name {
   margin: 0;
   line-height: 0.8;
   font-size: 19rem;
+
+  &__container {
+    width: 50%;
+  }
 
   &__first {
     font-weight: 500;

@@ -81,7 +81,8 @@ p {
 }
 
 .content {
-  padding-left: 15%;
+  padding-left: 55%;
+  padding-top: 5rem;
 }
 
 .content__subheading {
@@ -109,6 +110,10 @@ p {
   margin: 0;
   line-height: 0.8;
   font-size: 19rem;
+}
+
+.name__container {
+  width: 50%;
 }
 
 .name__first {
@@ -199,7 +204,6 @@ p {
   grid-row: 2 / 3;
   grid-column: 2/ 3;
   margin-top: 5rem;
-  padding-top: 5rem;
 }
 
 .projects__heading {
@@ -220,12 +224,15 @@ p {
   width: min-content;
 }
 
-.scroll-top {
-  width: min-content;
-}
-
 .scroll-top__btn {
   text-align: center;
+  width: min-content;
+  margin-top: 5rem;
+}
+
+.scroll-top__btn a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .scroll-top__p {

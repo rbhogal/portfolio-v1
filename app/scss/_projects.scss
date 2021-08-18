@@ -4,7 +4,6 @@
   grid-row: 2 / 3;
   grid-column: 2/ 3;
   margin-top: 5rem;
-  padding-top: 5rem;
 
   &__heading {
     font-size: 19rem;
@@ -26,10 +25,17 @@
 }
 
 .scroll-top {
-  width: min-content;
+  
 
   &__btn {
     text-align: center;
+    width: min-content;
+    margin-top: 5rem;
+
+    & a {
+    text-decoration: none;
+    color:inherit;
+  }
   }
 
   &__p {
