@@ -100,7 +100,6 @@ p {
   margin: 0;
   font-weight: 300;
   line-height: 0.8;
-  padding-bottom: 0rem;
   border-bottom: 5px solid #e3dede;
   width: min-content;
   padding-bottom: 5rem;
@@ -241,5 +240,33 @@ p {
 
 .scroll-top--arrow-up {
   width: 1.6rem;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.about__heading {
+  font-size: 19rem;
+  font-weight: 300;
+  margin: 0;
+  width: 32rem;
+  word-break: break-all;
+  line-height: 0.8;
+}
+
+.number__03 {
+  font-size: 19rem;
+  margin: 0;
+  font-weight: 300;
+  line-height: 0.8;
+  margin-bottom: 5rem;
+  border-bottom: 5px solid #e3dede;
+  width: min-content;
+  padding-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

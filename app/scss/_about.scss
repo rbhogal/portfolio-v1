@@ -1,0 +1,27 @@
+.about {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
+
+  &__heading {
+    font-size: 19rem;
+    font-weight: 300;
+    margin: 0;
+    width: 32rem;
+    word-break: break-all;
+    line-height: 0.8;
+  }
+}
+
+.number__03 {
+  font-size: 19rem;
+  margin: 0;
+  font-weight: 300;
+  line-height: 0.8;
+  margin-bottom: 5rem;
+  border-bottom: 5px solid $color-light-grey;
+  width: min-content;
+  padding-bottom: 5rem;
+}
