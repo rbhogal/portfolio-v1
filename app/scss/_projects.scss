@@ -4,6 +4,8 @@
   grid-row: 2 / 3;
   grid-column: 2/ 3;
   margin-top: 5rem;
+  // background-color: $color-light-grey;
+  // color: $color-dark-grey;
 
   &__heading {
     font-size: 19rem;
@@ -22,20 +24,19 @@
   margin-bottom: 5rem;
   border-bottom: 5px solid $color-light-grey;
   width: min-content;
+  // border-color: $color-dark-grey;
 }
 
 .scroll-top {
-  
-
   &__btn {
     text-align: center;
     width: min-content;
     margin-top: 5rem;
 
     & a {
-    text-decoration: none;
-    color:inherit;
-  }
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   &__p {
