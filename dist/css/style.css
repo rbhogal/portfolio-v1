@@ -85,9 +85,9 @@ p {
   padding-top: 5rem;
 }
 
-.content__subheading {
+.content__subtext {
   padding-left: 0.7rem;
-  max-width: 50rem;
+  max-width: 56rem;
 }
 
 .number {
@@ -109,15 +109,11 @@ p {
   margin: 0;
   line-height: 0.8;
   font-size: 19rem;
-  letter-spacing: .3rem;
-}
-
-.name__container {
-  width: 50%;
+  letter-spacing: 0.3rem;
 }
 
 .name__first {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .name__last {
@@ -228,6 +224,7 @@ p {
   text-align: center;
   width: min-content;
   margin-top: 5rem;
+  padding-left: 6.2%;
 }
 
 .scroll-top__btn a {
@@ -235,7 +232,7 @@ p {
   color: inherit;
 }
 
-.scroll-top__p {
+.scroll-top__text {
   margin: 0;
 }
 

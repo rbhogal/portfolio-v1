@@ -12,10 +12,10 @@
   padding-left: 55%;
   padding-top: 5rem;
 
-  &__subheading {
+  &__subtext {
     padding-left: 0.7rem;
-    max-width: 50rem;
-    // font-size: 2.4rem;
+    max-width: 56rem;
+    // font-size: 1.5rem;
   }
 }
 
@@ -38,14 +38,14 @@
   margin: 0;
   line-height: 0.8;
   font-size: 19rem;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 
   &__container {
-    width: 50%;
+    // width: 50%;
   }
 
   &__first {
-    font-weight: 500;
+    font-weight: 300;
   }
 
   &__last {
