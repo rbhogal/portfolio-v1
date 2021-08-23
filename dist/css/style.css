@@ -175,6 +175,13 @@ p {
   padding: 2.5rem 0;
 }
 
+.footer__icon {
+  width: 1.1rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+  transition: all 0.3s ease;
+}
+
 .contacts {
   width: fit-content;
   margin-left: auto;
@@ -187,11 +194,21 @@ p {
 .contacts li a {
   color: inherit;
   text-decoration: none;
+  display: flex;
+  align-items: flex-end;
 }
 
 .contacts li a p {
   margin: 0;
   line-height: 1.1;
+}
+
+.contacts li a .footer__icon {
+  opacity: 0;
+}
+
+.contacts li a:hover .footer__icon {
+  opacity: 1;
 }
 
 .projects {
