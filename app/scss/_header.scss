@@ -5,6 +5,7 @@
   right: 5rem;
   width: 100%;
   z-index: 9000;
+  width: min-content;
 }
 
 // .navbar {
@@ -16,7 +17,7 @@
     height: 12px;
     width: 40px;
     background-color: $color-dark-grey;
-       margin-left: auto;
+    margin-left: auto;
     position: fixed;
     top: 9rem;
     right: 5rem;

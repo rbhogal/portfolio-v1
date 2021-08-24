@@ -1,10 +1,10 @@
 .projects {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   grid-row: 2 / 3;
   grid-column: 2/ 3;
   margin-top: 5rem;
-  // background-color: $color-light-grey;
+  // background-color: $color-off-white;
   // color: $color-dark-grey;
 
   &__heading {
@@ -14,9 +14,28 @@
     width: 30rem;
     word-break: break-all;
     line-height: 0.8;
+    position: fixed;
+    top: 27rem;
   }
 
- 
+  &__card {
+    margin: 0 auto;
+    width: min-content;
+    display: flex;
+
+    // &__img {
+    // }
+
+    &__text {
+      width: 30rem;
+      background-color: red;
+      background-color: $color-off-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 }
 
 .number__02 {
@@ -24,9 +43,13 @@
   font-weight: 300;
   margin: 0;
   margin-bottom: 5rem;
-  border-bottom: 5px solid $color-light-grey;
+  border-bottom: 5px solid $color-off-white;
+  padding-bottom: 3rem;
+  line-height: 0.8;
   width: min-content;
   // border-color: $color-dark-grey;
+  position: fixed;
+  top: 5rem;
 }
 
 .scroll-top {
@@ -50,5 +73,3 @@
     width: 1.6rem;
   }
 }
-
-

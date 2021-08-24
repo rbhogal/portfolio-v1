@@ -12,28 +12,46 @@ html {
 
 body {
   background-color: $color-dark-grey;
-  color: $color-light-grey;
+  color: $color-off-white;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
 }
 
 .container {
   display: grid;
   grid-template-rows: 100vh 100vh;
   grid-template-columns: 3vw 1fr 3vw;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 h1 {
   font-family: $font-heading;
   font-style: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: $color-dark-grey;
+  font-family: $font-heading;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h4 {
+  color: $color-dark-grey;
+  font-family: europa, sans-serif;
+
+  // text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: normal;
+  opacity: .7;
 }
 
 p {
   font-family: $font-secondary;
   font-weight: 400;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .loading-screen {
@@ -48,7 +66,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: $color-light-grey;
+  background: $color-off-white;
   z-index: 9001;
 }
 

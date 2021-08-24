@@ -30,9 +30,16 @@ const footer = document.querySelector(".footer");
 //Home
 const projectsBtn = document.querySelector(".projects__btn");
 
+//Projects
+const projectsNumber02 = document.querySelector(".number__02");
+const projectsHeading = document.querySelector(".projects__heading");
+
+// Timelines
 const loadingScreenTL = gsap.timeline();
 const loadingNameTL = gsap.timeline();
+const projectsTL = gsap.timeline();
 
+/* 
 // Loading Text (Name) - Enter
 gsap.from(loadingFirstName, {
   duration: 1.5,
@@ -67,6 +74,26 @@ gsap.to(bodyContainer, {
   delay: 2.3,
   overflow: "visible",
 });
+
+ */
+
+projectsTL.from([projectsNumber02, projectsHeading], {
+  opacity: 0,
+  y: 110,
+  duration: 2,
+  ease: "power3.out",
+  stagger: 0.5,
+});
+
+const controller = new ScrollMagic.Controller();
+const scene = new ScrollMagic.Scene({
+  triggerElement: "#projectsBtn",
+  triggerHook: 0,
+  reverse: true,
+})
+  .addIndicators()
+  .setTween(projectsTL)
+  .addTo(controller);
 
 // .from([aboutLink, footer, projectsBtn], {
 //   y: 50,
