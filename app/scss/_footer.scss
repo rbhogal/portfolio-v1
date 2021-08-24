@@ -7,9 +7,28 @@
 
   &__icon {
     width: 1.1rem;
-    margin-right: 0.2rem;
-    margin-bottom: 0.2rem;  
     transition: all 0.3s ease;
+
+    &--download {
+      margin-right: 0.2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    &--external-link {
+      width: 1.4rem;
+      transform: rotate(-45deg);
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__cover--bottom {
+    position: fixed;
+    bottom: 0;
+    right: 5rem;
+    height: 25px;
+    width: 60px;
+    background-color: $color-dark-grey;
+    // background-color: white;
   }
 }
 
@@ -25,6 +44,7 @@
       text-decoration: none;
       display: flex;
       align-items: flex-end;
+      justify-content: flex-end;
 
       & p {
         margin: 0;

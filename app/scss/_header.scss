@@ -4,6 +4,7 @@
   top: 0;
   right: 5rem;
   width: 100%;
+  z-index: 9000;
 }
 
 // .navbar {
@@ -11,6 +12,17 @@
 // }
 
 .navbar-item {
+  &__cover {
+    height: 12px;
+    width: 40px;
+    background-color: $color-dark-grey;
+    margin-left: auto;
+    position: fixed;
+    top: 9rem;
+    right: 5rem;
+    z-index: 9000;
+  }
+
   &__container {
     width: 100%;
     display: flex;
@@ -22,9 +34,6 @@
   }
 
   &__about {
-    margin-left: auto;    
+    margin-left: auto;
   }
-
-
 }
-

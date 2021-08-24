@@ -11,18 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Heebo:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/rgy3utt.css" />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
 
     <title>Rohit Bhogal — Frontend Developer</title>
   </head>
   <body class="container">
+    <div class="loading-screen"></div>
+    <div class="loading-screen-addition"></div>
+    <div class="loading-intro">
+      <div class="loading-intro__cover"></div>
+      <h2 class="loading-intro__text loading-intro__text--first-name">Rohit</h2>
+      <h2 class="loading-intro__text loading-intro__text--last-name">Bhogal</h2>
+      <div class="loading-intro__cover"></div>
+    </div>
+
+    <div class="navbar-item__cover"></div>
     <header class="header">
       <nav class="navbar">
         <div class="navbar-item__container">
-          <a class="navbar-item__about" href="./about.html"><p>ABOUT</p> </a>
+          <a class="navbar-item__about" href="./about.html"><p>ABOUT</p></a>
         </div>
       </nav>
     </header>
@@ -47,7 +59,7 @@
         <a href="#projects"
           ><p>Projects</p>
           <svg
-            class="projects__btn--arrow-down"
+            class="projects__btn--arrow-down-icon"
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
             viewBox="0 0 20 20"
@@ -61,12 +73,11 @@
           </svg>
         </a>
       </div>
+      <div class="projects__btn__cover"></div>
     </section>
 
     <section id="projects" class="projects">
       <h1 class="number number__02">02</h1>
-      <!-- <span>-</span> -->
-
       <h1 class="projects__heading">Projects</h1>
 
       <div class="scroll-top__btn">
@@ -94,7 +105,7 @@
         <li>
           <a href="#"
             ><svg
-              class="footer__icon"
+              class="footer__icon footer__icon--download"
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
               viewBox="0 0 20 20"
@@ -112,17 +123,16 @@
         <li>
           <a href="#"
             ><svg
-              class="footer__icon"
+              class="footer__icon footer__icon--external-link"
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path
-                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"
-              />
-              <path
-                d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
+                fill-rule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
               />
             </svg>
             <p>Email</p></a
@@ -133,18 +143,18 @@
             href="https://github.com/rbhogal"
             target="_blank"
             rel="noopener noreferrer"
-            ><svg
-              class="footer__icon"
+          >
+            <svg
+              class="footer__icon footer__icon--external-link"
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path
-                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"
-              />
-              <path
-                d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
+                fill-rule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
               />
             </svg>
             <p>Github</p></a
@@ -152,6 +162,7 @@
         </li>
       </ul>
     </section>
+    <div class="footer__cover--bottom"></div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>

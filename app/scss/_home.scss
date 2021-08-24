@@ -44,6 +44,7 @@
     // width: 50%;
   }
 
+
   &__first {
     font-weight: 300;
   }
@@ -57,11 +58,21 @@
   width: fit-content;
   text-align: center;
   margin: 0 auto;
-  margin-top: 20rem;
   position: absolute;
   bottom: 2rem;
   left: 0;
   right: 0;
+
+  &__cover {
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    bottom: -2.2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $color-dark-grey;
+  }
 
   & p {
     margin: 0;
@@ -72,8 +83,14 @@
     text-decoration: none;
   }
 
-  &--arrow-down {
+  &--arrow-down-icon {
     width: 1.6rem;
     color: inherit;
+    transition: all 0.2s ease;
+  }
+
+  &:hover .projects__btn--arrow-down-icon {
+    transform: translateY(20px);
+    opacity: 0;
   }
 }
