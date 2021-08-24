@@ -17,6 +17,9 @@ const loadingLastName = document.querySelector(
   ".loading-intro__text--last-name"
 );
 
+//Body
+const bodyContainer = document.querySelector(".container");
+
 //Header
 const header = document.querySelector(".header");
 const aboutLink = document.querySelector(".navbar-item__about");
@@ -30,15 +33,9 @@ const projectsBtn = document.querySelector(".projects__btn");
 const loadingScreenTL = gsap.timeline();
 const loadingNameTL = gsap.timeline();
 
-gsap.from([aboutLink, footer, projectsBtn], {
-  y: 50,
-  duration: 1.5,
-  ease: "power3.inOut",
-});
-
+// Loading Text (Name) - Enter
 gsap.from(loadingFirstName, {
   duration: 1.5,
-  delay: 1,
   y: 25,
   ease: Expo.easeInOut,
 });
@@ -46,30 +43,45 @@ gsap.from(loadingFirstName, {
 gsap.from(loadingLastName, {
   duration: 1.5,
   y: -25,
-  delay: 1,
   ease: Expo.easeInOut,
 });
 
+// Loading Text (Name) - Exit
 loadingNameTL.to([loadingFirstName, loadingLastName], {
-  duration: 1.5,
-  delay: 3,
+  duration: 1,
+  delay: 1.5,
   ease: Expo.easeInOut,
   y: -25,
 });
 
-gsap.to([loadingScreen, loadingIntro], {
-  duration: 3.5,
-  delay: 3,
+// Loading Screen Exit
+loadingScreenTL.to([loadingScreen, loadingIntro], {
+  duration: 1.5,
+  delay: 1.5,
   top: "-110%",
   ease: Expo.easeInOut,
 });
 
-gsap.to(loadingScreenAddition, {
-  duration: 3.5,
-  delay: 3.2,
-  top: "-110%",
-  ease: Expo.easeInOut,
+gsap.to(bodyContainer, {
+  duration: 0,
+  delay: 2.3,
+  overflow: "visible",
 });
+
+// .from([aboutLink, footer, projectsBtn], {
+//   y: 50,
+//   duration: 1.5,
+//   ease: "power3.inOut",
+// });
+
+/* 
+  gsap.to(loadingScreenAddition, {
+    duration: 2.5,
+    delay: 2.3,
+    top: "-110%",
+    ease: Expo.easeInOut,
+  })
+*/
 
 // pageLoadTL.to([loadingScreen, loadingIntro], {
 //   duration: 4,

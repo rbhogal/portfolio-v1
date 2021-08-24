@@ -22,6 +22,7 @@ body {
   display: grid;
   grid-template-rows: 100vh 100vh;
   grid-template-columns: 3vw 1fr 3vw;
+  overflow: hidden;
 }
 
 h1 {
@@ -47,7 +48,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: black;
+  background: $color-light-grey;
   z-index: 9001;
 }
 
@@ -75,7 +76,6 @@ p {
 
   &__cover {
     background-color: $color-loading-screen;
-    // background-color: red;
     width: 25rem;
     height: 20px;
     margin: 0 auto;
