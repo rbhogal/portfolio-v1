@@ -21,6 +21,7 @@ body {
   display: grid;
   grid-template-rows: 100vh 100vh;
   grid-template-columns: 3vw 1fr 3vw;
+  overflow: hidden;
 }
 
 h1 {
@@ -122,6 +123,7 @@ body {
   display: grid;
   grid-template-rows: 100vh 100vh;
   grid-template-columns: 3vw 1fr 3vw;
+  overflow: hidden;
 }
 
 h1 {
@@ -418,16 +420,35 @@ p {
   margin: 0 auto;
   width: min-content;
   display: flex;
+  margin-left: 24%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .projects__card__text {
-  width: 30rem;
-  background-color: red;
-  background-color: #FAF9F6;
+  width: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.projects__card__text__container {
+  display: flex;
+  align-items: center;
+}
+
+.projects__card__text--number h1 {
+  color: #171717;
+  color: #FAF9F6;
+  font-weight: 300;
+  font-size: 6.4rem;
+}
+
+.projects__card__text--headings h3,
+.projects__card__text h4 {
+  margin: 0.5rem 0;
+  color: #FAF9F6;
 }
 
 .number__02 {

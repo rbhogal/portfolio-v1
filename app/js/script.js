@@ -39,7 +39,7 @@ const loadingScreenTL = gsap.timeline();
 const loadingNameTL = gsap.timeline();
 const projectsTL = gsap.timeline();
 
-/* 
+
 // Loading Text (Name) - Enter
 gsap.from(loadingFirstName, {
   duration: 1.5,
@@ -75,19 +75,19 @@ gsap.to(bodyContainer, {
   overflow: "visible",
 });
 
- */
-
+ 
+ 
 projectsTL.from([projectsNumber02, projectsHeading], {
   opacity: 0,
   y: 110,
-  duration: 2,
+  duration: 0.6,
   ease: "power3.out",
-  stagger: 0.5,
+  stagger: 0.2,
 });
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
-  triggerElement: "#projectsBtn",
+  triggerElement: "#name__last",
   triggerHook: 0,
   reverse: true,
 })
