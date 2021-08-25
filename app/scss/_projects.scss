@@ -6,6 +6,7 @@
   margin-top: 5rem;
   // background-color: $color-off-white;
   // color: $color-dark-grey;
+  margin-bottom: 25rem;
 
   &__heading {
     font-size: 19rem;
@@ -27,8 +28,35 @@
     margin-bottom: 4rem;
     // background-color: $color-off-white;
 
-    // &__img {
-    // }
+    &__img {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &:hover .projects__card__img {
+      // transform: scale(1.02);
+    }
+
+    &__wrapper {
+      width: 75%;
+    }
+
+    &__headings {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid $color-off-white;
+
+      & h3 {
+        color: $color-off-white;
+        margin-bottom: .2rem;
+        
+      }
+    }
+
+    &__subheading h4 {
+      color: $color-off-white;
+      margin-top: 1.5rem;
+
+    }
 
     &__text {
       width: 40rem;
@@ -40,6 +68,8 @@
       &__container {
         display: flex;
         align-items: center;
+        border-bottom: 2px solid $color-off-white;
+        padding-bottom: 0.2rem;
       }
 
       &--number h1 {
@@ -47,12 +77,21 @@
         color: $color-off-white;
         font-weight: 300;
         font-size: 6.4rem;
+        margin: 0;
       }
 
-      &--headings h3,
-      h4 {
-        margin: 0.5rem 0;
-        color: $color-off-white;
+      &--headings {
+        margin-left: 3.5rem;
+
+        & h3 {
+          text-transform: uppercase;
+        }
+        & h3,
+        h4 {
+          margin: 0;
+          margin-top: 0.6rem;
+          color: $color-off-white;
+        }
       }
     }
   }

@@ -46,9 +46,10 @@
 
 .name {
   margin: 0;
-  line-height: 0.8;
+  // line-height: 0.8;
   font-size: 19rem;
-  letter-spacing: 0.3rem;
+  // letter-spacing: 0.3rem;
+  padding-left: 14rem;
 
   // Option 2
   // font-family: "Bebas Neue", cursive;
@@ -68,11 +69,18 @@
 
   &__first {
     font-weight: 300;
+
+    //Abolition
+    font-family: abolition, sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   &__last {
     font-weight: 300;
-    opacity: 0.2;
+    opacity: 0.6;
+
+    font-size: 5.6rem;
   }
 }
 

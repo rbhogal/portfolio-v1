@@ -38,7 +38,7 @@ const projectsHeading = document.querySelector(".projects__heading");
 const loadingScreenTL = gsap.timeline();
 const loadingNameTL = gsap.timeline();
 const projectsTL = gsap.timeline();
-
+/* 
 
 // Loading Text (Name) - Enter
 gsap.from(loadingFirstName, {
@@ -75,7 +75,7 @@ gsap.to(bodyContainer, {
   overflow: "visible",
 });
 
- 
+ */
  
 projectsTL.from([projectsNumber02, projectsHeading], {
   opacity: 0,
@@ -87,7 +87,7 @@ projectsTL.from([projectsNumber02, projectsHeading], {
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
-  triggerElement: "#name__last",
+  triggerElement: "#projectsBtn",
   triggerHook: 0,
   reverse: true,
 })

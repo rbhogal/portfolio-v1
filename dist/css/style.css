@@ -19,9 +19,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 100vh min-content;
   grid-template-columns: 3vw 1fr 3vw;
-  overflow: hidden;
 }
 
 h1 {
@@ -121,9 +120,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 100vh;
+  grid-template-rows: 100vh min-content;
   grid-template-columns: 3vw 1fr 3vw;
-  overflow: hidden;
 }
 
 h1 {
@@ -245,18 +243,21 @@ p {
 
 .name {
   margin: 0;
-  line-height: 0.8;
   font-size: 19rem;
-  letter-spacing: 0.3rem;
+  padding-left: 14rem;
 }
 
 .name__first {
   font-weight: 300;
+  font-family: abolition, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .name__last {
   font-weight: 300;
-  opacity: 0.2;
+  opacity: 0.6;
+  font-size: 5.6rem;
 }
 
 .projects__btn {
@@ -403,6 +404,7 @@ p {
   grid-row: 2 / 3;
   grid-column: 2/ 3;
   margin-top: 5rem;
+  margin-bottom: 25rem;
 }
 
 .projects__heading {
@@ -425,6 +427,30 @@ p {
   margin-bottom: 4rem;
 }
 
+.projects__card__img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.projects__card__wrapper {
+  width: 75%;
+}
+
+.projects__card__headings {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #FAF9F6;
+}
+
+.projects__card__headings h3 {
+  color: #FAF9F6;
+  margin-bottom: .2rem;
+}
+
+.projects__card__subheading h4 {
+  color: #FAF9F6;
+  margin-top: 1.5rem;
+}
+
 .projects__card__text {
   width: 40rem;
   display: flex;
@@ -436,6 +462,8 @@ p {
 .projects__card__text__container {
   display: flex;
   align-items: center;
+  border-bottom: 2px solid #FAF9F6;
+  padding-bottom: 0.2rem;
 }
 
 .projects__card__text--number h1 {
@@ -443,11 +471,21 @@ p {
   color: #FAF9F6;
   font-weight: 300;
   font-size: 6.4rem;
+  margin: 0;
+}
+
+.projects__card__text--headings {
+  margin-left: 3.5rem;
+}
+
+.projects__card__text--headings h3 {
+  text-transform: uppercase;
 }
 
 .projects__card__text--headings h3,
-.projects__card__text h4 {
-  margin: 0.5rem 0;
+.projects__card__text--headings h4 {
+  margin: 0;
+  margin-top: 0.6rem;
   color: #FAF9F6;
 }
 
