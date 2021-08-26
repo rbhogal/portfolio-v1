@@ -38,7 +38,6 @@ const projectsHeading = document.querySelector(".projects__heading");
 const loadingScreenTL = gsap.timeline();
 const loadingNameTL = gsap.timeline();
 const projectsTL = gsap.timeline();
-/* 
 
 // Loading Text (Name) - Enter
 gsap.from(loadingFirstName, {
@@ -75,7 +74,7 @@ gsap.to(bodyContainer, {
   overflow: "visible",
 });
 
- */
+ 
  
 projectsTL.from([projectsNumber02, projectsHeading], {
   opacity: 0,

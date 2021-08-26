@@ -219,6 +219,29 @@ p {
 
 .content {
   padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__hero {
+  margin-left: 15%;
+}
+
+.content__hero h1 {
+  font-size: 25rem;
+  font-weight: 300;
+}
+
+.content__subcontent {
+  width: 50rem;
+  margin-right: 15%;
+}
+
+.content__subcontent h2 {
+  font-size: 2.4rem;
+  font-family: europa, sans-serif;
+  font-weight: 400;
 }
 
 .content__subtext {
@@ -245,10 +268,15 @@ p {
   margin: 0;
   font-size: 19rem;
   padding-left: 14rem;
+  font-family: europa, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
 }
 
 .name__first {
   font-weight: 300;
+  padding-top: 8%;
   font-family: abolition, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -419,12 +447,11 @@ p {
 }
 
 .projects__card {
-  margin: 0 auto;
   width: min-content;
   display: flex;
-  margin-left: 24%;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-left: 16%;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 .projects__card__img {
@@ -444,6 +471,7 @@ p {
 .projects__card__headings h3 {
   color: #FAF9F6;
   margin-bottom: .2rem;
+  font-weight: 300;
 }
 
 .projects__card__subheading h4 {

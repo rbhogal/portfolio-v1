@@ -20,12 +20,11 @@
   }
 
   &__card {
-    margin: 0 auto;
     width: min-content;
     display: flex;
-    margin-left: 24%;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-left: 16%;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
     // background-color: $color-off-white;
 
     &__img {
@@ -48,6 +47,7 @@
       & h3 {
         color: $color-off-white;
         margin-bottom: .2rem;
+        font-weight: 300;
         
       }
     }

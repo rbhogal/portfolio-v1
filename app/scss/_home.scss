@@ -15,12 +15,39 @@
     word-break: break-all;
     line-height: 0.8;
   }
+
+  
+  
 }
 
 .content {
   // padding-left: 55%;
   padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  &__hero {
+    margin-left: 15%;
+    & h1 {
+      font-size: 25rem;
+      font-weight: 300;
+    }
+  }
+
+  &__subcontent {
+    width: 50rem;
+    margin-right: 15%;
+
+    & h2 {
+      font-size: 2.4rem;
+      // letter-spacing: 0;
+      // vertical-align: middle;
+      // line-height: 3.8;
+      font-family: europa, sans-serif;
+      font-weight: 400;
+    }
+  }
   &__subtext {
     padding-left: 0.7rem;
     max-width: 56rem;
@@ -58,10 +85,10 @@
   // font-size: 12rem;
 
   //Option 3
-  // font-family: europa,sans-serif;
-  // font-weight: 400;
-  // font-style: normal;
-  // letter-spacing: normal;
+  font-family: europa, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
 
   &__container {
     // width: 50%;
@@ -69,7 +96,7 @@
 
   &__first {
     font-weight: 300;
-
+    padding-top: 8%;
     //Abolition
     font-family: abolition, sans-serif;
     font-weight: 400;
