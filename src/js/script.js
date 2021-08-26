@@ -1,3 +1,6 @@
+// import LocomotiveScroll from "locomotive-scroll";
+
+// Cursor
 // new kursor({
 //   type: 1,
 //   removeDefaultCursor: true,
@@ -19,7 +22,6 @@ const loadingLastName = document.querySelector(
 
 //Body
 const bodyContainer = document.querySelector(".container");
-
 //Header
 const header = document.querySelector(".header");
 const aboutLink = document.querySelector(".navbar-item__about");
@@ -33,13 +35,11 @@ const projectsBtn = document.querySelector(".projects__btn");
 //Projects
 const projectsNumber02 = document.querySelector(".number__02");
 const projectsHeading = document.querySelector(".projects__heading");
-
-// Timelines
-const loadingScreenTL = gsap.timeline();
-const loadingNameTL = gsap.timeline();
-const projectsTL = gsap.timeline();
+const projectsCard = document.querySelectorAll(".projects__card");
 
 // Loading Text (Name) - Enter
+const loadingScreenTL = gsap.timeline();
+
 gsap.from(loadingFirstName, {
   duration: 1.5,
   y: 25,
@@ -53,6 +53,8 @@ gsap.from(loadingLastName, {
 });
 
 // Loading Text (Name) - Exit
+const loadingNameTL = gsap.timeline();
+
 loadingNameTL.to([loadingFirstName, loadingLastName], {
   duration: 1,
   delay: 1.5,
@@ -66,7 +68,14 @@ loadingScreenTL.to([loadingScreen, loadingIntro], {
   delay: 1.5,
   top: "-110%",
   ease: Expo.easeInOut,
-});
+}).from([projectsNumber02, projectsHeading], {
+  opacity: 0,
+  delay: -0.7,
+  y: 110,
+  duration: 1.5,
+  ease: "power3.out",
+  stagger: 0.2,
+});;
 
 gsap.to(bodyContainer, {
   duration: 0,
@@ -74,26 +83,41 @@ gsap.to(bodyContainer, {
   overflow: "visible",
 });
 
- 
- 
-projectsTL.from([projectsNumber02, projectsHeading], {
+//Projects Section
+const projectsHeaderTL = gsap.timeline();
+
+// projectsHeaderTL.
+
+const projectCardsTL = gsap.timeline();
+
+projectCardsTL.from(projectsCard, {
   opacity: 0,
-  y: 110,
-  duration: 0.6,
+  y: 200,
+  duration: 0.3,
   ease: "power3.out",
   stagger: 0.2,
 });
 
 const controller = new ScrollMagic.Controller();
-const scene = new ScrollMagic.Scene({
+/* 
+new ScrollMagic.Scene({
   triggerElement: "#projectsBtn",
   triggerHook: 0,
   reverse: true,
 })
   .addIndicators()
-  .setTween(projectsTL)
+  .setTween(projectsHeaderTL)
   .addTo(controller);
 
+new ScrollMagic.Scene({
+  triggerElement: "#projectsBtn",
+  triggerHook: 0,
+  reverse: true,
+})
+  .addIndicators()
+  .setTween(projectCardsTL)
+  .addTo(controller);
+ */
 // .from([aboutLink, footer, projectsBtn], {
 //   y: 50,
 //   duration: 1.5,

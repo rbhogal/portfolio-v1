@@ -1,12 +1,18 @@
 .projects {
   width: 100%;
-  // height: 100vh;
   grid-row: 2 / 3;
   grid-column: 2/ 3;
-  margin-top: 5rem;
+  margin-top: 20rem;
   // background-color: $color-off-white;
   // color: $color-dark-grey;
   margin-bottom: 25rem;
+  &__blah {
+    display: inline-block;
+    width: min-content;
+  }
+  &__header {
+    display: inline-block;
+  }
 
   &__heading {
     font-size: 19rem;
@@ -15,20 +21,30 @@
     width: 30rem;
     word-break: break-all;
     line-height: 0.8;
-    position: fixed;
-    top: 27rem;
+    // position: fixed;
+    // top: 38rem;
+    display: inline-block;
   }
 
   &__card {
     width: min-content;
     display: flex;
     margin-left: 16%;
-    margin-top: 15rem;
+    // margin-top: 15rem;
     margin-bottom: 15rem;
-    // background-color: $color-off-white;
+    transition: all 0.3s ease-in-out;
+
+    &--first {
+      margin-left: 0;
+      display: inline-block;
+    }
 
     &__img {
       transition: transform 0.2s ease-in-out;
+    }
+
+    &:hover {
+      // background-color: rgba(0,0,0,0.2);
     }
 
     &:hover .projects__card__img {
@@ -46,16 +62,14 @@
 
       & h3 {
         color: $color-off-white;
-        margin-bottom: .2rem;
+        margin-bottom: 0.2rem;
         font-weight: 300;
-        
       }
     }
 
     &__subheading h4 {
       color: $color-off-white;
       margin-top: 1.5rem;
-
     }
 
     &__text {
@@ -107,8 +121,8 @@
   line-height: 0.8;
   width: min-content;
   // border-color: $color-dark-grey;
-  position: fixed;
-  top: 5rem;
+  // position: fixed;
+  // top: 16rem;
 }
 
 .scroll-top {

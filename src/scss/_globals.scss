@@ -19,7 +19,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh min-content;
+  grid-template-rows: min min-content;
   grid-template-columns: 3vw 1fr 3vw;
   // overflow: hidden;
 }
