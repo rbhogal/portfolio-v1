@@ -17,6 +17,11 @@ body {
   padding: 0;
 }
 
+html,
+body {
+  cursor: none;
+}
+
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -182,6 +187,11 @@ body {
   color: #FAF9F6;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  cursor: none;
 }
 
 .cursor {
