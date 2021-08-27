@@ -11,23 +11,52 @@ html {
 }
 
 body {
-  background-color: #171717;
+  background: #171717;
   color: #FAF9F6;
   margin: 0;
   padding: 0;
 }
 
 .cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 3rem;
+  background-color: #FAF9F6;
   border-radius: 50%;
-  padding: 2.5rem;
+  transition: transform 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: .1;
+}
+
+.animate-cursor {
+  transform: translate(-50%, -50%) scale(0.5);
+  mix-blend-mode: difference;
+  opacity: 1;
+}
+
+/* 
+.cursor {
+  border-radius: 50%;
+  padding: 3.2rem;
   background-color: #fff;
   opacity: 0.2;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
+  // transition: all 0.3s ease;
+  transition-property: transform, opacity;
+  transform-origin: -50% -50%;
+  z-index: 9001;
 }
 
+
+.animate-cursor {
+  transform: scale(0.5);
+  opacity: 1;
+}
+ */
 .container {
   display: grid;
   grid-template-rows: min min-content;
@@ -123,23 +152,52 @@ html {
 }
 
 body {
-  background-color: #171717;
+  background: #171717;
   color: #FAF9F6;
   margin: 0;
   padding: 0;
 }
 
 .cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 3rem;
+  background-color: #FAF9F6;
   border-radius: 50%;
-  padding: 2.5rem;
+  transition: transform 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: .1;
+}
+
+.animate-cursor {
+  transform: translate(-50%, -50%) scale(0.5);
+  mix-blend-mode: difference;
+  opacity: 1;
+}
+
+/* 
+.cursor {
+  border-radius: 50%;
+  padding: 3.2rem;
   background-color: #fff;
   opacity: 0.2;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
+  // transition: all 0.3s ease;
+  transition-property: transform, opacity;
+  transform-origin: -50% -50%;
+  z-index: 9001;
 }
 
+
+.animate-cursor {
+  transform: scale(0.5);
+  opacity: 1;
+}
+ */
 .container {
   display: grid;
   grid-template-rows: min min-content;
@@ -360,6 +418,29 @@ p {
   opacity: 0;
 }
 
+.nav-wrapper {
+  position: fixed;
+  padding: 2.5rem 0;
+  top: 0;
+  right: 6rem;
+  width: 100%;
+  width: min-content;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+span {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FAF9F6;
+  pointer-events: none;
+}
+
+/* 
 .header {
   padding: 2.5rem 0;
   position: fixed;
@@ -370,31 +451,39 @@ p {
   width: min-content;
 }
 
-.navbar-link {
-  width: 100%;
-  display: flex;
-}
 
-.navbar-link a {
-  color: inherit;
-  text-decoration: none;
-}
+nav {
 
-.navbar-link__cover {
-  height: 12px;
-  width: 40px;
-  background-color: #171717;
-  margin-left: auto;
-  position: fixed;
-  top: 9rem;
-  right: 6rem;
-  z-index: 9001;
-}
+  & a {
+    color: $color-off-white;
+    text-decoration: none;
 
-.navbar-link__about {
-  margin-left: auto;
-}
+    &:hover p {
+      // font-weight: 600;
+    }   
+    
+    & p {
+      pointer-events: none;
+      transition: transform 0.1s linear;
+    }
+  }
+ 
+  &__cover {
+    height: 12px;
+    width: 40px;
+    background-color: $color-dark-grey;
+    margin-left: auto;
+    position: fixed;
+    top: 9rem;
+    right: 6rem;
+    z-index: 9001;
+  }
 
+  &__about {
+    margin-left: auto;
+  }
+}
+ */
 .footer {
   position: fixed;
   bottom: 0;
@@ -433,11 +522,7 @@ p {
   margin-left: auto;
 }
 
-.contacts li {
-  list-style: none;
-}
-
-.contacts li a {
+.contacts a {
   color: inherit;
   text-decoration: none;
   display: flex;
@@ -445,16 +530,16 @@ p {
   justify-content: flex-end;
 }
 
-.contacts li a p {
+.contacts a p {
   margin: 0;
   line-height: 1.1;
 }
 
-.contacts li a .footer__icon {
+.contacts a .footer__icon {
   opacity: 0;
 }
 
-.contacts li a:hover .footer__icon {
+.contacts a:hover .footer__icon {
   opacity: 1;
 }
 
@@ -479,15 +564,30 @@ p {
   left: 11vw;
 }
 
+.projects__subtext {
+  margin-bottom: 10rem;
+  font-size: 2.4rem;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.5rem;
+  letter-spacing: 0.322vw;
+}
+
+.projects__subtext .emoji {
+  font-size: 5rem;
+}
+
 .projects__card {
   width: min-content;
   margin-bottom: 15rem;
   transition: all 0.3s ease-in-out;
   height: min-content;
-  border-radius: 1px;
+  border-radius: 5px;
   overflow: hidden;
-  margin-left: auto;
-  margin-left: 22vw;
+}
+
+.projects__card__container {
+  width: min-content;
+  margin-right: auto;
 }
 
 .projects__card__text {

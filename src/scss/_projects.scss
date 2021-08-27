@@ -6,7 +6,7 @@
   // background-color: $color-off-white;
   // color: $color-dark-grey;
   margin-bottom: 25rem;
-  
+
   padding: 0 8%;
 
   &__header {
@@ -24,21 +24,36 @@
     left: 11vw;
   }
 
+  &__subtext {
+    margin-bottom: 10rem;
+    font-size: 2.4rem;
+    font-family: $font-intro-text;
+    letter-spacing: 0.5rem;
+    letter-spacing: 0.322vw;
+
+    & .emoji {
+      font-size: 5rem;
+    }
+  }
   &__card {
     width: min-content;
     // display: flex;
     // margin-top: 15rem;
     margin-bottom: 15rem;
     transition: all 0.3s ease-in-out;
-    // background-color: $color-off-white;
+    // background-color: rgba(250, 249, 246, 1);
     height: min-content;
-    border-radius: 1px;
+    border-radius: 5px;
     overflow: hidden;
 
-    // margin-right: 10%;
-    margin-left: auto;
-    margin-left: 22vw;
+    // margin-left: 22vw;
     // margin-top: 10rem;
+
+    &__container {
+      // margin-left: 22vw;
+      width: min-content;
+      margin-right: auto;
+    }
 
     &__text {
       width: 40rem;
@@ -85,7 +100,7 @@
     }
 
     &:hover {
-      // background-color: rgba(0,0,0,0.2);
+      // background-color: rgba(255, 255, 255, 0.1);
     }
 
     &:hover .projects__card__img {
@@ -134,7 +149,7 @@
   padding-bottom: 3rem;
   line-height: 0.8;
   width: min-content;
-  
+
   // border-color: $color-dark-grey;
   position: fixed;
   top: 16rem;

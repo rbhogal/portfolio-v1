@@ -165,21 +165,48 @@ new ScrollMagic.Scene({
 // });
 
 //Custom Cursor
-let cursor = document.querySelector('.cursor');  
-let navLinks = document.querySelectorAll('.nav-link')
-let footerLinks = document.querySelectorAll('.footer__links li');
+const link = document.querySelectorAll("nav > .hover-this");
+let cursor = document.querySelector(".cursor");
 
-window.addEventListener('mousemove', editCursor);
+const editCursor = (e) => {
+  const { clientX: x, clientY: y } = e;
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
+};
 
-function editCursor(e) {
-  cursor.style.top = e.pageY + 'px';
-  cursor.style.left = e.pageX + 'px';
-}
+window.addEventListener("mousemove", editCursor);
 
-navLinks.forEach(link => {
-  link.addEventListener('mouseover', () => {
-    cursor.classList.add('link-grow');
+link.forEach(link => {
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add('animate-cursor');
+  })
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove('animate-cursor');
   })
 })
 
-.link-grow
+
+
+
+/* 
+let cursor = document.querySelector(".cursor");
+let navLinks = document.querySelectorAll(".navbar-links");
+window.addEventListener("mousemove", editCursor);
+
+function editCursor(e) {
+  const { clientX: x, clientY: y } = e;
+  cursor.style.top = y + "px";
+  cursor.style.left = x + "px";
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor");
+    link.classList.remove("hovered-link");
+  });
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor");
+    link.classList.add("hovered-link");
+  });
+});
+ */

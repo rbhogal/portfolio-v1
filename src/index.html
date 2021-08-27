@@ -21,7 +21,7 @@
     <title>Rohit Bhogal | Frontend Developer</title>
   </head>
   <body id="#container" class="container">
-    <div class="cursor"></div>
+        <div class="cursor"></div>
 
     <!-- <div class="loading-screen"></div> -->
     <!-- <div class="loading-screen-addition"></div> -->
@@ -34,17 +34,25 @@
     </div>
  -->
     <!-- <div class="navbar-item__cover"></div> -->
-    <header class="header">
-      <nav class="navbar">
-        <div class="navbar-link">
-          <a class="navbar-link__about" href="./about.html"><p>ABOUT</p></a>
-        </div>
+    <!-- <header class="header">
+      <nav>
+        <a class="nav-link__about" href="./about.html"><p>About</p></a>
+ 
       </nav>
-    </header>
+    </header> -->
+
+    <div class="nav-wrapper">
+      <nav>
+        <a href="#" class="hover-this"><span>About</span></a>
+      </nav>
+    </div>
 
     <section class="home">
-      <div class="home__heading">Rohit Bhogal</div>
-      <div class="home__subheading">Frontend Web Developer</div>
+      <div class="home__header">
+        <div class="home__heading">Rohit Bhogal</div>
+        <!-- <div class="home__folio">Folio</div> -->
+        <div class="home__subheading">Frontend Web Developer</div>
+      </div>
 
       <!-- <h1 class="number number__01">01</h1> -->
       <!-- 
@@ -101,69 +109,76 @@
     </section>
 
     <section id="projects" class="projects">
-      <div class="projects__header">
+      <!-- <div class="projects__header">
         <h1 class="number number__02">01</h1>
         <h1 class="projects__heading">Projects</h1>
-      </div>
+      </div> -->
 
-      <div class="projects__card projects__card--001">
-        <div class="projects__card__img">
-          <img
-            width="900"
-            src="../images/projects/Game-Save__BOTW_game_page__900px.png"
-            alt="Game Save Web App"
-          />
-        </div>
-        <div class="projects__card__text">
-          <div class="projects__card__wrapper">
-            <div class="projects__card__headings">
-              <h3>Game Save</h3>
-              <h3>001</h3>
-            </div>
-            <div class="projects__card__subheading">
-              <h4>Web App using IGDB API</h4>
+      <div class="projects__card__container">
+        <!-- 
+           <p class="projects__subtext">
+          I'm Rohit, a frontend web developer. Check out my recent works.
+           <span class="emoji">😬</span>
+        </p> 
+ -->
+        <div class="projects__card projects__card--001">
+          <div class="projects__card__img">
+            <img
+              width="900"
+              src="../images/projects/Game-Save__BOTW_game_page__900px.png"
+              alt="Game Save Web App"
+            />
+          </div>
+          <div class="projects__card__text">
+            <div class="projects__card__wrapper">
+              <div class="projects__card__headings">
+                <h3>Game Save</h3>
+                <h3>001</h3>
+              </div>
+              <div class="projects__card__subheading">
+                <h4>Web App using IGDB API</h4>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="projects__card projects__card--002">
-        <div class="projects__card__img">
-          <img
-            width="900"
-            src="../images/projects/Burgerlords__Home__900px.png"
-            alt="Burgerlords Landing Page"
-          />
-        </div>
-        <div class="projects__card__text">
-          <div class="projects__card__wrapper">
-            <div class="projects__card__headings">
-              <h3>Burgerlords</h3>
-              <h3>002</h3>
-            </div>
-            <div class="projects__card__subheading">
-              <h4>Restaurant Landing Page</h4>
+        <div class="projects__card projects__card--002">
+          <div class="projects__card__img">
+            <img
+              width="900"
+              src="../images/projects/Burgerlords__Home__900px.png"
+              alt="Burgerlords Landing Page"
+            />
+          </div>
+          <div class="projects__card__text">
+            <div class="projects__card__wrapper">
+              <div class="projects__card__headings">
+                <h3>Burgerlords</h3>
+                <h3>002</h3>
+              </div>
+              <div class="projects__card__subheading">
+                <h4>Restaurant Landing Page</h4>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="projects__card projects__card--003">
-        <div class="projects__card__img">
-          <img
-            width="900"
-            src="../images/projects/Bookmark__landing_page__900px.png"
-            alt="Bookmark Landing Page"
-          />
-        </div>
-        <div class="projects__card__text">
-          <div class="projects__card__wrapper">
-            <div class="projects__card__headings">
-              <h3>Bookmark</h3>
-              <h3>003</h3>
-            </div>
-            <div class="projects__card__subheading">
-              <h4>Chrome Extension Landing Page</h4>
+        <div class="projects__card projects__card--003">
+          <div class="projects__card__img">
+            <img
+              width="900"
+              src="../images/projects/Bookmark__landing_page__900px.png"
+              alt="Bookmark Landing Page"
+            />
+          </div>
+          <div class="projects__card__text">
+            <div class="projects__card__wrapper">
+              <div class="projects__card__headings">
+                <h3>Bookmark</h3>
+                <h3>003</h3>
+              </div>
+              <div class="projects__card__subheading">
+                <h4>Chrome Extension Landing Page</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -265,66 +280,62 @@
     </section>
 
     <section class="footer">
-      <ul class="contacts">
-        <li>
-          <a href="#"
-            ><svg
-              class="footer__icon footer__icon--download"
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <p>Resume</p></a
+      <div class="contacts navbar-links">
+        <a href="#"
+          ><svg
+            class="footer__icon footer__icon--download"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
-        </li>
-        <li>
-          <a href="#"
-            ><svg
-              class="footer__icon footer__icon--external-link"
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <p>Email</p></a
+            <path
+              fill-rule="evenodd"
+              d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <p>Resume</p></a
+        >
+
+        <a href="#"
+          ><svg
+            class="footer__icon footer__icon--external-link"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
-        </li>
-        <li>
-          <a
-            href="https://github.com/rbhogal"
-            target="_blank"
-            rel="noopener noreferrer"
+            <path
+              fill-rule="evenodd"
+              d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <p>Email</p></a
+        >
+
+        <a
+          href="https://github.com/rbhogal"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="footer__icon footer__icon--external-link"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
-            <svg
-              class="footer__icon footer__icon--external-link"
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <p>Github</p></a
-          >
-        </li>
-      </ul>
+            <path
+              fill-rule="evenodd"
+              d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <p>Github</p></a
+        >
+      </div>
     </section>
     <div class="footer__cover--bottom"></div>
   </body>

@@ -1,3 +1,32 @@
+.nav-wrapper {
+  position: fixed;
+  padding: 2.5rem 0;
+  top: 0;
+  right: 6rem;
+  width: 100%;
+  width: min-content;
+  // background: $color-dark-grey;
+}
+
+.hover-this {
+  // transition: all 0.3s ease;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+span {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: $color-off-white;
+  pointer-events: none;
+  // transition: transform 0.1s linear;
+}
+
+/* 
 .header {
   padding: 2.5rem 0;
   position: fixed;
@@ -8,19 +37,23 @@
   width: min-content;
 }
 
-// .navbar {
-//   width: 100%;
-// }
 
-.navbar-link {
-  width: 100%;
-  display: flex;
+nav {
 
   & a {
-    color: inherit;
+    color: $color-off-white;
     text-decoration: none;
-  }
 
+    &:hover p {
+      // font-weight: 600;
+    }   
+    
+    & p {
+      pointer-events: none;
+      transition: transform 0.1s linear;
+    }
+  }
+ 
   &__cover {
     height: 12px;
     width: 40px;
@@ -36,3 +69,4 @@
     margin-left: auto;
   }
 }
+ */
