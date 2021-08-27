@@ -41,7 +41,7 @@ h4 {
   font-family: europa, sans-serif;
   font-size: 1.4rem;
   font-weight: normal;
-  opacity: .7;
+  opacity: .8;
 }
 
 p {
@@ -142,7 +142,7 @@ h4 {
   font-family: europa, sans-serif;
   font-size: 1.4rem;
   font-weight: normal;
-  opacity: .7;
+  opacity: .8;
 }
 
 p {
@@ -440,17 +440,11 @@ p {
   width: 100%;
   grid-row: 2 / 3;
   grid-column: 2/ 3;
-  margin-top: 20rem;
+  margin-top: 10rem;
   margin-bottom: 25rem;
-}
-
-.projects__blah {
-  display: inline-block;
-  width: min-content;
-}
-
-.projects__header {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8%;
 }
 
 .projects__heading {
@@ -460,53 +454,30 @@ p {
   width: 30rem;
   word-break: break-all;
   line-height: 0.8;
-  display: inline-block;
+  position: fixed;
+  top: 38rem;
+  left: 11vw;
 }
 
 .projects__card {
   width: min-content;
-  display: flex;
-  margin-left: 16%;
   margin-bottom: 15rem;
   transition: all 0.3s ease-in-out;
-}
-
-.projects__card--first {
-  margin-left: 0;
-  display: inline-block;
-}
-
-.projects__card__img {
-  transition: transform 0.2s ease-in-out;
-}
-
-.projects__card__wrapper {
-  width: 75%;
-}
-
-.projects__card__headings {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid #FAF9F6;
-}
-
-.projects__card__headings h3 {
-  color: #FAF9F6;
-  margin-bottom: 0.2rem;
-  font-weight: 300;
-}
-
-.projects__card__subheading h4 {
-  color: #FAF9F6;
-  margin-top: 1.5rem;
+  height: min-content;
+  border-radius: 1px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-left: 22vw;
 }
 
 .projects__card__text {
   width: 40rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 0rem;
 }
 
 .projects__card__text__container {
@@ -539,6 +510,41 @@ p {
   color: #FAF9F6;
 }
 
+.projects__card--002 .projects__card__img {
+  width: min-content;
+}
+
+.projects__card__img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.projects__card__wrapper {
+  width: 100%;
+}
+
+.projects__card__headings {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #171717;
+  border-bottom: 1.5px solid #FAF9F6;
+}
+
+.projects__card__headings h3 {
+  color: #FAF9F6;
+  margin-bottom: 0.2rem;
+  font-weight: 300;
+  font-size: 4.2rem;
+}
+
+.projects__card__subheading {
+  display: flex;
+}
+
+.projects__card__subheading h4 {
+  color: #FAF9F6;
+  margin-top: 3rem;
+}
+
 .number__02 {
   font-size: 19rem;
   font-weight: 300;
@@ -548,6 +554,9 @@ p {
   padding-bottom: 3rem;
   line-height: 0.8;
   width: min-content;
+  position: fixed;
+  top: 16rem;
+  left: 11vw;
 }
 
 .scroll-top__btn {

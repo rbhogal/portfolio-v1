@@ -44,14 +44,21 @@ h4 {
   // text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: normal;
-  opacity: .7;
+  opacity: .8;
 }
 
 p {
   font-family: $font-secondary;
+  
   font-weight: 400;
   font-size: 1.2rem;
   text-transform: uppercase;
+
+  //Option 2
+  // font-family: $font-intro-text;  
+  // font-size: 1.8rem;
+  // letter-spacing: .2em;
+
 }
 
 .loading-screen {
