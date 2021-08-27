@@ -165,7 +165,7 @@ new ScrollMagic.Scene({
 // });
 
 //Custom Cursor
-const link = document.querySelectorAll("nav > .hover-this");
+const link = document.querySelectorAll(".hover-this");
 let cursor = document.querySelector(".cursor");
 
 const editCursor = (e) => {

@@ -21,6 +21,7 @@
     letter-spacing: 1.2rem;
     // text-align: center;
     padding-bottom: 0.5rem;
+    width: fit-content;
   }
 
   &__subheading {
@@ -29,9 +30,12 @@
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.2em;
-    // text-align: center;
     border-bottom: 1.5px solid $color-off-white;
     padding-bottom: 2rem;
+
+    & div {
+      width: fit-content;
+    }
   }
 }
 
