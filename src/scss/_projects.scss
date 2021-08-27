@@ -10,18 +10,28 @@
   padding: 0 8%;
 
   &__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid $color-off-white;
+    margin-bottom: 5rem;
   }
 
   &__heading {
     font-size: 19rem;
     font-weight: 300;
     margin: 0;
-    width: 30rem;
     word-break: break-all;
-    line-height: 0.8;
-    position: fixed;
-    top: 38rem;
-    left: 11vw;
+    // line-height: 0.8;
+    // position: fixed;
+    // top: 38rem;
+    // left: 11vw;
+    //  width: 30rem;
+
+    //Option 2
+    // font-family: "Bebas Neue", cursive;
+    font-size: 2.4rem;
+    // letter-spacing: 1.2rem;
+    font-weight: 300;
   }
 
   &__subtext {
@@ -36,34 +46,24 @@
     }
   }
   &__card {
-    width: min-content;
-    // display: flex;
-    // margin-top: 15rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 15rem;
     transition: all 0.3s ease-in-out;
     // background-color: rgba(250, 249, 246, 1);
     height: min-content;
-    border-radius: 5px;
     overflow: hidden;
 
-    // margin-left: 22vw;
-    // margin-top: 10rem;
-
     &__container {
-      // margin-left: 22vw;
-      width: min-content;
-      margin-right: auto;
+      width: 100%;
     }
 
     &__text {
-      width: 40rem;
-
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      margin-top: 0rem;
 
       &__container {
         display: flex;
@@ -71,44 +71,16 @@
         border-bottom: 2px solid $color-off-white;
         padding-bottom: 0.2rem;
       }
-
-      &--number h1 {
-        color: $color-dark-grey;
-        color: $color-off-white;
-        font-weight: 300;
-        font-size: 6.4rem;
-        margin: 0;
-      }
-
-      &--headings {
-        margin-left: 3.5rem;
-
-        & h3 {
-          text-transform: uppercase;
-        }
-        & h3,
-        h4 {
-          margin: 0;
-          margin-top: 0.6rem;
-          color: $color-off-white;
-        }
-      }
     }
 
     &__img {
       transition: transform 0.2s ease-in-out;
-    }
-
-    &:hover {
-      // background-color: rgba(255, 255, 255, 0.1);
-    }
-
-    &:hover .projects__card__img {
-      // transform: scale(1.02);
+      height: 43.9rem;
     }
 
     &__wrapper {
       width: 100%;
+      padding: 0 5vw;
     }
 
     &__headings {
@@ -132,8 +104,8 @@
     &__subheading {
       display: flex;
       & h4 {
+        color: $color-dark-grey;
         color: $color-off-white;
-        // color: $color-dark-grey;
         margin-top: 3rem;
       }
     }
@@ -151,9 +123,9 @@
   width: min-content;
 
   // border-color: $color-dark-grey;
-  position: fixed;
-  top: 16rem;
-  left: 11vw;
+  // position: fixed;
+  // top: 16rem;
+  // left: 11vw;
 }
 
 .scroll-top {

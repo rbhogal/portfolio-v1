@@ -17,11 +17,6 @@ body {
   padding: 0;
 }
 
-html,
-body {
-  cursor: none;
-}
-
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -189,11 +184,6 @@ body {
   padding: 0;
 }
 
-html,
-body {
-  cursor: none;
-}
-
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -349,6 +339,26 @@ p {
   margin-top: 3rem;
 }
 
+.home__header {
+  width: 100%;
+  border-bottom: 1.5px solid #FAF9F6;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.home__folio {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  text-align: center;
+}
+
 .home__heading {
   margin: 0;
   font-family: "Bebas Neue", cursive;
@@ -359,14 +369,17 @@ p {
   width: fit-content;
 }
 
+.home__heading__container {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
 .home__subheading {
   margin: 0;
   font-family: "Bebas Neue", cursive;
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.2em;
-  border-bottom: 1.5px solid #FAF9F6;
-  padding-bottom: 2rem;
 }
 
 .home__subheading div {
@@ -498,6 +511,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover span {
+  font-weight: 400;
+}
+
 span {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
@@ -619,16 +636,20 @@ nav {
   padding: 0 8%;
 }
 
+.projects__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #FAF9F6;
+  margin-bottom: 5rem;
+}
+
 .projects__heading {
   font-size: 19rem;
   font-weight: 300;
   margin: 0;
-  width: 30rem;
   word-break: break-all;
-  line-height: 0.8;
-  position: fixed;
-  top: 38rem;
-  left: 11vw;
+  font-size: 2.4rem;
+  font-weight: 300;
 }
 
 .projects__subtext {
@@ -644,27 +665,24 @@ nav {
 }
 
 .projects__card {
-  width: min-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 15rem;
   transition: all 0.3s ease-in-out;
   height: min-content;
-  border-radius: 5px;
   overflow: hidden;
 }
 
 .projects__card__container {
-  width: min-content;
-  margin-right: auto;
+  width: 100%;
 }
 
 .projects__card__text {
-  width: 40rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 0rem;
 }
 
 .projects__card__text__container {
@@ -674,35 +692,14 @@ nav {
   padding-bottom: 0.2rem;
 }
 
-.projects__card__text--number h1 {
-  color: #171717;
-  color: #FAF9F6;
-  font-weight: 300;
-  font-size: 6.4rem;
-  margin: 0;
-}
-
-.projects__card__text--headings {
-  margin-left: 3.5rem;
-}
-
-.projects__card__text--headings h3 {
-  text-transform: uppercase;
-}
-
-.projects__card__text--headings h3,
-.projects__card__text--headings h4 {
-  margin: 0;
-  margin-top: 0.6rem;
-  color: #FAF9F6;
-}
-
 .projects__card__img {
   transition: transform 0.2s ease-in-out;
+  height: 43.9rem;
 }
 
 .projects__card__wrapper {
   width: 100%;
+  padding: 0 5vw;
 }
 
 .projects__card__headings {
@@ -724,6 +721,7 @@ nav {
 }
 
 .projects__card__subheading h4 {
+  color: #171717;
   color: #FAF9F6;
   margin-top: 3rem;
 }
@@ -737,9 +735,6 @@ nav {
   padding-bottom: 3rem;
   line-height: 0.8;
   width: min-content;
-  position: fixed;
-  top: 16rem;
-  left: 11vw;
 }
 
 .scroll-top__btn {

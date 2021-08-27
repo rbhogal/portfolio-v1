@@ -8,12 +8,13 @@
   // background: $color-dark-grey;
 }
 
-.hover-this {
-  // transition: all 0.3s ease;
-}
-
 nav a {
   text-decoration: none;
+
+  &:hover span {
+    // color: rgb(252, 203, 42);
+    font-weight: 400;
+  }
 }
 
 span {

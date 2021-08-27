@@ -1,11 +1,4 @@
-// import LocomotiveScroll from "locomotive-scroll";
 
-// Cursor
-// new kursor({
-//   type: 1,
-//   removeDefaultCursor: true,
-//   color: '#ffffff',
-// });
 /* 
 //Loading screen
 const loadingScreen = document.querySelector(".loading-screen");

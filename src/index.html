@@ -44,17 +44,19 @@
 
     <div class="nav-wrapper">
       <nav>
-        <a href="#" class="hover-this"><span>About</span></a>
+        <a href="./about.html" class="hover-this"><span>About</span></a>
       </nav>
     </div>
 
     <section class="home">
       <div class="home__header">
-        <div class="home__heading hover-this">Rohit Bhogal</div>
-        <!-- <div class="home__folio">Folio</div> -->
-        <div class="home__subheading">
-          <div class="hover-this">Frontend Web Developer</div>
+        <div class="home__heading__container">
+          <div class="home__heading hover-this">Rohit Bhogal</div>
+          <div class="home__subheading">
+            <div class="hover-this">Frontend Web Developer</div>
+          </div>
         </div>
+        <!-- <div class="home__folio hover-this">Folio</div> -->
       </div>
 
       <!-- <h1 class="number number__01">01</h1> -->
@@ -112,11 +114,13 @@
     </section>
 
     <section id="projects" class="projects">
-      <!-- <div class="projects__header">
+      <!-- 
+      <div class="projects__header">
         <h1 class="number number__02">01</h1>
         <h1 class="projects__heading">Projects</h1>
-      </div> -->
-
+        <h1 class="projects__heading">004/004</h1>
+      </div>
+ -->
       <div class="projects__card__container">
         <!-- 
            <p class="projects__subtext">
@@ -125,13 +129,6 @@
         </p> 
  -->
         <div class="projects__card projects__card--001">
-          <div class="projects__card__img">
-            <img
-              width="900"
-              src="../images/projects/Game-Save__BOTW_game_page__900px.png"
-              alt="Game Save Web App"
-            />
-          </div>
           <div class="projects__card__text">
             <div class="projects__card__wrapper">
               <div class="projects__card__headings">
@@ -142,6 +139,13 @@
                 <h4>Web App using IGDB API</h4>
               </div>
             </div>
+          </div>
+          <div class="projects__card__img">
+            <img
+              width="900"
+              src="../images/projects/Game-Save__BOTW_game_page__900px.png"
+              alt="Game Save Web App"
+            />
           </div>
         </div>
         <div class="projects__card projects__card--002">
@@ -166,13 +170,6 @@
         </div>
 
         <div class="projects__card projects__card--003">
-          <div class="projects__card__img">
-            <img
-              width="900"
-              src="../images/projects/Bookmark__landing_page__900px.png"
-              alt="Bookmark Landing Page"
-            />
-          </div>
           <div class="projects__card__text">
             <div class="projects__card__wrapper">
               <div class="projects__card__headings">
@@ -184,84 +181,15 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- 
-
-      <div class="projects__card projects__card--01">
-        <div class="projects__card__text">
-          <div class="projects__card__wrapper">
-            <div class="projects__card__headings">
-              <h3>Burgerlords</h3>
-              <h3>001</h3>
-            </div>
-            <div class="projects__card__subheading">
-              <h4>Restaurant Landing Page</h4>
-            </div>
-          </div>
-        </div>
-        <img
-          class="projects__card__img"
-          width="900"
-          src="../images/projects/Burgerlords__Home__900px.png"
-          alt="Burgerlords Landing Page"
-        />
-      </div>
-
-      <div class="projects__card">
-        <img
-          class="projects__card__img"
-          width="900"
-          src="../images/projects/Bookmark__landing_page__900px.png"
-          alt="Bookmark Landing Page"
-        />
-
-        <div class="projects__card__text">
-          <div class="projects__card__wrapper">
-            <div class="projects__card__headings">
-              <h3>Bookmark</h3>
-              <h3>002</h3>
-            </div>
-            <div class="projects__card__subheading">
-              <h4>Chrome Extension Landing Page</h4>
-            </div>
+          <div class="projects__card__img">
+            <img
+              width="900"
+              src="../images/projects/Bookmark__landing_page__900px.png"
+              alt="Bookmark Landing Page"
+            />
           </div>
         </div>
       </div>
-
-      <div class="projects__card">
-        <img
-          class="projects__card__img"
-          width="900"
-          src="../images/projects/Game-Save__BOTW_game_page__900px.png"
-          alt="Game Save - BOTW Game Page"
-        />
-        <div class="projects__card__text">
-          <div class="projects__card__wrapper">
-            <div class="projects__card__headings">
-              <h3>Game Save</h3>
-              <h3>003</h3>
-            </div>
-            <div class="projects__card__subheading">
-              <h4>Web App using IGDB API</h4>
-            </div>
-          </div>
-        </div>
-      </div>
- -->
-      <!-- <img
-        width="900"
-        src="../images/projects/Bookmark__landing_page__900px.png"
-        alt="Bookmark__landing_page"
-      />
-
-      <img
-        width="900"
-        src="../images/projects/Game-Save__BOTW_game_page__900px.png"
-        alt="Game-Save__BOTW_game_page"
-      /> -->
-
       <div class="scroll-top__btn">
         <a href="#">
           <p class="scroll-top__text">Top</p>
@@ -284,7 +212,7 @@
 
     <section class="footer">
       <div class="contacts navbar-links">
-        <a href="#"
+        <a class="hover-this" href="#"
           ><svg
             class="footer__icon footer__icon--download"
             xmlns="http://www.w3.org/2000/svg"
@@ -301,7 +229,7 @@
           <p>Resume</p></a
         >
 
-        <a href="#"
+        <a class="hover-this" href="#"
           ><svg
             class="footer__icon footer__icon--external-link"
             xmlns="http://www.w3.org/2000/svg"
@@ -319,6 +247,7 @@
         >
 
         <a
+          class="hover-this"
           href="https://github.com/rbhogal"
           target="_blank"
           rel="noopener noreferrer"

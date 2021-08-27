@@ -7,21 +7,40 @@
   grid-column: 2 / 3;
   margin-top: 3rem;
 
-  &__heading {
-    // font-size: 19rem;
-    // font-weight: 300;
-    // margin: 0;
-    // width: 25rem;
-    // word-break: break-all;
-    // line-height: 0.8;
+  &__header {
+    width: 100%;
+    border-bottom: 1.5px solid $color-off-white;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__folio {
     margin: 0;
     font-family: $font-intro-text;
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
-    // text-align: center;
+    // margin-top: .3rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    text-align: center;
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: $font-intro-text;
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 1.2rem;
     padding-bottom: 0.5rem;
     width: fit-content;
+
+    &__container {
+      grid-column: 1 / 2;
+      grid-row: 1 / -1;
+    }
   }
 
   &__subheading {
@@ -30,8 +49,7 @@
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.2em;
-    border-bottom: 1.5px solid $color-off-white;
-    padding-bottom: 2rem;
+    
 
     & div {
       width: fit-content;
