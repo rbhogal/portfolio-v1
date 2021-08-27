@@ -19,27 +19,47 @@ body {
 
 html,
 body {
-  cursor: none;
+  // cursor: none;
 }
 
 .cursor {
   pointer-events: none;
   position: fixed;
-  padding: 3rem;
+  padding: 0.4rem;
   background-color: $color-off-white;
   border-radius: 50%;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
   z-index: 1;
-  opacity: .1;
+}
 
+.cursor-2 {
+  pointer-events: none;
+  position: fixed;
+  padding: 3.5rem;
+  background-color: $color-off-white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.1;
 }
 
 .animate-cursor {
-  transform: translate(-50%, -50%) scale(.3);
+  transform: translate(-50%, -50%) scale(0.3);
   mix-blend-mode: difference;
   opacity: 1;
+}
 
+.cursors div {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: $color-off-white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /* 

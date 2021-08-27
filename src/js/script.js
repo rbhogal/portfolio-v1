@@ -167,12 +167,53 @@ new ScrollMagic.Scene({
 //Custom Cursor
 const link = document.querySelectorAll(".hover-this");
 let cursor = document.querySelector(".cursor");
+let cursor2 = document.querySelector(".cursor-2");
 
+let currentX = 0;
+let currentY = 0
+let currentX2 = 0;
+let currentY2 = 0;
+
+let aimX = 0;
+let aimY = 0;
+let speed = 0.2;
+let speed2 = 0.1;
+const editCursor = (e) => {
+  const { clientX: x, clientY: y } = e;
+  aimX = x;
+  aimY = y;
+};
+
+const trailEffect = e => {
+  currentX += (aimX - currentX) * speed;
+  currentY += (aimY - currentY) * speed;
+
+  currentX2 += (aimX - currentX2) * speed2;
+  currentY2 += (aimY - currentY2) * speed2;
+
+  cursor.style.left = currentX + "px";
+  cursor.style.top = currentY + "px";
+
+  cursor2.style.left = currentX2 + "px";
+  cursor2.style.top = currentY2 + "px";
+
+  requestAnimationFrame(trailEffect);
+}
+
+trailEffect();
+
+
+/* 
 const editCursor = (e) => {
   const { clientX: x, clientY: y } = e;
   cursor.style.left = x + "px";
   cursor.style.top = y + "px";
+  cursor2.style.left = x + "px";
+  cursor2.style.top = y + "px";
 };
+ */
+
+
 
 window.addEventListener("mousemove", editCursor);
 
