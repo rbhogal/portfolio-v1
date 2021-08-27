@@ -442,8 +442,6 @@ p {
   grid-column: 2/ 3;
   margin-top: 10rem;
   margin-bottom: 25rem;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0 8%;
 }
 
@@ -510,10 +508,6 @@ p {
   color: #FAF9F6;
 }
 
-.projects__card--002 .projects__card__img {
-  width: min-content;
-}
-
 .projects__card__img {
   transition: transform 0.2s ease-in-out;
 }
@@ -563,7 +557,8 @@ p {
   text-align: center;
   width: min-content;
   margin-top: 5rem;
-  padding-left: 6.2%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .scroll-top__btn a {
