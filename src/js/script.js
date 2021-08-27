@@ -6,7 +6,7 @@
 //   removeDefaultCursor: true,
 //   color: '#ffffff',
 // });
-
+/* 
 //Loading screen
 const loadingScreen = document.querySelector(".loading-screen");
 const loadingScreenAddition = document.querySelector(
@@ -19,7 +19,7 @@ const loadingFirstName = document.querySelector(
 const loadingLastName = document.querySelector(
   ".loading-intro__text--last-name"
 );
-
+ 
 //Body
 const bodyContainer = document.querySelector(".container");
 //Header
@@ -82,7 +82,7 @@ gsap.to(bodyContainer, {
   delay: 2.3,
   overflow: "visible",
 });
-
+ 
 //Projects Section
 const projectsHeaderTL = gsap.timeline();
 
@@ -97,7 +97,7 @@ projectCardsTL.from(projectsCard, {
   ease: "power3.out",
   stagger: 0.2,
 });
-
+*/
 const controller = new ScrollMagic.Controller();
 /* 
 new ScrollMagic.Scene({
@@ -163,3 +163,23 @@ new ScrollMagic.Scene({
 //   top: "-110%",
 //   ease: Expo.easeInOut,
 // });
+
+//Custom Cursor
+let cursor = document.querySelector('.cursor');  
+let navLinks = document.querySelectorAll('.nav-link')
+let footerLinks = document.querySelectorAll('.footer__links li');
+
+window.addEventListener('mousemove', editCursor);
+
+function editCursor(e) {
+  cursor.style.top = e.pageY + 'px';
+  cursor.style.left = e.pageX + 'px';
+}
+
+navLinks.forEach(link => {
+  link.addEventListener('mouseover', () => {
+    cursor.classList.add('link-grow');
+  })
+})
+
+.link-grow

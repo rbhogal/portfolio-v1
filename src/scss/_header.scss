@@ -12,7 +12,15 @@
 //   width: 100%;
 // }
 
-.navbar-item {
+.navbar-link {
+  width: 100%;
+  display: flex;
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   &__cover {
     height: 12px;
     width: 40px;
@@ -22,16 +30,6 @@
     top: 9rem;
     right: 6rem;
     z-index: 9001;
-  }
-
-  &__container {
-    width: 100%;
-    display: flex;
-
-    & a {
-      color: inherit;
-      text-decoration: none;
-    }
   }
 
   &__about {
