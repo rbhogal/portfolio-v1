@@ -6,21 +6,21 @@
   // background-color: $color-off-white;
   // color: $color-dark-grey;
   margin-bottom: 25rem;
-
-  padding: 0 8%;
+  padding-right: 10vw;
+  display: flex;
 
   &__header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1.5px solid $color-off-white;
-    margin-bottom: 5rem;
+    // border-bottom: 1.5px solid $color-off-white;
+    // margin-bottom: 5rem;
   }
 
   &__heading {
     font-size: 19rem;
     font-weight: 300;
     margin: 0;
-    word-break: break-all;
+    // word-break: break-all;
     // line-height: 0.8;
     // position: fixed;
     // top: 38rem;
@@ -32,6 +32,11 @@
     font-size: 2.4rem;
     // letter-spacing: 1.2rem;
     font-weight: 300;
+    font-size: 19rem;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    line-height: 0.7;
+    margin-right: 5rem;
   }
 
   &__subtext {

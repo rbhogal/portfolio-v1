@@ -633,23 +633,26 @@ nav {
   grid-column: 2/ 3;
   margin-top: 10rem;
   margin-bottom: 25rem;
-  padding: 0 8%;
+  padding-right: 10vw;
+  display: flex;
 }
 
 .projects__header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1.5px solid #FAF9F6;
-  margin-bottom: 5rem;
 }
 
 .projects__heading {
   font-size: 19rem;
   font-weight: 300;
   margin: 0;
-  word-break: break-all;
   font-size: 2.4rem;
   font-weight: 300;
+  font-size: 19rem;
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  line-height: 0.7;
+  margin-right: 5rem;
 }
 
 .projects__subtext {
