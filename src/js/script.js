@@ -170,7 +170,7 @@ let cursor = document.querySelector(".cursor");
 let cursor2 = document.querySelector(".cursor-2");
 
 let currentX = 0;
-let currentY = 0
+let currentY = 0;
 let currentX2 = 0;
 let currentY2 = 0;
 
@@ -184,7 +184,7 @@ const editCursor = (e) => {
   aimY = y;
 };
 
-const trailEffect = e => {
+const trailEffect = (e) => {
   currentX += (aimX - currentX) * speed;
   currentY += (aimY - currentY) * speed;
 
@@ -198,12 +198,12 @@ const trailEffect = e => {
   cursor2.style.top = currentY2 + "px";
 
   requestAnimationFrame(trailEffect);
-}
+};
 
 trailEffect();
 
-
 /* 
+// Regular Cursor Movement
 const editCursor = (e) => {
   const { clientX: x, clientY: y } = e;
   cursor.style.left = x + "px";
@@ -211,23 +211,20 @@ const editCursor = (e) => {
   cursor2.style.left = x + "px";
   cursor2.style.top = y + "px";
 };
- */
-
-
+*/
 
 window.addEventListener("mousemove", editCursor);
 
-link.forEach(link => {
+link.forEach((link) => {
   link.addEventListener("mouseover", () => {
-    cursor.classList.add('animate-cursor');
-  })
+    cursor.classList.add("animate-cursor");
+    cursor2.classList.add("animate-cursor-2");
+  });
   link.addEventListener("mouseleave", () => {
-    cursor.classList.remove('animate-cursor');
-  })
-})
-
-
-
+    cursor.classList.remove("animate-cursor");
+    cursor2.classList.remove("animate-cursor-2");
+  });
+});
 
 /* 
 let cursor = document.querySelector(".cursor");
