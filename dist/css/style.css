@@ -339,6 +339,18 @@ p {
   margin-top: 3rem;
 }
 
+.home__intro {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.5rem;
+  letter-spacing: 0.322vw;
+}
+
+.home__intro .emoji {
+  font-size: 5rem;
+}
+
 .home__header {
   width: 100%;
   border-bottom: 1.5px solid #FAF9F6;
@@ -655,18 +667,6 @@ nav {
   margin-right: 5rem;
 }
 
-.projects__subtext {
-  margin-bottom: 10rem;
-  font-size: 2.4rem;
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 0.5rem;
-  letter-spacing: 0.322vw;
-}
-
-.projects__subtext .emoji {
-  font-size: 5rem;
-}
-
 .projects__card {
   width: 100%;
   display: flex;
@@ -677,8 +677,21 @@ nav {
   overflow: hidden;
 }
 
+.projects__card:hover .projects__card__wrapper {
+  opacity: 1;
+}
+
+.projects__card:hover {
+  transform: scale(0.97);
+}
+
 .projects__card__container {
   width: 100%;
+  padding: 0 2vw;
+}
+
+.projects__card__container a {
+  text-decoration: none;
 }
 
 .projects__card__text {
@@ -702,7 +715,9 @@ nav {
 
 .projects__card__wrapper {
   width: 100%;
-  padding: 0 5vw;
+  padding: 0 4vw;
+  transition: all 0.2s ease-in-out;
+  opacity: .7;
 }
 
 .projects__card__headings {

@@ -7,6 +7,18 @@
   grid-column: 2 / 3;
   margin-top: 3rem;
 
+  &__intro {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-family: $font-intro-text;
+    letter-spacing: 0.5rem;
+    letter-spacing: 0.322vw;
+
+    & .emoji {
+      font-size: 5rem;
+    }
+  }
+
   &__header {
     width: 100%;
     border-bottom: 1.5px solid $color-off-white;

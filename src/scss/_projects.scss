@@ -39,17 +39,6 @@
     margin-right: 5rem;
   }
 
-  &__subtext {
-    margin-bottom: 10rem;
-    font-size: 2.4rem;
-    font-family: $font-intro-text;
-    letter-spacing: 0.5rem;
-    letter-spacing: 0.322vw;
-
-    & .emoji {
-      font-size: 5rem;
-    }
-  }
   &__card {
     width: 100%;
     display: flex;
@@ -59,9 +48,22 @@
     // background-color: rgba(250, 249, 246, 1);
     height: min-content;
     overflow: hidden;
+    &:hover .projects__card__wrapper {
+      // background-color: rgba(255, 255, 255, .1);
+      opacity: 1;
+    }
+
+    &:hover {
+      transform: scale(.97);
+    }
 
     &__container {
       width: 100%;
+      padding: 0 2vw;
+      
+      & a {
+        text-decoration: none;
+      }
     }
 
     &__text {
@@ -81,11 +83,17 @@
     &__img {
       transition: transform 0.2s ease-in-out;
       height: 43.9rem;
+      
     }
 
     &__wrapper {
       width: 100%;
-      padding: 0 5vw;
+      padding: 0 4vw;
+      transition: all 0.2s ease-in-out;
+
+      opacity: .7;
+
+     
     }
 
     &__headings {
