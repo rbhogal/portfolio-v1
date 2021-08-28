@@ -5,6 +5,14 @@
   padding-left: 3vw;
   padding-right: 3vw;
 
+  & p {
+    font-family: "Bebas Neue", cursive;
+    font-size: 3.6rem;
+    color: $color-off-white;
+    text-transform: none;
+    font-weight: 300;
+  }
+
   &__heading {
     font-size: 19rem;
     font-weight: 300;

@@ -54,13 +54,15 @@
     }
 
     &:hover {
-      transform: scale(.97);
+      transform: scale(0.97);
+
+      
     }
 
     &__container {
       width: 100%;
       padding: 0 2vw;
-      
+
       & a {
         text-decoration: none;
       }
@@ -82,8 +84,14 @@
 
     &__img {
       transition: transform 0.2s ease-in-out;
-      height: 43.9rem;
-      
+      // height: 43.9rem;
+      width: 100%;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     &__wrapper {
@@ -91,9 +99,7 @@
       padding: 0 4vw;
       transition: all 0.2s ease-in-out;
 
-      opacity: .7;
-
-     
+      opacity: 0.7;
     }
 
     &__headings {
