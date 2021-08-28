@@ -1,4 +1,3 @@
-
 /* 
 //Loading screen
 const loadingScreen = document.querySelector(".loading-screen");
@@ -171,6 +170,7 @@ let aimX = 0;
 let aimY = 0;
 let speed = 0.2;
 let speed2 = 0.1;
+
 const editCursor = (e) => {
   const { clientX: x, clientY: y } = e;
   aimX = x;
@@ -207,6 +207,14 @@ const editCursor = (e) => {
 */
 
 window.addEventListener("mousemove", editCursor);
+window.addEventListener("mousedown", () => {
+  cursor.classList.add("animate-cursor");
+  cursor2.classList.add("animate-cursor-2");
+});
+window.addEventListener("mouseup", () => {
+  cursor.classList.remove("animate-cursor");
+  cursor2.classList.remove("animate-cursor-2");
+});
 
 link.forEach((link) => {
   link.addEventListener("mouseover", () => {
