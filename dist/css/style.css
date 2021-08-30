@@ -85,7 +85,7 @@ body {
  */
 .container {
   display: grid;
-  grid-template-rows: min min-content;
+  grid-template-rows: min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
 }
 
@@ -252,7 +252,7 @@ body {
  */
 .container {
   display: grid;
-  grid-template-rows: min min-content;
+  grid-template-rows: min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
 }
 
@@ -332,6 +332,25 @@ p {
   position: relative;
 }
 
+.home__hamburger-menu,
+.home__hamburger-menu::after,
+.home__hamburger-menu:before {
+  width: 3rem;
+  height: 0.4rem;
+}
+
+.home__hamburger-menu.animate-menu::after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home__hamburger-menu.animate-menu::before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .home {
   width: 100%;
   grid-row: 1 / 2;
@@ -363,12 +382,59 @@ p {
 .home__folio {
   margin: 0;
   font-family: "Bebas Neue", cursive;
+  font-family: mono45-headline, monospace;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
   grid-column: 2 / 3;
   grid-row: 1 / -1;
-  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 90rem) {
+  .home__folio {
+    display: none;
+  }
+}
+
+.home__hamburger-menu {
+  position: relative;
+  transform: translateY(1rem);
+  background: #faf9f6;
+  transition: all 0ms 300ms;
+}
+
+.home__hamburger-menu.animate-menu {
+  background: rgba(250, 249, 246, 0);
+}
+
+.home__hamburger-menu__container {
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+  position: absolute;
+  right: 3vw;
+  width: 3rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.home__hamburger-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  background: #faf9f6;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home__hamburger-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background: #faf9f6;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .home__heading {
@@ -512,7 +578,7 @@ p {
 
 .nav-wrapper {
   position: fixed;
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   top: 0;
   right: 6rem;
   width: 100%;
@@ -527,6 +593,12 @@ nav a:hover span {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 90rem) {
+  nav {
+    display: none;
+  }
+}
+
 span {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
@@ -534,6 +606,11 @@ span {
   text-transform: uppercase;
   color: #FAF9F6;
   pointer-events: none;
+  font-family: "Bebas Neue", cursive;
+  font-family: mono45-headline, monospace;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
 }
 
 /* 
@@ -588,6 +665,12 @@ nav {
   padding: 2.5rem 0;
 }
 
+@media only screen and (max-width: 90rem) {
+  .footer {
+    display: none;
+  }
+}
+
 .footer__icon {
   width: 1.1rem;
   transition: all 0.3s ease;
@@ -628,7 +711,9 @@ nav {
 
 .contacts a p {
   margin: 0;
-  line-height: 1.1;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: .5rem;
+  margin: .5rem 0;
 }
 
 .contacts a .footer__icon {
@@ -694,6 +779,10 @@ nav {
   text-decoration: none;
 }
 
+.projects__card--003 {
+  margin-right: 8vw;
+}
+
 .projects__card__text {
   width: 100%;
   display: flex;
@@ -723,7 +812,7 @@ nav {
   width: 100%;
   padding: 0 4vw;
   transition: all 0.2s ease-in-out;
-  opacity: 0.7;
+  opacity: .8;
 }
 
 .projects__card__headings {

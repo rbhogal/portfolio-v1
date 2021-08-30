@@ -90,7 +90,7 @@ body {
  */
 .container {
   display: grid;
-  grid-template-rows: min min-content;
+  grid-template-rows: min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
   // overflow: hidden;
 }
@@ -122,9 +122,12 @@ h4 {
 
 p {
   font-family: $font-secondary;
+  // font-family: $font-intro-text;
 
   font-weight: 400;
   font-size: 1.2rem;
+  // font-size: 2rem;
+  // letter-spacing: .2rem;
   text-transform: uppercase;
 
   //Option 2

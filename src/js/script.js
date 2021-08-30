@@ -227,25 +227,13 @@ link.forEach((link) => {
   });
 });
 
-/* 
-let cursor = document.querySelector(".cursor");
-let navLinks = document.querySelectorAll(".navbar-links");
-window.addEventListener("mousemove", editCursor);
+//Hamburger Menu
+const hamburgerMenuContainer = document.querySelector(
+  ".home__hamburger-menu__container"
+);
+const hamburgerMenu = document.querySelector(".home__hamburger-menu");
 
-function editCursor(e) {
-  const { clientX: x, clientY: y } = e;
-  cursor.style.top = y + "px";
-  cursor.style.left = x + "px";
-}
-
-navLinks.forEach((link) => {
-  link.addEventListener("mouseleave", () => {
-    cursor.classList.remove("animate-cursor");
-    link.classList.remove("hovered-link");
-  });
-  link.addEventListener("mouseover", () => {
-    cursor.classList.add("animate-cursor");
-    link.classList.add("hovered-link");
-  });
+hamburgerMenuContainer.addEventListener("click", () => {
+  console.log("click");
+  hamburgerMenu.classList.toggle("animate-menu");
 });
- */

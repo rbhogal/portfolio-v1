@@ -1,8 +1,37 @@
 @import "globals";
+$bar-width: 3rem;
+$bar-height: 0.4rem;
+$bar-spacing: 1rem;
+
+.home__hamburger-menu,
+.home__hamburger-menu::after,
+.home__hamburger-menu:before {
+  width: $bar-width;
+  height: $bar-height;
+}
+
+.home__hamburger-menu::after {
+  // top: 0;
+  // transform: rotate(45deg);
+
+}
+
+.home__hamburger-menu.animate-menu::after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home__hamburger-menu.animate-menu::before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
 
 .home {
   width: 100%;
-  // height: 100vh;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   margin-top: 3rem;
@@ -31,18 +60,66 @@
   &__folio {
     margin: 0;
     font-family: $font-intro-text;
+    font-family: $font-heading;
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
-    // margin-top: .3rem;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
-    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 90rem) {
+      display: none;
+    }
+  }
+
+  &__hamburger-menu {
+    position: relative;
+    transform: translateY($bar-spacing);
+    background: rgba(250, 249, 246, 1);
+    transition: all 0ms 300ms;
+
+    &.animate-menu {
+      background: rgba(250, 249, 246, 0);
+    }
+
+    &__container {
+      grid-column: 3 / 4;
+      grid-row: 1 / -1;
+      position: absolute;
+      right: 3vw;
+      width: $bar-width;
+      height: $bar-height + $bar-spacing * 2;
+      cursor: pointer;
+      // margin-left: auto;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: $bar-spacing;
+      background: rgba(250, 249, 246, 1);
+      transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: $bar-spacing;
+      background: rgba(250, 249, 246, 1);
+      transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
   }
 
   &__heading {
     margin: 0;
     font-family: $font-intro-text;
+    // font-family: $font-heading;
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
@@ -61,7 +138,6 @@
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.2em;
-    
 
     & div {
       width: fit-content;
