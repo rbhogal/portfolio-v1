@@ -4,7 +4,7 @@ $color-dark-grey: #171717;
 // $color-dark-grey: #1d1d1d;
 // $color-dark-grey: #FAF9F6;
 // $color-light-grey: #e3dede;
-$color-off-white: #FAF9F6;
+$color-off-white: #faf9f6;
 // $color-off-white: #Fff;
 // $color-off-white: #171717;
 $color-loading-screen: #0a0a0a;
@@ -13,3 +13,8 @@ $color-loading-screen: #0a0a0a;
 $font-heading: mono45-headline, monospace;
 $font-secondary: "Heebo", sans-serif;
 $font-intro-text: "Bebas Neue", cursive;
+
+// Breakpoints
+
+$bp-medium: 56.25em; // 900px
+

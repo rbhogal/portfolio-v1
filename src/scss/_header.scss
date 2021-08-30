@@ -1,8 +1,10 @@
+@import "variables";
+
 .nav-wrapper {
   position: fixed;
   padding: 3rem 0;
   top: 0;
-  right: 6rem;
+  right: 2.4vw;
   width: 100%;
   width: min-content;
   // background: $color-dark-grey;
@@ -18,7 +20,7 @@ nav {
     }
   }
 
-  @media only screen and (max-width: 90rem) {
+  @media only screen and (max-width: $bp-medium) {
     display: none;
   }
 }

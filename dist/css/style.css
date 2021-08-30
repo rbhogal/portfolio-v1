@@ -12,7 +12,7 @@ html {
 
 body {
   background: #171717;
-  color: #FAF9F6;
+  color: #faf9f6;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ body {
   pointer-events: none;
   position: fixed;
   padding: 0.4rem;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   border-radius: 50%;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
@@ -32,7 +32,7 @@ body {
   pointer-events: none;
   position: fixed;
   padding: 3.5rem;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   border-radius: 50%;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
@@ -54,7 +54,7 @@ body {
   pointer-events: none;
   position: fixed;
   padding: 0.3rem;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   border-radius: 50%;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
@@ -129,7 +129,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: #FAF9F6;
+  background: #faf9f6;
   z-index: 9001;
 }
 
@@ -179,7 +179,7 @@ html {
 
 body {
   background: #171717;
-  color: #FAF9F6;
+  color: #faf9f6;
   margin: 0;
   padding: 0;
 }
@@ -188,7 +188,7 @@ body {
   pointer-events: none;
   position: fixed;
   padding: 0.4rem;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   border-radius: 50%;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
@@ -199,7 +199,7 @@ body {
   pointer-events: none;
   position: fixed;
   padding: 3.5rem;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   border-radius: 50%;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
@@ -221,7 +221,7 @@ body {
   pointer-events: none;
   position: fixed;
   padding: 0.3rem;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
   border-radius: 50%;
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
@@ -296,7 +296,7 @@ p {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: #FAF9F6;
+  background: #faf9f6;
   z-index: 9001;
 }
 
@@ -339,18 +339,6 @@ p {
   height: 0.4rem;
 }
 
-.home__hamburger-menu.animate-menu::after {
-  top: 0;
-  transform: rotate(45deg);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.home__hamburger-menu.animate-menu::before {
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
 .home {
   width: 100%;
   grid-row: 1 / 2;
@@ -372,7 +360,7 @@ p {
 
 .home__header {
   width: 100%;
-  border-bottom: 1.5px solid #FAF9F6;
+  border-bottom: 1.5px solid #faf9f6;
   padding-bottom: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -409,7 +397,20 @@ p {
   background: rgba(250, 249, 246, 0);
 }
 
+.home__hamburger-menu.animate-menu:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.home__hamburger-menu.animate-menu:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .home__hamburger-menu__container {
+  display: none;
   grid-column: 3 / 4;
   grid-row: 1 / -1;
   position: absolute;
@@ -417,6 +418,12 @@ p {
   width: 3rem;
   height: 2.4rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .home__hamburger-menu__container {
+    display: block;
+  }
 }
 
 .home__hamburger-menu::before {
@@ -506,7 +513,7 @@ p {
   margin: 0;
   font-weight: 300;
   line-height: 0.8;
-  border-bottom: 5px solid #FAF9F6;
+  border-bottom: 5px solid #faf9f6;
   width: min-content;
   padding-bottom: 3rem;
 }
@@ -580,7 +587,7 @@ p {
   position: fixed;
   padding: 3rem 0;
   top: 0;
-  right: 6rem;
+  right: 2.4vw;
   width: 100%;
   width: min-content;
 }
@@ -593,7 +600,7 @@ nav a:hover span {
   font-weight: 400;
 }
 
-@media only screen and (max-width: 90rem) {
+@media only screen and (max-width: 56.25em) {
   nav {
     display: none;
   }
@@ -604,7 +611,7 @@ span {
   font-weight: 400;
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #FAF9F6;
+  color: #faf9f6;
   pointer-events: none;
   font-family: "Bebas Neue", cursive;
   font-family: mono45-headline, monospace;
@@ -660,12 +667,12 @@ nav {
 .footer {
   position: fixed;
   bottom: 0;
-  right: 6rem;
+  right: 2.5vw;
   width: min-content;
   padding: 2.5rem 0;
 }
 
-@media only screen and (max-width: 90rem) {
+@media only screen and (max-width: 56.25em) {
   .footer {
     display: none;
   }
@@ -793,7 +800,7 @@ nav {
 .projects__card__text__container {
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #FAF9F6;
+  border-bottom: 2px solid #faf9f6;
   padding-bottom: 0.2rem;
 }
 
@@ -819,11 +826,11 @@ nav {
   display: flex;
   justify-content: space-between;
   border-bottom: 1.5px solid #171717;
-  border-bottom: 1.5px solid #FAF9F6;
+  border-bottom: 1.5px solid #faf9f6;
 }
 
 .projects__card__headings h3 {
-  color: #FAF9F6;
+  color: #faf9f6;
   margin-bottom: 0.2rem;
   font-weight: 300;
   font-size: 4.2rem;
@@ -835,7 +842,7 @@ nav {
 
 .projects__card__subheading h4 {
   color: #171717;
-  color: #FAF9F6;
+  color: #faf9f6;
   margin-top: 3rem;
 }
 
@@ -844,7 +851,7 @@ nav {
   font-weight: 300;
   margin: 0;
   margin-bottom: 5rem;
-  border-bottom: 5px solid #FAF9F6;
+  border-bottom: 5px solid #faf9f6;
   padding-bottom: 3rem;
   line-height: 0.8;
   width: min-content;
@@ -882,7 +889,7 @@ nav {
 .about p {
   font-family: "Bebas Neue", cursive;
   font-size: 3.6rem;
-  color: #FAF9F6;
+  color: #faf9f6;
   text-transform: none;
   font-weight: 300;
 }
@@ -902,7 +909,7 @@ nav {
   font-weight: 300;
   line-height: 0.8;
   margin-bottom: 5rem;
-  border-bottom: 5px solid #FAF9F6;
+  border-bottom: 5px solid #faf9f6;
   width: min-content;
   padding-bottom: 5rem;
 }

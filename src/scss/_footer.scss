@@ -1,11 +1,11 @@
 .footer {
   position: fixed;
   bottom: 0;
-  right: 6rem;
+  right: 2.5vw;
   width: min-content;
   padding: 2.5rem 0;
 
-  @media only screen and (max-width: 90rem) {
+  @media only screen and (max-width: $bp-medium) {
     display: none;
   }
 
