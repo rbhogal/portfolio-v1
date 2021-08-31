@@ -121,6 +121,9 @@
       padding: 0 4vw;
       transition: all 0.2s ease-in-out;
       opacity: 1;
+      position: relative;
+      // left: 20rem;
+      // mix-blend-mode: difference;
 
       @media only screen and (max-width: $bp-medium) {
         padding: 0;
@@ -147,8 +150,12 @@
         // font-family: 'Bebas Neue', cursive;
         // letter-spacing: .1rem;
         font-size: 4.2rem;
+        font-size: 2rem;
+      
+        @media only screen and (max-width: $bp-large) {
+          font-size: 5rem;
 
-
+         }
       }
     }
 
@@ -163,7 +170,6 @@
         @media only screen and (max-width: $bp-medium) {
           margin-top: 1rem;
           opacity: .2;
-          font-weight: 300;
         }
       }
     }

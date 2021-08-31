@@ -1,9 +1,14 @@
 .footer {
-  position: fixed;
-  bottom: 0;
-  right: 2.5vw;
-  width: min-content;
+  // position: fixed;
+  // bottom: 0;
+  // right: 2.5vw;
+  // width: min-content;
+  width: 100%;
+  height: 25vh;
   padding: 2.5rem 0;
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  background-color: $color-off-white;
 
   @media only screen and (max-width: $bp-medium) {
     display: none;
@@ -40,10 +45,10 @@
   width: fit-content;
   margin-left: auto;
 
-  
-
   & a {
     color: inherit;
+    color: $color-off-white;
+
     text-decoration: none;
     display: flex;
     align-items: flex-end;
@@ -52,12 +57,14 @@
     & p {
       margin: 0;
       // line-height: 1.1;
+      color: $color-off-white;
+      color: $color-dark-grey;
 
       // option 2
       font-family: $font-intro-text;
-      // font-size: 2.4rem;
-      letter-spacing: .5rem;
-      margin: .5rem 0;
+      font-size: 1.4rem;
+      letter-spacing: 0.5rem;
+      // margin: .4rem 0;
     }
   }
 
@@ -69,10 +76,8 @@
     opacity: 1;
   }
 
-
   // & li {
   //         list-style: none;
-
 
   //   & a {
   //     color: inherit;
