@@ -83,8 +83,8 @@
       }
     }
 
-    &--003 {
-      margin-right: 8vw;
+    &--03 {
+      // margin-right: 8vw;
     }
 
     &__text {
@@ -107,6 +107,7 @@
 
       @media only screen and (max-width: $bp-large) {
         display: none;
+        
       }
 
       & img {
@@ -154,7 +155,7 @@
       
         @media only screen and (max-width: $bp-large) {
           font-size: 5rem;
-
+          font-size: 3rem;
          }
       }
     }

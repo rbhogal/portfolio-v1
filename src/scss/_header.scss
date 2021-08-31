@@ -13,11 +13,7 @@
 nav {
   & a {
     text-decoration: none;
-
-    &:hover span {
-      // color: rgb(252, 203, 42);
-      font-weight: 400;
-    }
+    display: inline-block;
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -27,7 +23,7 @@ nav {
 
 span {
   font-family: $font-secondary;
-  // font-family: $font-intro-text;
+  font-family: $font-intro-text;
   font-weight: 400;
   font-size: 1.2rem;
   // font-size: 2rem;
@@ -38,8 +34,6 @@ span {
   // transition: transform 0.1s linear;
 
   font-family: $font-intro-text;
-  font-family: $font-heading;
-  // font-family: $font-heading;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
