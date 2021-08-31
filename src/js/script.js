@@ -229,11 +229,15 @@ link.forEach((link) => {
 
 //Hamburger Menu
 const hamburgerMenuContainer = document.querySelector(
-  ".home__hamburger-menu__container"
+  ".home__hamburger-btn__container"
 );
-const hamburgerMenu = document.querySelector(".home__hamburger-menu");
+const hamburgerBtn = document.querySelector(".home__hamburger-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+const body = document.querySelector(".container");
 
 hamburgerMenuContainer.addEventListener("click", () => {
   console.log("click");
-  hamburgerMenu.classList.toggle("animate-menu");
+  hamburgerBtn.classList.toggle("animate-btn");
+  mobileMenu.classList.toggle("open");
+  body.classList.toggle("scroll-lock");
 });

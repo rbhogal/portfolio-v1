@@ -3,9 +3,9 @@ $bar-width: 3rem;
 $bar-height: 0.4rem;
 $bar-spacing: 1rem;
 
-.home__hamburger-menu,
-.home__hamburger-menu::after,
-.home__hamburger-menu:before {
+.home__hamburger-btn,
+.home__hamburger-btn::after,
+.home__hamburger-btn:before {
   width: $bar-width;
   height: $bar-height;
 }
@@ -54,13 +54,15 @@ $bar-spacing: 1rem;
     }
   }
 
-  &__hamburger-menu {
+  &__hamburger-btn {
     position: relative;
     transform: translateY($bar-spacing);
     background: rgba(250, 249, 246, 1);
     transition: all 0ms 300ms;
+    z-index: 9003;
 
-    &.animate-menu {
+
+    &.animate-btn {
       background: rgba(250, 249, 246, 0);
 
       &:after {
