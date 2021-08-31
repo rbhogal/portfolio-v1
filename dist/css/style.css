@@ -874,7 +874,7 @@ nav {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .projects__card {
     display: block;
     margin-bottom: 0;
@@ -894,7 +894,7 @@ nav {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .projects__card__container {
     padding-top: 5rem;
   }
@@ -923,7 +923,7 @@ nav {
   width: 100%;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .projects__card__img {
     display: none;
   }
