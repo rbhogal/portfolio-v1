@@ -1,19 +1,18 @@
 .projects {
   width: 100%;
   grid-row: 2 / 3;
-  grid-column: 2/ 3;
+  grid-column: 2 / 3;
   margin-top: 10rem;
   // background-color: $color-off-white;
   // color: $color-dark-grey;
-  margin-bottom: 25rem;
+  margin-bottom: 20rem;
   padding-right: 10vw;
   display: flex;
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    // border-bottom: 1.5px solid $color-off-white;
-    // margin-bottom: 5rem;
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
+    margin-top: 7rem;
+    padding-right: 0;
   }
 
   &__heading {
@@ -34,9 +33,17 @@
     font-weight: 300;
     font-size: 19rem;
     writing-mode: vertical-rl;
-    text-orientation: sideways;
     line-height: 0.7;
     margin-right: 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      writing-mode: unset;
+      word-break: break-all;
+      line-height: 0.8;
+      margin-right: 1rem;
+      // width: 20rem;
+      font-size: 20.5rem;
+    }
   }
 
   &__card {
@@ -49,9 +56,14 @@
     height: min-content;
     overflow: hidden;
 
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+      margin-bottom: 0;
+    }
+
     &:hover .projects__card__wrapper {
       // background-color: rgba(255, 255, 255, .1);
-      opacity: 1;
+      // opacity: 1;
     }
 
     &:hover {
@@ -64,6 +76,10 @@
 
       & a {
         text-decoration: none;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        padding-top: 5rem;
       }
     }
 
@@ -87,8 +103,11 @@
 
     &__img {
       transition: transform 0.2s ease-in-out;
-      // height: 43.9rem;
       width: 100%;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
 
       & img {
         width: 100%;
@@ -101,15 +120,23 @@
       width: 100%;
       padding: 0 4vw;
       transition: all 0.2s ease-in-out;
+      opacity: 1;
 
-      opacity: .8;
+      @media only screen and (max-width: $bp-medium) {
+        padding: 0;
+        border-bottom: 1px solid $color-off-white;
+
+      }
     }
 
     &__headings {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1.5px solid $color-dark-grey;
       border-bottom: 1.5px solid $color-off-white;
+
+      @media only screen and (max-width: $bp-medium) {
+       border-bottom: unset;
+      }
 
       & h3 {
         color: $color-off-white;
@@ -120,15 +147,24 @@
         // font-family: 'Bebas Neue', cursive;
         // letter-spacing: .1rem;
         font-size: 4.2rem;
+
+
       }
     }
 
     &__subheading {
       display: flex;
+
       & h4 {
         color: $color-dark-grey;
         color: $color-off-white;
         margin-top: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+          margin-top: 1rem;
+          opacity: .2;
+          font-weight: 300;
+        }
       }
     }
   }
@@ -148,28 +184,4 @@
   // position: fixed;
   // top: 16rem;
   // left: 11vw;
-}
-
-.scroll-top {
-  &__btn {
-    text-align: center;
-    width: min-content;
-    margin-top: 5rem;
-    // padding-left: 6.2%;
-    margin-left: auto;
-    margin-right: auto;
-
-    & a {
-      text-decoration: none;
-      color: inherit;
-    }
-  }
-
-  &__text {
-    margin: 0;
-  }
-
-  &--arrow-up {
-    width: 1.6rem;
-  }
 }

@@ -35,6 +35,11 @@ $bar-spacing: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+
+    @media only screen and (max-width: $bp-small) {
+      border-bottom: unset;
+      padding-bottom: unset;
+    }
   }
 
   &__folio {
@@ -49,7 +54,7 @@ $bar-spacing: 1rem;
     width: fit-content;
     margin: 0 auto;
 
-    @media only screen and (max-width: 90rem) {
+    @media only screen and (max-width:  $bp-medium) {
       display: none;
     }
   }
@@ -60,6 +65,25 @@ $bar-spacing: 1rem;
     background: rgba(250, 249, 246, 1);
     transition: all 0ms 300ms;
     z-index: 9003;
+
+    &__container {
+      display: none;
+      grid-column: 3 / 4;
+      grid-row: 1 / -1;
+      position: absolute;
+      top: 3.6rem;
+      right: 3vw;
+      width: $bar-width;
+      height: $bar-height + $bar-spacing * 2;
+      cursor: pointer;
+      // margin-left: auto;
+
+     
+      @media only screen and (max-width: $bp-medium) {
+        display: block;
+      }
+
+    }
 
 
     &.animate-btn {
@@ -78,24 +102,6 @@ $bar-spacing: 1rem;
         transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
           transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
-    }
-
-    &__container {
-      display: none;
-      grid-column: 3 / 4;
-      grid-row: 1 / -1;
-      position: absolute;
-      right: 3vw;
-      width: $bar-width;
-      height: $bar-height + $bar-spacing * 2;
-      cursor: pointer;
-      // margin-left: auto;
-
-     
-      @media only screen and (max-width: $bp-medium) {
-        display: block;
-      }
-
     }
 
     &::before {
@@ -132,7 +138,12 @@ $bar-spacing: 1rem;
     &__container {
       grid-column: 1 / 2;
       grid-row: 1 / -1;
+
+      @media only screen and (max-width: $bp-small) {
+        grid-column: 1 / -1;
+      }
     }
+    
   }
 
   &__subheading {

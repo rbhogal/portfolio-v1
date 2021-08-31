@@ -19,12 +19,18 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: min-content min-content;
+  grid-template-rows: min-content min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
 }
 
 .container.scroll-lock {
   overflow: hidden;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .container {
+    grid-template-columns: 5.5vw 1fr 5.5vw;
+  }
 }
 
 .cursor {
@@ -219,12 +225,18 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: min-content min-content;
+  grid-template-rows: min-content min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
 }
 
 .container.scroll-lock {
   overflow: hidden;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .container {
+    grid-template-columns: 5.5vw 1fr 5.5vw;
+  }
 }
 
 .cursor {
@@ -433,6 +445,13 @@ p {
   grid-template-rows: 1fr;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .home__header {
+    border-bottom: unset;
+    padding-bottom: unset;
+  }
+}
+
 .home__folio {
   margin: 0;
   font-family: "Bebas Neue", cursive;
@@ -446,7 +465,7 @@ p {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 90rem) {
+@media only screen and (max-width: 56.25em) {
   .home__folio {
     display: none;
   }
@@ -458,6 +477,24 @@ p {
   background: #faf9f6;
   transition: all 0ms 300ms;
   z-index: 9003;
+}
+
+.home__hamburger-btn__container {
+  display: none;
+  grid-column: 3 / 4;
+  grid-row: 1 / -1;
+  position: absolute;
+  top: 3.6rem;
+  right: 3vw;
+  width: 3rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .home__hamburger-btn__container {
+    display: block;
+  }
 }
 
 .home__hamburger-btn.animate-btn {
@@ -474,23 +511,6 @@ p {
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.home__hamburger-btn__container {
-  display: none;
-  grid-column: 3 / 4;
-  grid-row: 1 / -1;
-  position: absolute;
-  right: 3vw;
-  width: 3rem;
-  height: 2.4rem;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .home__hamburger-btn__container {
-    display: block;
-  }
 }
 
 .home__hamburger-btn::before {
@@ -524,6 +544,12 @@ p {
 .home__heading__container {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .home__heading__container {
+    grid-column: 1 / -1;
+  }
 }
 
 .home__subheading {
@@ -801,16 +827,19 @@ nav {
 .projects {
   width: 100%;
   grid-row: 2 / 3;
-  grid-column: 2/ 3;
+  grid-column: 2 / 3;
   margin-top: 10rem;
-  margin-bottom: 25rem;
+  margin-bottom: 20rem;
   padding-right: 10vw;
   display: flex;
 }
 
-.projects__header {
-  display: flex;
-  justify-content: space-between;
+@media only screen and (max-width: 56.25em) {
+  .projects {
+    display: block;
+    margin-top: 7rem;
+    padding-right: 0;
+  }
 }
 
 .projects__heading {
@@ -821,9 +850,18 @@ nav {
   font-weight: 300;
   font-size: 19rem;
   writing-mode: vertical-rl;
-  text-orientation: sideways;
   line-height: 0.7;
   margin-right: 5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__heading {
+    writing-mode: unset;
+    word-break: break-all;
+    line-height: 0.8;
+    margin-right: 1rem;
+    font-size: 20.5rem;
+  }
 }
 
 .projects__card {
@@ -836,8 +874,11 @@ nav {
   overflow: hidden;
 }
 
-.projects__card:hover .projects__card__wrapper {
-  opacity: 1;
+@media only screen and (max-width: 56.25em) {
+  .projects__card {
+    display: block;
+    margin-bottom: 0;
+  }
 }
 
 .projects__card:hover {
@@ -851,6 +892,12 @@ nav {
 
 .projects__card__container a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__card__container {
+    padding-top: 5rem;
+  }
 }
 
 .projects__card--003 {
@@ -876,6 +923,12 @@ nav {
   width: 100%;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .projects__card__img {
+    display: none;
+  }
+}
+
 .projects__card__img img {
   width: 100%;
   height: 100%;
@@ -886,14 +939,26 @@ nav {
   width: 100%;
   padding: 0 4vw;
   transition: all 0.2s ease-in-out;
-  opacity: .8;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__card__wrapper {
+    padding: 0;
+    border-bottom: 1px solid #faf9f6;
+  }
 }
 
 .projects__card__headings {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1.5px solid #171717;
   border-bottom: 1.5px solid #faf9f6;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__card__headings {
+    border-bottom: unset;
+  }
 }
 
 .projects__card__headings h3 {
@@ -913,6 +978,14 @@ nav {
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .projects__card__subheading h4 {
+    margin-top: 1rem;
+    opacity: .2;
+    font-weight: 300;
+  }
+}
+
 .number__02 {
   font-size: 19rem;
   font-weight: 300;
@@ -922,27 +995,6 @@ nav {
   padding-bottom: 3rem;
   line-height: 0.8;
   width: min-content;
-}
-
-.scroll-top__btn {
-  text-align: center;
-  width: min-content;
-  margin-top: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.scroll-top__btn a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.scroll-top__text {
-  margin: 0;
-}
-
-.scroll-top--arrow-up {
-  width: 1.6rem;
 }
 
 .about {
