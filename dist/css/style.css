@@ -42,6 +42,7 @@ body {
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
   z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .cursor-2 {
@@ -54,11 +55,11 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0.1;
+  mix-blend-mode: difference;
 }
 
 .animate-cursor {
   transform: translate(-50%, -50%) scale(3.5);
-  mix-blend-mode: difference;
   opacity: 1;
 }
 
@@ -248,6 +249,7 @@ body {
   transition: transform 0.3s ease;
   transform: translate(-50%, -50%);
   z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .cursor-2 {
@@ -260,11 +262,11 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0.1;
+  mix-blend-mode: difference;
 }
 
 .animate-cursor {
   transform: translate(-50%, -50%) scale(3.5);
-  mix-blend-mode: difference;
   opacity: 1;
 }
 
@@ -685,18 +687,7 @@ p {
   width: min-content;
 }
 
-nav a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-@media only screen and (max-width: 56.25em) {
-  nav {
-    display: none;
-  }
-}
-
-span {
+.nav-wrapper span {
   font-family: "Heebo", sans-serif;
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
@@ -708,6 +699,17 @@ span {
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 56.25em) {
+  nav {
+    display: none;
+  }
 }
 
 /* 
@@ -1005,17 +1007,30 @@ nav {
 .about {
   width: 100%;
   height: 100vh;
-  padding-top: 5rem;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  margin-top: 12rem;
+  padding: 0 40rem;
 }
 
-.about p {
-  font-family: "Bebas Neue", cursive;
-  font-size: 3.6rem;
+.about h1 {
+  font-size: 5.6rem;
   color: #faf9f6;
   text-transform: none;
   font-weight: 300;
+}
+
+.about p {
+  font-size: 3.6rem;
+  font-size: 2.2rem;
+  color: #faf9f6;
+  text-transform: none;
+  font-weight: 300;
+}
+
+.about p span {
+  font-weight: 500;
+  font-size: 2.8rem;
 }
 
 .about__heading {
@@ -1025,6 +1040,10 @@ nav {
   width: 32rem;
   word-break: break-all;
   line-height: 0.8;
+}
+
+.about__emoji {
+  font-size: 7rem;
 }
 
 .number__03 {
