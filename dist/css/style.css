@@ -156,7 +156,7 @@ p {
 
 .loading-intro__text {
   margin: 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
@@ -196,7 +196,7 @@ p {
 
 .mobile-menu__content h2 {
   font-size: 2.4rem;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 300;
   letter-spacing: 1.2rem;
 }
@@ -363,7 +363,7 @@ p {
 
 .loading-intro__text {
   margin: 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
@@ -403,7 +403,7 @@ p {
 
 .mobile-menu__content h2 {
   font-size: 2.4rem;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 300;
   letter-spacing: 1.2rem;
 }
@@ -427,11 +427,26 @@ p {
 }
 
 .home__intro {
-  margin-bottom: 2rem;
   font-size: 2.4rem;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   letter-spacing: 0.5rem;
   letter-spacing: 0.322vw;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__intro__heading {
+  font-size: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__intro__subheading {
+  width: 92%;
 }
 
 .home__intro .emoji {
@@ -456,7 +471,7 @@ p {
 
 .home__folio {
   margin: 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-family: mono45-headline, monospace;
   font-size: 2.4rem;
   font-weight: 400;
@@ -535,7 +550,7 @@ p {
 
 .home__heading {
   margin: 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
@@ -556,7 +571,7 @@ p {
 
 .home__subheading {
   margin: 0;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.2em;
@@ -689,13 +704,13 @@ p {
 
 .nav-wrapper span {
   font-family: "Heebo", sans-serif;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #faf9f6;
   pointer-events: none;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
@@ -814,7 +829,7 @@ nav {
   margin: 0;
   color: #faf9f6;
   color: #171717;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.5rem;
 }
@@ -1005,12 +1020,42 @@ nav {
 }
 
 .about {
+  height: 89vh;
   width: 100%;
-  height: 100vh;
-  grid-row: 1 / 2;
-  grid-column: 1 / -1;
-  margin-top: 12rem;
-  padding: 0 40rem;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  margin-top: 5rem;
+}
+
+.about__intro {
+  font-size: 2.4rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.322vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__intro__heading {
+  font-size: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__intro__subheading {
+  width: 50%;
+  letter-spacing: 0.2rem;
+  letter-spacing: 0.322vw;
+  line-height: 2.8rem;
+}
+
+.about__intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
 }
 
 .about h1 {
@@ -1020,17 +1065,8 @@ nav {
   font-weight: 300;
 }
 
-.about p {
-  font-size: 3.6rem;
-  font-size: 2.2rem;
-  color: #faf9f6;
-  text-transform: none;
-  font-weight: 300;
-}
-
 .about p span {
-  font-weight: 500;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 
 .about__heading {

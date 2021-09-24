@@ -17,11 +17,32 @@ $bar-spacing: 1rem;
   margin-top: 3rem;
 
   &__intro {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
     font-size: 2.4rem;
     font-family: $font-intro-text;
     letter-spacing: 0.5rem;
     letter-spacing: 0.322vw;
+    width: 100%;
+    height: 45vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    // padding-bottom: 10%;
+
+    &__heading {
+      font-size: 12rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__subheading {
+      // width: 85%;
+      width: 92%;
+    }
 
     & .emoji {
       font-size: 5rem;
@@ -54,7 +75,7 @@ $bar-spacing: 1rem;
     width: fit-content;
     margin: 0 auto;
 
-    @media only screen and (max-width:  $bp-medium) {
+    @media only screen and (max-width: $bp-medium) {
       display: none;
     }
   }
@@ -78,13 +99,10 @@ $bar-spacing: 1rem;
       cursor: pointer;
       // margin-left: auto;
 
-     
       @media only screen and (max-width: $bp-medium) {
         display: block;
       }
-
     }
-
 
     &.animate-btn {
       background: rgba(250, 249, 246, 0);
@@ -143,7 +161,6 @@ $bar-spacing: 1rem;
         grid-column: 1 / -1;
       }
     }
-    
   }
 
   &__subheading {
