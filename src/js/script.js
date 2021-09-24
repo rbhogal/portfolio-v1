@@ -158,8 +158,13 @@ new ScrollMagic.Scene({
 
 //Custom Cursor
 const link = document.querySelectorAll(".hover-this");
-let cursor = document.querySelector(".cursor");
-let cursor2 = document.querySelector(".cursor-2");
+const linkViewProject = document.querySelectorAll(".hover-view-project");
+const text1 = document.querySelector(".hover-text-1");
+const text2 = document.querySelector(".hover-text-2");
+
+let cursor = document.querySelector(".cursor"); // The small one
+let cursor2 = document.querySelector(".cursor-2"); // The large one
+let cursorText = document.querySelector(".cursor-view-project-text");
 
 let currentX = 0;
 let currentY = 0;
@@ -216,6 +221,7 @@ window.addEventListener("mouseup", () => {
   cursor2.classList.remove("animate-cursor-2");
 });
 
+// Cursor animations for nav links
 link.forEach((link) => {
   link.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor");
@@ -225,6 +231,50 @@ link.forEach((link) => {
     cursor.classList.remove("animate-cursor");
     cursor2.classList.remove("animate-cursor-2");
   });
+});
+
+// Cursor animations or project links
+linkViewProject.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor-view-project");
+    cursor2.classList.add("animate-cursor-2");
+    cursorText.classList.add("cursor-view-project-text-active");
+  });
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor-view-project");
+    cursor2.classList.remove("animate-cursor-2");
+    cursorText.classList.remove("cursor-view-project-text-active");
+  });
+});
+
+const youSmartGif = document.querySelector(".you-smart-gif");
+const troyAbedHandshakeGif = document.querySelector(".troy-abed-handshake-gif");
+
+// Cursor animations for you smart gif
+text1.addEventListener("mouseover", () => {
+  cursor.classList.add("animate-cursor-gif");
+  cursor2.classList.add("animate-cursor-2");
+  youSmartGif.classList.add("gif-active");
+});
+
+text1.addEventListener("mouseleave", () => {
+  cursor.classList.remove("animate-cursor-gif");
+  cursor2.classList.remove("animate-cursor-2");
+  youSmartGif.classList.remove("gif-active");
+});
+
+// Cursor animations for troy and abed gif
+text2.addEventListener("mouseover", () => {
+  cursor.classList.add("animate-cursor-gif");
+
+  cursor2.classList.add("animate-cursor-2");
+  troyAbedHandshakeGif.classList.add("gif-active");
+});
+text2.addEventListener("mouseleave", () => {
+  cursor.classList.remove("animate-cursor-gif");
+
+  cursor2.classList.remove("animate-cursor-2");
+  troyAbedHandshakeGif.classList.remove("gif-active");
 });
 
 //Hamburger Menu

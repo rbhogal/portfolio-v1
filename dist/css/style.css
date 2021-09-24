@@ -33,6 +33,10 @@ body {
   }
 }
 
+.no-cursor {
+  cursor: none;
+}
+
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -58,8 +62,44 @@ body {
   mix-blend-mode: difference;
 }
 
+.cursor-view-project-text {
+  text-align: center;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.cursor-view-project-text-active {
+  display: block;
+}
+
 .animate-cursor {
   transform: translate(-50%, -50%) scale(3.5);
+  opacity: 1;
+}
+
+.you-smart-gif {
+  display: none;
+}
+
+.troy-abed-handshake-gif {
+  display: none;
+}
+
+.gif-active {
+  display: block;
+}
+
+.animate-cursor-gif {
+  mix-blend-mode: unset;
+  border-radius: 100%;
+  padding: 0;
+  display: block;
+}
+
+.animate-cursor-view-project {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 0.7rem;
   opacity: 1;
 }
 
@@ -119,6 +159,14 @@ h4 {
   font-size: 1.4rem;
   font-weight: 300;
   opacity: 0.8;
+}
+
+h5 {
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.001rem;
+  font-weight: 400;
+  line-height: 0.8rem;
 }
 
 p {
@@ -240,6 +288,10 @@ body {
   }
 }
 
+.no-cursor {
+  cursor: none;
+}
+
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -265,8 +317,44 @@ body {
   mix-blend-mode: difference;
 }
 
+.cursor-view-project-text {
+  text-align: center;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.cursor-view-project-text-active {
+  display: block;
+}
+
 .animate-cursor {
   transform: translate(-50%, -50%) scale(3.5);
+  opacity: 1;
+}
+
+.you-smart-gif {
+  display: none;
+}
+
+.troy-abed-handshake-gif {
+  display: none;
+}
+
+.gif-active {
+  display: block;
+}
+
+.animate-cursor-gif {
+  mix-blend-mode: unset;
+  border-radius: 100%;
+  padding: 0;
+  display: block;
+}
+
+.animate-cursor-view-project {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 0.7rem;
   opacity: 1;
 }
 
@@ -326,6 +414,14 @@ h4 {
   font-size: 1.4rem;
   font-weight: 300;
   opacity: 0.8;
+}
+
+h5 {
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.001rem;
+  font-weight: 400;
+  line-height: 0.8rem;
 }
 
 p {
@@ -1020,7 +1116,7 @@ nav {
 }
 
 .about {
-  height: 89vh;
+  height: calc(100vh - 15.65rem);
   width: 100%;
   grid-row: 2 / 3;
   grid-column: 2 / 3;

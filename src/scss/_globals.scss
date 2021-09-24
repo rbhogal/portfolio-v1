@@ -37,6 +37,10 @@ body {
   // cursor: none;
 }
 
+.no-cursor {
+  cursor: none;
+}
+
 .cursor {
   pointer-events: none;
   position: fixed;
@@ -47,7 +51,6 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   mix-blend-mode: difference;
-
 }
 
 .cursor-2 {
@@ -61,11 +64,46 @@ body {
   z-index: 1;
   opacity: 0.1;
   mix-blend-mode: difference;
+}
 
+.cursor-view-project-text {
+  text-align: center;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.cursor-view-project-text-active {
+  display: block;
 }
 
 .animate-cursor {
   transform: translate(-50%, -50%) scale(3.5);
+  opacity: 1;
+}
+
+.you-smart-gif {
+  display: none;
+}
+
+.troy-abed-handshake-gif {
+  display: none;
+}
+
+.gif-active {
+  display: block;
+}
+
+.animate-cursor-gif {
+  mix-blend-mode: unset;
+  border-radius: 100%;
+  padding: 0;
+  display: block;
+}
+
+.animate-cursor-view-project {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 0.7rem;
   opacity: 1;
 }
 
@@ -128,6 +166,15 @@ h4 {
   font-size: 1.4rem;
   font-weight: 300;
   opacity: 0.8;
+}
+
+h5 {
+  color: $color-dark-grey;
+  font-family: $font-intro-text;
+  font-size: 0.001rem;
+  font-weight: 400;
+  // letter-spacing: 1.2rem;
+  line-height: 0.8rem;
 }
 
 p {
