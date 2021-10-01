@@ -157,6 +157,11 @@ $bar-spacing: 1rem;
       grid-column: 1 / 2;
       grid-row: 1 / -1;
 
+      & a {
+        text-decoration: none;
+        color: inherit;
+      }
+
       @media only screen and (max-width: $bp-small) {
         grid-column: 1 / -1;
       }

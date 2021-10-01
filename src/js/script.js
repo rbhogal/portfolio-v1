@@ -233,7 +233,7 @@ link.forEach((link) => {
   });
 });
 
-// Cursor animations or project links
+// Cursor animations or View Project inks
 linkViewProject.forEach((link) => {
   link.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor-view-project");
@@ -250,32 +250,37 @@ linkViewProject.forEach((link) => {
 const youSmartGif = document.querySelector(".you-smart-gif");
 const troyAbedHandshakeGif = document.querySelector(".troy-abed-handshake-gif");
 
+console.log(location.pathname);
+
 // Cursor animations for you smart gif
-text1.addEventListener("mouseover", () => {
-  cursor.classList.add("animate-cursor-gif");
-  cursor2.classList.add("animate-cursor-2");
-  youSmartGif.classList.add("gif-active");
-});
 
-text1.addEventListener("mouseleave", () => {
-  cursor.classList.remove("animate-cursor-gif");
-  cursor2.classList.remove("animate-cursor-2");
-  youSmartGif.classList.remove("gif-active");
-});
+if (location.pathname === "/src/about.html") {
+  text1.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor-gif");
+    cursor2.classList.add("animate-cursor-2");
+    youSmartGif.classList.add("gif-active");
+  });
 
-// Cursor animations for troy and abed gif
-text2.addEventListener("mouseover", () => {
-  cursor.classList.add("animate-cursor-gif");
+  text1.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor-gif");
+    cursor2.classList.remove("animate-cursor-2");
+    youSmartGif.classList.remove("gif-active");
+  });
 
-  cursor2.classList.add("animate-cursor-2");
-  troyAbedHandshakeGif.classList.add("gif-active");
-});
-text2.addEventListener("mouseleave", () => {
-  cursor.classList.remove("animate-cursor-gif");
+  // Cursor animations for troy and abed gif
+  text2.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor-gif");
 
-  cursor2.classList.remove("animate-cursor-2");
-  troyAbedHandshakeGif.classList.remove("gif-active");
-});
+    cursor2.classList.add("animate-cursor-2");
+    troyAbedHandshakeGif.classList.add("gif-active");
+  });
+  text2.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor-gif");
+
+    cursor2.classList.remove("animate-cursor-2");
+    troyAbedHandshakeGif.classList.remove("gif-active");
+  });
+}
 
 //Hamburger Menu
 const hamburgerMenuContainer = document.querySelector(

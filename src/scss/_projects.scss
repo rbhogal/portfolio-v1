@@ -5,7 +5,7 @@
   margin-top: 10rem;
   // background-color: $color-off-white;
   // color: $color-dark-grey;
-  margin-bottom: 20rem;
+  // margin-bottom: 20rem;
   padding-right: 10vw;
   display: flex;
 
@@ -107,7 +107,6 @@
 
       @media only screen and (max-width: $bp-large) {
         display: none;
-        
       }
 
       & img {
@@ -129,7 +128,6 @@
       @media only screen and (max-width: $bp-medium) {
         padding: 0;
         border-bottom: 1px solid $color-off-white;
-
       }
     }
 
@@ -139,7 +137,7 @@
       border-bottom: 1.5px solid $color-off-white;
 
       @media only screen and (max-width: $bp-medium) {
-       border-bottom: unset;
+        border-bottom: unset;
       }
 
       & h3 {
@@ -152,11 +150,11 @@
         // letter-spacing: .1rem;
         font-size: 4.2rem;
         font-size: 2rem;
-      
+
         @media only screen and (max-width: $bp-large) {
           font-size: 5rem;
           font-size: 3rem;
-         }
+        }
       }
     }
 
@@ -170,7 +168,7 @@
 
         @media only screen and (max-width: $bp-medium) {
           margin-top: 1rem;
-          opacity: .2;
+          opacity: 0.2;
         }
       }
     }

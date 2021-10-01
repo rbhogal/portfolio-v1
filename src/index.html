@@ -21,17 +21,19 @@
     <title>Rohit Bhogal | Frontend Developer</title>
   </head>
   <body id="#container" class="container">
-    <div class="cursor"><h5 class="cursor-view-project-text">View <br>Project</h5></div>
+    <div class="cursor">
+      <h5 class="cursor-view-project-text">View <br />Project</h5>
+    </div>
     <div class="cursor-2"></div>
+
     <div class="mobile-menu">
-      <div class="mobile-menu__content"> 
+      <div class="mobile-menu__content">
         <a class="mobile-menu__link" href="./about.html">
           <h2>About</h2>
         </a>
         <a class="mobile-menu__link" href="./index.html">
           <h2>Projects</h2>
         </a>
-       
       </div>
 
       <div class="mobile-menu__contacts"></div>
@@ -61,32 +63,20 @@
       </nav>
     </div>
 
-
-        
     <section class="home">
       <div class="home__header">
         <div class="home__heading__container">
-          <div class="home__heading hover-this">Rohit Bhogal</div>
-          <div class="home__subheading">
-            <div class="hover-this">Frontend Web Developer</div>
-          </div>
+          <a href="./index.html">
+            <div class="home__heading hover-this">Rohit Bhogal</div>
+            <div class="home__subheading">
+              <div class="hover-this">Frontend Web Developer</div>
+            </div>
+          </a>
         </div>
         <div class="home__folio hover-this">Folio</div>
         <div class="home__hamburger-btn__container">
           <div class="home__hamburger-btn"></div>
         </div>
-      </div>
-
-     
-
-        <!-- <div class="home__intro__content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            nulla modi, ex officia delectus explicabo aliquam odio perferendis,
-            inventore praesentium eligendi facilis minus voluptate magnam ab
-            dolorum ratione non vero.
-          </p>
-        </div> -->
       </div>
 
       <!-- <h1 class="number number__01">01</h1> -->
@@ -150,7 +140,7 @@
       </div>
 
       <div class="projects__card__container">
-        <a class="hover-view-project" href="./project-game-save.html">
+        <a class="hover-this" href="./project-game-save.html">
           <div class="projects__card projects__card--01">
             <div class="projects__card__text">
               <div class="projects__card__wrapper">
@@ -172,53 +162,67 @@
           </div>
         </a>
 
-        <div class="projects__card projects__card--02">
-          <div class="projects__card__text">
-            <div class="projects__card__wrapper">
-              <div class="projects__card__headings">
-                <h3>Burgerlords</h3>
-                <h3>02</h3>
-              </div>
-              <div class="projects__card__subheading">
-                <h4>Restaurant Landing Page</h4>
+        <a href="./project-burgerlords.html" class="hover-this">
+          <div class="projects__card projects__card--02">
+            <div class="projects__card__text">
+              <div class="projects__card__wrapper">
+                <div class="projects__card__headings">
+                  <h3>Burgerlords</h3>
+                  <h3>02</h3>
+                </div>
+                <div class="projects__card__subheading">
+                  <h4>Restaurant Landing Page</h4>
+                </div>
               </div>
             </div>
+            <div class="projects__card__img">
+              <img
+                src="../images/Mockups/Burgerlords-Mockup-MacBook-Pro-16-650px.png"
+                alt="Burgerlords Landing Page"
+              />
+            </div>
           </div>
-          <div class="projects__card__img">
-            <img
-              src="../images/Mockups/Burgerlords-Mockup-MacBook-Pro-16-650px.png"
-              alt="Burgerlords Landing Page"
-            />
-          </div>
-        </div>
+        </a>
 
-        <div class="projects__card projects__card--03">
-          <div class="projects__card__text">
-            <div class="projects__card__wrapper">
-              <div class="projects__card__headings">
-                <h3>Bookmark</h3>
-                <h3>03</h3>
-              </div>
-              <div class="projects__card__subheading">
-                <h4>Chrome Extension Landing Page</h4>
+        <a href="./project-bookmark.html" class="hover-this">
+          <div class="projects__card projects__card--03">
+            <div class="projects__card__text">
+              <div class="projects__card__wrapper">
+                <div class="projects__card__headings">
+                  <h3>Bookmark</h3>
+                  <h3>03</h3>
+                </div>
+                <div class="projects__card__subheading">
+                  <h4>Chrome Extension Landing Page</h4>
+                </div>
               </div>
             </div>
+            <div class="projects__card__img">
+              <img
+                width="900"
+                src="../images/Mockups/Bookmark-mockup-samsungS10-v2.png"
+                alt="Bookmark Landing Page"
+              />
+            </div>
           </div>
-          <div class="projects__card__img">
-            <img
-              width="900"
-              src="../images/Mockups/Bookmark-mockup-samsungS10-v2.png"
-              alt="Bookmark Landing Page"
-            />
-          </div>
-        </div>
+        </a>
       </div>
     </section>
 
     <section class="footer">
+      <hr width="25%" style="margin: 1.1rem 0 2.2rem 0" />
+      <p>Contacts</p>
+
+      <div class="contacts">
+        <a href="#" class="hover-this">
+          <h1 class="contacts--email">rbhogal23@gmail.com</h1>
+        </a>
+      </div>
+
       <div class="contacts navbar-links">
         <a class="hover-this" href="#"
-          ><svg
+          ><p>Resume</p>
+          <svg
             class="footer__icon footer__icon--download"
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -231,9 +235,7 @@
               clip-rule="evenodd"
             />
           </svg>
-          <p>Resume</p></a
-        >
-
+        </a>
         <a class="hover-this" href="#"
           ><svg
             class="footer__icon footer__icon--external-link"
@@ -248,15 +250,15 @@
               clip-rule="evenodd"
             />
           </svg>
-          <p>Email</p></a
-        >
+          <!-- <p>Email</p> -->
+        </a>
 
         <a
           class="hover-this"
           href="https://github.com/rbhogal"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          ><p>Github</p>
           <svg
             class="footer__icon footer__icon--external-link"
             xmlns="http://www.w3.org/2000/svg"
@@ -270,8 +272,7 @@
               clip-rule="evenodd"
             />
           </svg>
-          <p>Github</p></a
-        >
+        </a>
       </div>
     </section>
     <!-- <div class="footer__cover--bottom"></div> -->

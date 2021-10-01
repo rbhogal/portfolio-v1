@@ -1,7 +1,6 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -256,7 +255,6 @@ p {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -659,6 +657,11 @@ p {
   grid-row: 1 / -1;
 }
 
+.home__heading__container a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (max-width: 31.25em) {
   .home__heading__container {
     grid-column: 1 / -1;
@@ -869,17 +872,14 @@ nav {
  */
 .footer {
   width: 100%;
-  height: 25vh;
   padding: 2.5rem 0;
-  grid-column: 1 / -1;
+  grid-column: 2/3;
   grid-row: 3 / 4;
-  background-color: #faf9f6;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .footer {
-    display: none;
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+  margin-bottom: 10rem;
+  align-items: center;
 }
 
 .footer__icon {
@@ -908,8 +908,12 @@ nav {
 }
 
 .contacts {
-  width: fit-content;
-  margin-left: auto;
+  display: flex;
+}
+
+.contacts--email {
+  font-size: 11rem;
+  font-weight: 300;
 }
 
 .contacts a {
@@ -924,9 +928,9 @@ nav {
 .contacts a p {
   margin: 0;
   color: #faf9f6;
-  color: #171717;
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 0.5rem;
 }
 
@@ -943,7 +947,6 @@ nav {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   margin-top: 10rem;
-  margin-bottom: 20rem;
   padding-right: 10vw;
   display: flex;
 }
@@ -1100,7 +1103,7 @@ nav {
 @media only screen and (max-width: 56.25em) {
   .projects__card__subheading h4 {
     margin-top: 1rem;
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
