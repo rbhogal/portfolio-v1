@@ -977,7 +977,13 @@ nav {
 
 .contacts a .footer__icon {
   opacity: 0;
-  width: 2rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 1.3rem;
+}
+
+.contacts a .footer__icon--github {
+  margin-right: 1.5rem;
 }
 
 .contacts a:hover .footer__icon {
@@ -1197,6 +1203,7 @@ nav {
   flex-direction: column;
   align-items: center;
   margin: 4rem 0;
+  text-align: center;
 }
 
 .about h1 {

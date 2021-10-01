@@ -132,7 +132,13 @@
 
   & a .footer__icon {
     opacity: 0;
-    width: 2rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-right: 1.3rem;
+
+    &--github {
+      margin-right: 1.5rem;
+    }
   }
 
   & a:hover .footer__icon {
