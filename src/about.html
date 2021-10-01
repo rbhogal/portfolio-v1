@@ -22,8 +22,27 @@
   </head>
   <body id="#container" class="container">
     <div class="cursor">
-      <img class="you-smart-gif" src="https://media.giphy.com/media/toe7vOw1WPAmEDfKeZ/giphy.gif?cid=790b7611584b530bb2e77b81ca9b63635a636eeb1083bc72&rid=giphy.gif&ct=g" alt="you-smart-gif">
-      <img class="troy-abed-handshake-gif" src="https://media.giphy.com/media/RLn2w2fLpcwTu/giphy.gif?cid=790b76119e40c57ee6b457d48f6668c00100eabfd4b2f4eb&rid=giphy.gif&ct=g" alt="troy-abed-handshake-gif">
+      <img
+        class="you-smart-gif"
+        src="https://media.giphy.com/media/toe7vOw1WPAmEDfKeZ/giphy.gif?cid=790b7611584b530bb2e77b81ca9b63635a636eeb1083bc72&rid=giphy.gif&ct=g"
+        alt="you-smart-gif"
+      />
+      <img
+        class="troy-abed-handshake-gif"
+        src="https://media.giphy.com/media/RLn2w2fLpcwTu/giphy.gif?cid=790b76119e40c57ee6b457d48f6668c00100eabfd4b2f4eb&rid=giphy.gif&ct=g"
+        alt="troy-abed-handshake-gif"
+      />
+      <div class="profile-pic__container">
+        <img
+          class="profile-pic"
+          src="/images/profile-pic.jpeg"
+          alt="Profile Pic"
+        />
+        <span class="profile-pic--wave-emoji">
+          Hi!
+          <div class="wave">👋🏼</div></span
+        >
+      </div>
     </div>
     <div class="cursor-2"></div>
     <div class="mobile-menu">
@@ -67,12 +86,13 @@
       <div class="home__header">
         <div class="home__heading__container">
           <a href="./index.html">
-          <div class="home__heading hover-this">Rohit Bhogal</div>
-          <div class="home__subheading">
-            <div class="hover-this">Frontend Web Developer</div>
-            </a>
-          </div>
+            <div class="home__heading hover-this">Rohit Bhogal</div>
+            <div class="home__subheading">
+              <div class="hover-this">Frontend Web Developer</div>
+            </div>
+          </a>
         </div>
+
         <div class="home__folio hover-this">Folio</div>
         <div class="home__hamburger-btn__container">
           <div class="home__hamburger-btn"></div>
@@ -83,31 +103,36 @@
     <section class="about">
       <div class="about__intro">
         <div class="about__intro__heading">
-          <div>Hi, I'm <span> Rohit</span> Bhogal</div>
+          <div class="hover-text-full-name">
+            Hi, I'm <span> Rohit</span> Bhogal
+          </div>
           <p class="about__intro__subheading">
             A self-taught front-end developer. I studied Biomedical Engineering
-            at San Jose State University. Felt better suited to web development as it
-            allows me to fuse my passions for creativity and problem solving. I
-            believe in work that brings value to both company and people in an
-            effort to leave behind a better world.
-
-            <hr width="50%"
-            style='margin: 1.1rem 0'>
+            at San Jose State University.
+            <!-- Felt better suited to web development
+            as -->
+            I enjoy web development as it allows me to fuse my passions for
+            creativity and problem solving. I believe in work that brings a
+            positive impact to both company and people, in an effort to leave
+            behind a better world. Currently seeking to join the right team.
           </p>
 
+          <hr width="50%" style="margin: 1.1rem 0" />
+
           <div class="about__intro__content">
-            <p> 
+            <p>
               <b>Tech:</b> HTML/CSS, Sass (SCSS), JavaScript, React JS, Redux,
               Git/GitHub, NPM, Parcel, Material UI
             </p>
             <p><b>Other Skills:</b> Photoshop, Lightroom Classic</p>
             <p>
-             <b>Some things I nerd out about:</b> hip hop music/production,
+              <b>Some things I nerd out about:</b> hip hop music/production,
               photography, cooking, fitness, nutrition, basketball, travel,
               stand up, movies...
             </p>
             <p>
-              Like what you hear? <span class="hover-text-1">OF COURSE YOU DO.</span> Let's get to
+              Like what you hear?
+              <span class="hover-text-1">OF COURSE YOU DO.</span> Let's get to
               <span class="hover-text-2">WORK.</span>
             </p>
           </div>
@@ -136,21 +161,20 @@
         <span>WORK.</span>
       </p> -->
 
-      <section class="footer">
-        <hr width="25%"
-        style='margin: 1.1rem 0 2.2rem 0'>
-        <p >Contacts</p>
-  
-        <div class="contacts">
-          <a href="#" class="hover-this">
-            <h1 class="contacts--email">rbhogal23@gmail.com</h1>
-          </a>
-        </div>
-  
-        <div class="contacts navbar-links">
-          <a class="hover-this" href="#"
-            ><p>Resume</p>
-            <svg
+    <section class="footer">
+      <hr width="25%" style="margin: 1.1rem 0 2.2rem 0" />
+      <p>Contacts</p>
+
+      <div class="contacts">
+        <a href="#" class="hover-this-email">
+          <h1 class="contacts footer__link--email">rbhogal23@gmail.com</h1>
+        </a>
+      </div>
+
+      <div class="contacts navbar-links">
+        <a class="footer__link hover-this" href="#"
+          ><p>Resume</p>
+          <!-- <svg
               class="footer__icon footer__icon--download"
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -162,10 +186,16 @@
                 d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
                 clip-rule="evenodd"
               />
-            </svg>
-          </a>
-          <a class="hover-this" href="#"
-            ><svg
+            </svg> -->
+        </a>
+
+        <a
+          class="footer__link hover-this"
+          href="https://github.com/rbhogal"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><p>Github</p>
+          <!-- <svg
               class="footer__icon footer__icon--external-link"
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -177,32 +207,10 @@
                 d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
                 clip-rule="evenodd"
               />
-            </svg>
-            <!-- <p>Email</p> -->
-          </a>
-  
-          <a
-            class="hover-this"
-            href="https://github.com/rbhogal"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><p>Github</p>
-            <svg
-              class="footer__icon footer__icon--external-link"
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-        </div>
-      </section>
+            </svg> -->
+        </a>
+      </div>
+    </section>
 
     <!-- <div class="footer__cover--bottom"></div> -->
   </body>

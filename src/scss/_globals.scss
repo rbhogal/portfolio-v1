@@ -80,11 +80,49 @@ body {
   opacity: 1;
 }
 
+.animate-cursor-2 {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.animate-cursor--email {
+  transform: translate(-50%, -50%) scale(15);
+  opacity: 1;
+}
+
 .you-smart-gif {
   display: none;
 }
 
 .troy-abed-handshake-gif {
+  display: none;
+}
+
+.profile-pic {
+  height: 80rem;
+  position: relative;
+
+  &--wave-emoji {
+    font-size: 4rem;
+    position: absolute;
+    left: 3.5rem;
+    bottom: 3rem;
+    font-family: $font-intro-text;
+  }
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 1s infinite ease-in-out;
+  transform-origin: bottom right;
+}
+
+@keyframes wave {
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+.profile-pic__container {
   display: none;
 }
 
@@ -106,10 +144,6 @@ body {
   opacity: 1;
 }
 
-.animate-cursor-2 {
-  transform: translate(-50%, -50%) scale(0);
-}
-
 .cursors div {
   pointer-events: none;
   position: fixed;
@@ -120,29 +154,6 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-
-/* 
-.cursor {
-  border-radius: 50%;
-  padding: 3.2rem;
-  background-color: #fff;
-  opacity: 0.2;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  mix-blend-mode: difference;
-  // transition: all 0.3s ease;
-  transition-property: transform, opacity;
-  transform-origin: -50% -50%;
-  z-index: 9001;
-}
-
-
-.animate-cursor {
-  transform: scale(0.5);
-  opacity: 1;
-}
- */
 
 h1 {
   font-family: $font-heading;

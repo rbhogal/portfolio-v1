@@ -159,8 +159,7 @@ new ScrollMagic.Scene({
 //Custom Cursor
 const link = document.querySelectorAll(".hover-this");
 const linkViewProject = document.querySelectorAll(".hover-view-project");
-const text1 = document.querySelector(".hover-text-1");
-const text2 = document.querySelector(".hover-text-2");
+const email = document.querySelector(".hover-this-email");
 
 let cursor = document.querySelector(".cursor"); // The small one
 let cursor2 = document.querySelector(".cursor-2"); // The large one
@@ -247,13 +246,26 @@ linkViewProject.forEach((link) => {
   });
 });
 
+// Cursor animations for footer email
+email.addEventListener("mouseover", () => {
+  cursor.classList.add("animate-cursor--email");
+  cursor2.classList.add("animate-cursor-2");
+});
+email.addEventListener("mouseleave", () => {
+  cursor.classList.remove("animate-cursor--email");
+  cursor2.classList.remove("animate-cursor-2");
+});
+
+const fullNameText = document.querySelector(".hover-text-full-name");
+const text1 = document.querySelector(".hover-text-1");
+const text2 = document.querySelector(".hover-text-2");
 const youSmartGif = document.querySelector(".you-smart-gif");
 const troyAbedHandshakeGif = document.querySelector(".troy-abed-handshake-gif");
+const profilePic = document.querySelector(".profile-pic__container");
 
 console.log(location.pathname);
 
-// Cursor animations for you smart gif
-
+// Cursor animations for you smart gif & profile pic
 if (location.pathname === "/src/about.html") {
   text1.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor-gif");
@@ -279,6 +291,19 @@ if (location.pathname === "/src/about.html") {
 
     cursor2.classList.remove("animate-cursor-2");
     troyAbedHandshakeGif.classList.remove("gif-active");
+  });
+
+  // Cursor animations for full name hover
+  fullNameText.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor-gif");
+    cursor2.classList.add("animate-cursor-2");
+    profilePic.classList.add("gif-active");
+  });
+
+  fullNameText.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor-gif");
+    cursor2.classList.remove("animate-cursor-2");
+    profilePic.classList.remove("gif-active");
   });
 }
 
