@@ -248,6 +248,12 @@ p {
     margin: 0 auto;
     z-index: 9002;
     position: relative;
+
+    &--top {
+    }
+
+    &--bottom {
+    }
   }
 }
 

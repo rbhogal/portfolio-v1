@@ -1,0 +1,188 @@
+.project__burgerlords {
+  grid-column: 2 /3;
+  grid-row: 2 / 3;
+  margin-top: 10rem;
+  // display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+
+  &__header {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+    &--heading {
+      font-size: 19rem;
+      font-weight: 300;
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 300;
+      font-size: 19rem;
+      writing-mode: vertical-rl;
+
+      line-height: 0.7;
+      //   margin-right: 5rem;
+      min-height: 100.5rem;
+      //   text-align: start;
+      margin-left: auto;
+    }
+  }
+
+  &__heading {
+    color: $color-off-white;
+    font-family: $font-intro-text;
+    font-size: 10rem;
+    font-weight: 400;
+    // letter-spacing: 1.2rem;
+    line-height: 10rem;
+    //   margin-top: 0;
+    margin: 4rem 0;
+  }
+
+  &__subheading {
+    font-size: 5rem;
+    color: $color-off-white;
+    font-family: $font-intro-text;
+    font-weight: 400;
+    // letter-spacing: 1.2rem;
+    line-height: 10rem;
+    //   margin-top: 0;
+    margin: 4rem 0;
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    padding: 0 8.5vw;
+    padding: 0 15vw;
+
+    p {
+      text-transform: none;
+      font-size: 1.4rem;
+      //   letter-spacing: 0.1rem;
+      //   word-spacing: 0.1rem;
+      font-weight: 300;
+      opacity: 0.8;
+    }
+
+    &--about-container {
+      max-width: 115rem;
+    }
+
+    &--tech {
+      display: flex;
+      gap: 4rem;
+
+      & h3 {
+        font-family: $font-intro-text;
+        color: $color-off-white;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50;
+    }
+  }
+
+  &__links {
+    padding: 4rem 0;
+    display: flex;
+    gap: 2.4rem;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__btn {
+    font-family: $font-intro-text;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: $color-off-white;
+    color: $color-dark-grey;
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    padding-bottom: 0.1rem;
+
+    &:hover {
+      background-color: transparent;
+      border: transparent;
+      color: $color-off-white;
+    }
+  }
+
+  &__animations-showcase {
+    display: flex;
+    justify-content: space-between;
+    margin: 24rem 0;
+
+    &--text {
+      padding-right: 6rem;
+    }
+  }
+
+  &__grid-showcase {
+    width: min-content;
+    height: 65.5rem;
+
+    &__container {
+      margin-bottom: 24rem;
+    }
+
+    &__text {
+      // margin: 10rem 0;
+    }
+
+    & img {
+      width: 121rem;
+      height: 65.5rem;
+      object-fit: cover;
+      // object-position: 50% 50%;
+    }
+  }
+
+  &__photo-gallery-showcase {
+    display: flex;
+    justify-content: space-between;
+    margin: 24rem 0;
+
+    &--text {
+      padding-right: 6rem;
+    }
+  }
+}
+
+.number {
+  font-family: $font-heading;
+  font-style: normal;
+
+  &__01 {
+    writing-mode: vertical-rl;
+    font-size: 19rem;
+    margin: 0;
+    font-weight: 300;
+    line-height: 0.7;
+    border-bottom: 5px solid $color-off-white;
+    width: min-content;
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+  }
+}
+
+iframe:focus {
+  outline: none;
+  border: none;
+}

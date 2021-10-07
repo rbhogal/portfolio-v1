@@ -7,7 +7,7 @@
   right: 2.4vw;
   width: 100%;
   width: min-content;
-  // background: $color-dark-grey;
+  mix-blend-mode: difference;
 
   & span {
     font-family: $font-secondary;
@@ -20,7 +20,7 @@
     color: $color-off-white;
     pointer-events: none;
     // transition: transform 0.1s linear;
-  
+
     font-family: $font-intro-text;
     font-size: 2.4rem;
     font-weight: 400;
@@ -32,6 +32,11 @@ nav {
   & a {
     text-decoration: none;
     display: inline-block;
+    color: inherit;
+
+    &:hover .nav__arrow-icon {
+      opacity: 1;
+    }
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -39,8 +44,20 @@ nav {
   }
 }
 
+.nav {
+  &__link {
+    display: flex;
+  }
 
-
+  &__arrow-icon {
+    width: 2rem;
+    transform: rotate(-45deg);
+    margin-right: 0.2rem;
+    margin-top: 0.4rem;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+}
 /* 
 .header {
   padding: 2.5rem 0;

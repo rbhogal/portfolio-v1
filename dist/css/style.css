@@ -736,21 +736,6 @@ p {
   max-width: 56rem;
 }
 
-.number {
-  font-family: mono45-headline, monospace;
-  font-style: normal;
-}
-
-.number__01 {
-  font-size: 19rem;
-  margin: 0;
-  font-weight: 300;
-  line-height: 0.8;
-  border-bottom: 5px solid #faf9f6;
-  width: min-content;
-  padding-bottom: 3rem;
-}
-
 .name {
   margin: 0;
   font-size: 19rem;
@@ -823,6 +808,7 @@ p {
   right: 2.4vw;
   width: 100%;
   width: min-content;
+  mix-blend-mode: difference;
 }
 
 .nav-wrapper span {
@@ -842,12 +828,30 @@ p {
 nav a {
   text-decoration: none;
   display: inline-block;
+  color: inherit;
+}
+
+nav a:hover .nav__arrow-icon {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 56.25em) {
   nav {
     display: none;
   }
+}
+
+.nav__link {
+  display: flex;
+}
+
+.nav__arrow-icon {
+  width: 2rem;
+  transform: rotate(-45deg);
+  margin-right: 0.2rem;
+  margin-top: 0.4rem;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
 
 /* 
@@ -903,6 +907,7 @@ nav {
   flex-direction: column;
   padding: 0 15%;
   margin-bottom: 10rem;
+  margin-bottom: 8rem;
   align-items: center;
 }
 
@@ -916,6 +921,18 @@ nav {
 .footer__link--email {
   font-size: 11rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 75em) {
+  .footer__link--email {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .footer__link--email {
+    font-size: 3rem;
+  }
 }
 
 .footer__link--email-border {
@@ -1239,5 +1256,290 @@ nav {
   border-bottom: 5px solid #faf9f6;
   width: min-content;
   padding-bottom: 5rem;
+}
+
+.project__game-save {
+  grid-column: 2 /3;
+  grid-row: 2 / 3;
+  margin-top: 10rem;
+  display: flex;
+}
+
+.project__game-save__header--heading {
+  font-size: 19rem;
+  font-weight: 300;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-size: 19rem;
+  writing-mode: vertical-rl;
+  line-height: 0.7;
+  min-height: 100.5rem;
+  margin-left: auto;
+}
+
+.project__game-save__heading {
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 10rem;
+  margin: 4rem 0;
+}
+
+.project__game-save__subheading {
+  font-size: 5rem;
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  line-height: 10rem;
+  margin: 4rem 0;
+}
+
+.project__game-save__content {
+  padding: 0 9vw;
+}
+
+.project__game-save__content p {
+  text-transform: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.project__game-save__content--about-container {
+  max-width: 115rem;
+}
+
+.project__game-save__content--tech {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 10rem;
+}
+
+.project__game-save__content--tech h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #faf9f6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.project__game-save__links {
+  padding: 4rem 0;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.project__game-save__links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__game-save__btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #faf9f6;
+  color: #171717;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  padding-bottom: 0.1rem;
+}
+
+.project__game-save__btn:hover {
+  background-color: transparent;
+  border: transparent;
+  color: #faf9f6;
+}
+
+.number {
+  font-family: mono45-headline, monospace;
+  font-style: normal;
+}
+
+.number__01 {
+  writing-mode: vertical-rl;
+  font-size: 19rem;
+  margin: 0;
+  font-weight: 300;
+  line-height: 0.7;
+  border-bottom: 5px solid #faf9f6;
+  width: min-content;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+}
+
+.project__burgerlords {
+  grid-column: 2 /3;
+  grid-row: 2 / 3;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+}
+
+.project__burgerlords__header {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.project__burgerlords__header--heading {
+  font-size: 19rem;
+  font-weight: 300;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-size: 19rem;
+  writing-mode: vertical-rl;
+  line-height: 0.7;
+  min-height: 100.5rem;
+  margin-left: auto;
+}
+
+.project__burgerlords__heading {
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 10rem;
+  margin: 4rem 0;
+}
+
+.project__burgerlords__subheading {
+  font-size: 5rem;
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  line-height: 10rem;
+  margin: 4rem 0;
+}
+
+.project__burgerlords__content {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  padding: 0 8.5vw;
+  padding: 0 15vw;
+}
+
+.project__burgerlords__content p {
+  text-transform: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.project__burgerlords__content--about-container {
+  max-width: 115rem;
+}
+
+.project__burgerlords__content--tech {
+  display: flex;
+  gap: 4rem;
+}
+
+.project__burgerlords__content--tech h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #faf9f6;
+  font-weight: 500;
+}
+
+.project__burgerlords__banner {
+  width: 100%;
+  height: 30rem;
+  background-color: white;
+}
+
+.project__burgerlords__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50;
+}
+
+.project__burgerlords__links {
+  padding: 4rem 0;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.project__burgerlords__links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__burgerlords__btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #faf9f6;
+  color: #171717;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  padding-bottom: 0.1rem;
+}
+
+.project__burgerlords__btn:hover {
+  background-color: transparent;
+  border: transparent;
+  color: #faf9f6;
+}
+
+.project__burgerlords__animations-showcase {
+  display: flex;
+  justify-content: space-between;
+  margin: 24rem 0;
+}
+
+.project__burgerlords__animations-showcase--text {
+  padding-right: 6rem;
+}
+
+.project__burgerlords__grid-showcase {
+  width: min-content;
+  height: 65.5rem;
+}
+
+.project__burgerlords__grid-showcase__container {
+  margin-bottom: 24rem;
+}
+
+.project__burgerlords__grid-showcase img {
+  width: 121rem;
+  height: 65.5rem;
+  object-fit: cover;
+}
+
+.project__burgerlords__photo-gallery-showcase {
+  display: flex;
+  justify-content: space-between;
+  margin: 24rem 0;
+}
+
+.project__burgerlords__photo-gallery-showcase--text {
+  padding-right: 6rem;
+}
+
+.number {
+  font-family: mono45-headline, monospace;
+  font-style: normal;
+}
+
+.number__01 {
+  writing-mode: vertical-rl;
+  font-size: 19rem;
+  margin: 0;
+  font-weight: 300;
+  line-height: 0.7;
+  border-bottom: 5px solid #faf9f6;
+  width: min-content;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+}
+
+iframe:focus {
+  outline: none;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

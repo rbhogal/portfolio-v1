@@ -216,21 +216,21 @@ $bar-spacing: 1rem;
   }
 }
 
-.number {
-  font-family: $font-heading;
-  font-style: normal;
+// .number {
+//   font-family: $font-heading;
+//   font-style: normal;
 
-  &__01 {
-    font-size: 19rem;
-    margin: 0;
-    font-weight: 300;
-    line-height: 0.8;
-    border-bottom: 5px solid $color-off-white;
-    width: min-content;
-    padding-bottom: 3rem;
-    // margin-bottom: 5rem;
-  }
-}
+//   &__01 {
+//     font-size: 19rem;
+//     margin: 0;
+//     font-weight: 300;
+//     line-height: 0.8;
+//     border-bottom: 5px solid $color-off-white;
+//     width: min-content;
+//     padding-bottom: 3rem;
+//     // margin-bottom: 5rem;
+//   }
+// }
 
 .name {
   margin: 0;
