@@ -1411,7 +1411,6 @@ nav {
   color: #faf9f6;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  line-height: 10rem;
   margin: 4rem 0;
 }
 
@@ -1442,6 +1441,7 @@ nav {
   font-family: "Bebas Neue", sans-serif;
   color: #faf9f6;
   font-weight: 500;
+  opacity: 0.8;
 }
 
 .project__burgerlords__banner {
@@ -1489,6 +1489,7 @@ nav {
 .project__burgerlords__animations-showcase {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 24rem 0;
 }
 
@@ -1509,15 +1510,77 @@ nav {
   width: 121rem;
   height: 65.5rem;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .project__burgerlords__photo-gallery-showcase {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 24rem 0;
 }
 
 .project__burgerlords__photo-gallery-showcase--text {
+  padding-right: 6rem;
+}
+
+.project__burgerlords__mobile-friendly-showcase {
+  margin: 24rem 0;
+}
+
+.project__burgerlords__mobile-friendly-showcase p {
+  margin: 1.2rem auto;
+}
+
+.project__burgerlords__mobile-friendly-showcase--grid-container {
+  display: grid;
+  grid-template-columns: [desktop-start] min-content [desktop-end tablet-start] min-content [tablet-end mobile-start] min-content [mobile-end];
+  grid-template-rows: auto;
+  align-items: flex-end;
+  gap: 5rem;
+}
+
+.project__burgerlords__mobile-friendly-showcase--desktop {
+  grid-column: desktop-start / desktop-end;
+  grid-row: 1 / -1;
+}
+
+.project__burgerlords__mobile-friendly-showcase--desktop-img {
+  width: auto;
+  height: 30rem;
+  border: 10px solid black;
+}
+
+.project__burgerlords__mobile-friendly-showcase--tablet {
+  grid-column: tablet-start / tablet-end;
+  grid-row: 1 / -1;
+}
+
+.project__burgerlords__mobile-friendly-showcase--tablet-img {
+  width: auto;
+  height: 25rem;
+  border: 10px solid black;
+}
+
+.project__burgerlords__mobile-friendly-showcase--mobile {
+  grid-column: mobile-start / mobile-end;
+  grid-row: 1 / -1;
+}
+
+.project__burgerlords__mobile-friendly-showcase--mobile-img {
+  width: auto;
+  height: 20rem;
+  border: 10px solid black;
+}
+
+.project__burgerlords__challenges-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+.project__burgerlords__challenges-showcase--text {
   padding-right: 6rem;
 }
 
