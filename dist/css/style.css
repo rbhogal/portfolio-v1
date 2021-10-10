@@ -80,7 +80,7 @@ body {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.animate-cursor--email {
+.animate-cursor-big {
   transform: translate(-50%, -50%) scale(15);
   opacity: 1;
 }
@@ -346,7 +346,7 @@ body {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.animate-cursor--email {
+.animate-cursor-big {
   transform: translate(-50%, -50%) scale(15);
   opacity: 1;
 }
@@ -1432,18 +1432,6 @@ nav {
   max-width: 115rem;
 }
 
-.project__burgerlords__content--tech {
-  display: flex;
-  gap: 4rem;
-}
-
-.project__burgerlords__content--tech h3 {
-  font-family: "Bebas Neue", sans-serif;
-  color: #faf9f6;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
 .project__burgerlords__banner {
   width: 100%;
   height: 30rem;
@@ -1497,11 +1485,6 @@ nav {
   padding-right: 6rem;
 }
 
-.project__burgerlords__grid-showcase {
-  width: min-content;
-  height: 65.5rem;
-}
-
 .project__burgerlords__grid-showcase__container {
   margin-bottom: 24rem;
 }
@@ -1509,6 +1492,8 @@ nav {
 .project__burgerlords__grid-showcase img {
   width: 121rem;
   height: 65.5rem;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
 }
@@ -1582,6 +1567,56 @@ nav {
 
 .project__burgerlords__challenges-showcase--text {
   padding-right: 6rem;
+}
+
+.project__burgerlords__tech-showcase {
+  margin: 24rem 0;
+}
+
+.project__burgerlords__tech-showcase--tech {
+  display: flex;
+  gap: 4rem;
+}
+
+.project__burgerlords__tech-showcase--tech h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #faf9f6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.project__burgerlords__prev-next {
+  margin: 24rem 0;
+  width: 46.6rem;
+}
+
+.project__burgerlords__prev-next h2 {
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.project__burgerlords__prev-next h2:hover {
+  opacity: 1;
+}
+
+.project__burgerlords__prev-next p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.project__burgerlords__prev-next a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__burgerlords__prev-next--next {
+  display: flex;
+}
+
+.project__burgerlords__prev-next__icon {
+  width: 2rem;
+  margin-left: 1rem;
 }
 
 .number {

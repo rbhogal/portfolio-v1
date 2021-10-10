@@ -162,7 +162,7 @@ new ScrollMagic.Scene({
 //Custom Cursor
 const link = document.querySelectorAll(".hover-this");
 const linkViewProject = document.querySelectorAll(".hover-view-project");
-const email = document.querySelector(".hover-this-email");
+const linkBig = document.querySelectorAll(".hover-this-big");
 
 let cursor = document.querySelector(".cursor"); // The small one
 let cursor2 = document.querySelector(".cursor-2"); // The large one
@@ -250,13 +250,16 @@ linkViewProject.forEach((link) => {
 });
 
 // Cursor animations for footer email
-email.addEventListener("mouseover", () => {
-  cursor.classList.add("animate-cursor--email");
-  cursor2.classList.add("animate-cursor-2");
-});
-email.addEventListener("mouseleave", () => {
-  cursor.classList.remove("animate-cursor--email");
-  cursor2.classList.remove("animate-cursor-2");
+
+linkBig.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor-big");
+    cursor2.classList.add("animate-cursor-2");
+  });
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor-big");
+    cursor2.classList.remove("animate-cursor-2");
+  });
 });
 
 const fullNameText = document.querySelector(".hover-text-full-name");
