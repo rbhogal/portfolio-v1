@@ -91,9 +91,8 @@ $bar-spacing: 1rem;
       display: none;
       grid-column: 3 / 4;
       grid-row: 1 / -1;
-      position: absolute;
-      top: 3.6rem;
-      right: 3vw;
+      justify-self: end;
+
       width: $bar-width;
       height: $bar-height + $bar-spacing * 2;
       cursor: pointer;
@@ -267,7 +266,6 @@ $bar-spacing: 1rem;
   &__last {
     font-weight: 300;
     opacity: 0.6;
-
     font-size: 5.6rem;
   }
 }

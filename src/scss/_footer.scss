@@ -20,6 +20,12 @@
     // display: none;
   }
 
+  &__line-break {
+    @media screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+
   &__link {
     display: flex;
     flex-direction: column;
