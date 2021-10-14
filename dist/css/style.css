@@ -1435,12 +1435,14 @@ nav {
 @media only screen and (max-width: 40.625em) {
   .project__burgerlords__heading {
     font-size: 8rem;
+    margin: 4rem 0 2rem 0;
   }
 }
 
 @media only screen and (max-width: 31.25em) {
   .project__burgerlords__heading {
     font-size: 6rem;
+    margin: 4rem 0 0 0;
   }
 }
 
@@ -1483,19 +1485,19 @@ nav {
 
 @media only screen and (max-width: 75em) {
   .project__burgerlords__banner {
-    height: 20rem;
+    height: 19rem;
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .project__burgerlords__banner {
-    height: 15rem;
+    height: 16rem;
   }
 }
 
 @media only screen and (max-width: 31.25em) {
   .project__burgerlords__banner {
-    height: 10rem;
+    height: 8rem;
   }
 }
 
@@ -1768,6 +1770,463 @@ nav {
 }
 
 .project__burgerlords__prev-next__icon {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.number {
+  font-family: mono45-headline, monospace;
+  font-style: normal;
+}
+
+.number__01 {
+  writing-mode: vertical-rl;
+  font-size: 19rem;
+  margin: 0;
+  font-weight: 300;
+  line-height: 0.7;
+  border-bottom: 5px solid #faf9f6;
+  width: min-content;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+}
+
+.video__container {
+  max-width: 60rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .video__container {
+    max-width: 100%;
+  }
+}
+
+.project__bookmark {
+  grid-column: 2 /3;
+  grid-row: 2 / 3;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__bookmark {
+    margin-top: 0rem;
+  }
+}
+
+.project__bookmark__header {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__header {
+    display: none;
+  }
+}
+
+.project__bookmark__header--heading {
+  font-size: 19rem;
+  font-weight: 300;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-size: 19rem;
+  writing-mode: vertical-rl;
+  line-height: 0.7;
+  min-height: 100.5rem;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__header--heading {
+    writing-mode: unset;
+    min-height: unset;
+    font-size: 17rem;
+    padding: 0 15vw;
+    word-break: break-all;
+  }
+}
+
+.project__bookmark__heading {
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 10rem;
+  margin: 4rem 0;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__bookmark__heading {
+    font-size: 8rem;
+    margin: 4rem 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__bookmark__heading {
+    font-size: 6rem;
+    margin: 4rem 0 0 0;
+  }
+}
+
+.project__bookmark__subheading {
+  font-size: 5rem;
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  margin: 4rem 0;
+}
+
+.project__bookmark__content {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  padding: 0 15vw;
+}
+
+.project__bookmark__content p {
+  text-transform: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.project__bookmark__content a {
+  color: inherit;
+}
+
+.project__bookmark__content--about-container {
+  max-width: 115rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__bookmark__content {
+    padding: 7vw;
+  }
+}
+
+.project__bookmark__banner {
+  width: 100%;
+  height: 30rem;
+  background-color: white;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__banner {
+    height: 19rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__bookmark__banner {
+    height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__bookmark__banner {
+    height: 8rem;
+  }
+}
+
+.project__bookmark__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 41%;
+}
+
+.project__bookmark__links {
+  padding: 4rem 0;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.project__bookmark__links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__bookmark__btn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #faf9f6;
+  color: #171717;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  padding-bottom: 0.1rem;
+}
+
+.project__bookmark__btn:hover {
+  background-color: transparent;
+  border: transparent;
+  color: #faf9f6;
+}
+
+.project__bookmark__animations-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__animations-showcase {
+    flex-direction: column-reverse;
+  }
+}
+
+.project__bookmark__animations-showcase--text {
+  padding-right: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__animations-showcase--text {
+    padding: 0;
+  }
+}
+
+.project__bookmark__grid-showcase__container {
+  margin-bottom: 24rem;
+}
+
+.project__bookmark__grid-showcase__img-container {
+  width: 100%;
+}
+
+.project__bookmark__grid-showcase__img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__bookmark__features-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__features-showcase {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.project__bookmark__features-showcase--text {
+  padding-right: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__features-showcase--text {
+    padding: 0;
+  }
+}
+
+.project__bookmark__FAQ-accordion-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__FAQ-accordion-showcase {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.project__bookmark__FAQ-accordion-showcase--text {
+  padding-left: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__FAQ-accordion-showcase--text {
+    padding: 0;
+  }
+}
+
+.project__bookmark__email-validation-showcase__container {
+  margin-bottom: 24rem;
+}
+
+.project__bookmark__email-validation-showcase__img-container {
+  width: 100%;
+}
+
+.project__bookmark__email-validation-showcase__img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__bookmark__mobile-friendly-showcase {
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__mobile-friendly-showcase {
+    text-align: center;
+  }
+}
+
+.project__bookmark__mobile-friendly-showcase p {
+  margin: 1.2rem auto;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__mobile-friendly-showcase p {
+    height: 4.2rem;
+  }
+}
+
+.project__bookmark__mobile-friendly-showcase--grid-container {
+  align-items: flex-end;
+  display: flex;
+  gap: 5rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__mobile-friendly-showcase--grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__bookmark__mobile-friendly-showcase--grid-container {
+    gap: 2rem;
+  }
+}
+
+.project__bookmark__mobile-friendly-showcase--mobile-img {
+  width: 14vw;
+  border: 0.5vw solid black;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__mobile-friendly-showcase--mobile-img {
+    width: 100%;
+  }
+}
+
+.project__bookmark__challenges-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__challenges-showcase {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.project__bookmark__challenges-showcase__img-container {
+  width: 100%;
+}
+
+.project__bookmark__challenges-showcase__img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__bookmark__challenges-showcase--text {
+  padding-right: 6rem;
+  max-width: 49.6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__bookmark__challenges-showcase--text {
+    padding: 0;
+    max-width: 100%;
+  }
+}
+
+.project__bookmark__tech-showcase {
+  margin: 24rem 0;
+}
+
+.project__bookmark__tech-showcase--tech {
+  display: flex;
+  gap: 4rem;
+}
+
+.project__bookmark__tech-showcase--tech h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #faf9f6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.project__bookmark__prev-next {
+  margin: 24rem 0;
+  width: 60rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__bookmark__prev-next {
+    width: 100%;
+  }
+}
+
+.project__bookmark__prev-next h2 {
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__bookmark__prev-next h2 {
+    line-height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__bookmark__prev-next h2 {
+    line-height: 5rem;
+  }
+}
+
+.project__bookmark__prev-next h2:hover {
+  opacity: 1;
+}
+
+.project__bookmark__prev-next p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__bookmark__prev-next p {
+    font-size: 1.2rem;
+  }
+}
+
+.project__bookmark__prev-next a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__bookmark__prev-next--next {
+  display: flex;
+}
+
+.project__bookmark__prev-next__icon {
   width: 2rem;
   margin-left: 1rem;
 }
