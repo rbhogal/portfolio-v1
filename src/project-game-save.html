@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/rgy3utt.css" />
 
-    <title>Rohit Bhogal | About</title>
+    <title>Rohit Bhogal | Project Game Save</title>
   </head>
   <body id="#container" class="container">
     <div class="cursor"></div>
@@ -112,119 +112,224 @@
 
     <section class="project__game-save">
       <div class="project__game-save__header">
-        <h1 class="project__game-save__header--heading">Game Save</h1>
+        <h1 class="project__game-save__header--heading">Game Save 02</h1>
       </div>
 
       <div class="project__game-save__content">
-        <h2 class="project__game-save__heading">About | Game Save &nbsp; 01</h2>
+        <h2 class="project__game-save__heading">Game Save</h2>
+        <p>
+          Web app where users can search, discover, and save information about
+          video game titles pulled using the IGDB API (videogame database).
+        </p>
+        <p>
+          This project involved many firsts such as using React, Redux, making
+          API requests to fetch data from an API and displaying the information,
+          handling tokens, implementing (OAuth) authentication, some basic CRUD
+          operations, adding user accounts with the data stored in firebase as
+          my database and backend.
+        </p>
 
-        <div class="project__game-save__content--about-container">
-          <p>
-            Web app where users can search, discover, and save information about
-            video game titles pulled using the IGDB API (videogame database).
-          </p>
-          <p>
-            This was my first project using react and redux. My main aim for
-            this project was to practice those skills, along with fetching data
-            from an API and displaying the information, implementing (OAuth)
-            authentication, some basic CRUD operations, and user accounts with
-            data stored in firebase as my database and backend.
-          </p>
+        <div class="project__game-save__links">
+          <a
+            href="https://game-save.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project__game-save__btn hover-this">Website</div>
+          </a>
 
-          <div class="project__game-save__links">
-            <a
-              href="http://game-save.web.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="project__game-save__btn hover-this">Website</div>
-            </a>
+          <a
+            href="https://github.com/rbhogal/game-save-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="project__game-save__btn hover-this">Github</div>
+          </a>
+        </div>
 
-            <a
-              href="https://github.com/rbhogal/game-save-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="project__game-save__btn hover-this">Github</div>
-            </a>
+        <div class="project__game-save__banner">
+          <img
+            src="../images/projects/game-save/Game-Save__BOTW_game_page.png"
+            alt="project game-save banner"
+          />
+        </div>
+
+        <div class="project__game-save__search-showcase">
+          <div class="project__game-save__search-showcase--text">
+            <h2 class="project__game-save__subheading">Search Games</h2>
+            <p>
+              Searching game titles via search or drop down select genre makes
+              an API request to the IGDB database and returns a list of games in
+              a carousel.
+            </p>
           </div>
 
-          <!-- <h2 class="project__game-save__subheading">Tech</h2> -->
-          <div class="project__game-save__content--tech">
+          <div class="project__game-save__search-showcase">
+            <img
+              src="../images/projects/game-save/game-save_search.png"
+              alt="Game save search bar"
+            />
+          </div>
+        </div>
+
+        <div class="project__game-save__view-game-info-showcase__container">
+          <div class="project__game-save__view-game-info-showcase">
+            <div class="video__container">
+              <video
+                width="100%"
+                autoplay
+                loop="true"
+                style="border-style: none"
+                title="Game Save - Search and view game info"
+              >
+                <source
+                  src="../images/projects/game-save/game-save__view-game-info.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div class="project__game-save__view-game-info-showcase--text">
+              <h2 class="project__game-save__subheading">View Game info</h2>
+              <p>
+                View game rating, summary, storyline, social links, videos of
+                trailers/gameplay, screenshots, and artwork.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__game-save__auth-showcase">
+          <div class="video__container">
+            <video
+              width="100%"
+              autoplay
+              loop="true"
+              style="border-style: none"
+              title="Game Save authentication via Google - Save and remove game titles to your list"
+            >
+              <source
+                src="../images/projects/game-save/game-save__auth.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+
+          <div class="project__game-save__auth-showcase--text">
+            <h2 class="project__game-save__subheading">
+              Authentication (OAuth) // Save game Titles
+            </h2>
+            <p>
+              Sign in with user authentication via Google (firebase) and save or
+              remove game titles to or from your list. Game titles get saved to
+              your list. Quick save from carousel or the game information page.
+            </p>
+          </div>
+        </div>
+
+        <div class="project__game-save__challenges-showcase">
+          <div class="project__game-save__challenges-showcase--text">
+            <h2 class="project__game-save__subheading">Challenges</h2>
+            <p>
+              Other than trying to keep up with learning React faster than it
+              was updating, I had a number of challenges. However my biggest
+              challenge was handling asynchronous data.
+            </p>
+            <p>
+              Many of the errors/bugs were simply due to code being written
+              without consideration to async data such as code being executed
+              before data in a useState hook had a chance to update.
+            </p>
+            <p>
+              The other big challenge, and another first, was working with a
+              more complex API such as Twitch/IGDB's API. Reading and
+              understanding the documentation, testing (using Postman), and
+              implementing the app access token into my code properly took some
+              time and effort. I ran into a CORS error which required a
+              workaround for the IGDB API by setting up a proxy using CORS
+              anywhere with Heroku.
+            </p>
+            <p>
+              Another big takeaway was the ability to debug code. I feel this
+              project really tested my debugging skills. First and foremost my
+              mistakes taught me to use best practices in the first place to
+              avoid bugs entirely if you can, but when they do happen, work
+              through them logically, use console logs, chrome dev
+              tools/debugger/breakpoints, and more than likely it's a very easy
+              fix with a solution just around the corner.
+            </p>
+            <p>
+              Overall this project provided me with a wealth of learning
+              experience with hard lessons learnt that I wouldn't forget and was
+              able to carry on going forward.
+            </p>
+          </div>
+
+          <div class="project__game-save__challenges-showcase">
+            <img
+              src="../images/projects/game-save/game-save.web.app_(1080).png"
+              alt="Game save search bar"
+            />
+          </div>
+        </div>
+
+        <div class="project__game-save__tech-showcase">
+          <h2 class="project__game-save__subheading">Tech</h2>
+          <div class="project__game-save__tech-showcase--tech">
+            <h3>JSX</h3>
             <h3>React JS</h3>
             <h3>Redux/Toolkit</h3>
             <h3>NPM</h3>
-            <h3>Heroku (proxy)</h3>
+            <h3>Heroku(Proxy)</h3>
             <h3>Firebase</h3>
             <h3>IGDB API</h3>
-            <h3>OAuth</h3>
+            <h3>0Auth</h3>
           </div>
+        </div>
 
-          <!-- <div class="project__game-save__banner">
-            <img
-              src="../images/projects/Game-Save__BOTW_game_page.png"
-              alt="game-save banner"
-            />
-          </div> -->
+        <div class="project__game-save__prev-next">
+          <p style="margin-bottom: 0.5rem">Next Project</p>
 
-          <h2 class="project__game-save__subheading">Authentication</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            aliquid repudiandae nobis earum esse quod, dolores unde laboriosam
-            quo neque aspernatur architecto, nam excepturi vitae molestias?
-            Dolores, eius deleniti alias ullam explicabo velit culpa enim ex
-            tempora ea itaque molestias eveniet iste commodi aliquid error quae
-            dolore. Sequi magni praesentium error ut voluptates corporis dicta
-            adipisci, sed voluptas. Dignissimos, quisquam? In nulla distinctio
-            rem consectetur et hic quos odit voluptas eius suscipit reiciendis
-            consequuntur accusantium ipsam sed iure quisquam laborum rerum qui
-            fugiat, ut magnam. Perferendis numquam itaque deserunt repellendus,
-            neque laborum id excepturi nulla alias similique adipisci, illum
-            ipsa.
-          </p>
+          <a class="hover-this-big" href="./project-bookmark.html">
+            <h2 class="project__game-save__heading">Bookmark &nbsp; 03</h2>
+            <div class="project__game-save__prev-next--next">
+              <p class="project__game-save__prev-next__subheading">
+                Chrome Extension Landing Page
+              </p>
 
-          <h2 class="project__game-save__subheading">Search</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus
-            et doloribus exercitationem velit mollitia cupiditate possimus
-            obcaecati reprehenderit praesentium maiores id nihil quidem
-            repellendus, sequi minima, suscipit voluptate animi!
-          </p>
-
-          <h2 class="project__game-save__subheading">Save</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus
-            et doloribus exercitationem velit mollitia cupiditate possimus
-            obcaecati reprehenderit praesentium maiores id nihil quidem
-            repellendus, sequi minima, suscipit voluptate animi!
-          </p>
-
-          <h2 class="project__game-save__subheading">Challenges</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            aliquid repudiandae nobis earum esse quod, dolores unde laboriosam
-            quo neque aspernatur architecto, nam excepturi vitae molestias?
-            Dolores, eius deleniti alias ullam explicabo velit culpa enim ex
-            tempora ea itaque molestias eveniet iste commodi aliquid error quae
-            dolore. Sequi magni praesentium error ut voluptates corporis dicta
-            adipisci, sed voluptas. Dignissimos, quisquam? In nulla distinctio
-            rem consectetur et hic quos odit voluptas eius suscipit reiciendis
-            consequuntur accusantium ipsam sed iure quisquam laborum rerum qui
-            fugiat, ut magnam. Perferendis numquam itaque deserunt repellendus,
-            neque laborum id excepturi nulla alias similique adipisci, illum
-            ipsa.
-          </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 project__game-save__prev-next__icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
     <section class="footer">
-      <hr width="25%" style="margin: 1.1rem 0 2.2rem 0" />
+      <hr
+        class="footer__line-break"
+        width="25%"
+        style="margin: 1.1rem 0 2.2rem 0"
+      />
       <p style="margin-bottom: 0">Contacts</p>
 
       <div class="contacts">
-        <a href="mailto:rbhogal23@gmail.com" class="hover-this-email">
-          <h1 class="contacts footer__link--email">rbhogal23@gmail.com</h1>
+        <a href="mailto:rbhogal23@gmail.com">
+          <h1 class="contacts footer__link--email hover-this-big">
+            rbhogal23@gmail.com
+          </h1>
         </a>
       </div>
 
@@ -300,6 +405,12 @@
          -->
       </div>
     </section>
+    <small style="grid-column: 2 /3; opacity: 0.2">
+      <p style="text-align: center">
+        Copyright © 2021 Rohit Bhogal.<br />
+        All Rights Reserved
+      </p>
+    </small>
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
