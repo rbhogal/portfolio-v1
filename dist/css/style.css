@@ -1266,7 +1266,26 @@ nav {
   grid-column: 2 /3;
   grid-row: 2 / 3;
   margin-top: 10rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__game-save {
+    margin-top: 0rem;
+  }
+}
+
+.project__game-save__header {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__header {
+    display: none;
+  }
 }
 
 .project__game-save__header--heading {
@@ -1282,6 +1301,16 @@ nav {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 75em) {
+  .project__game-save__header--heading {
+    writing-mode: unset;
+    min-height: unset;
+    font-size: 17rem;
+    padding: 0 15vw;
+    word-break: break-all;
+  }
+}
+
 .project__game-save__heading {
   color: #faf9f6;
   font-family: "Bebas Neue", sans-serif;
@@ -1291,17 +1320,32 @@ nav {
   margin: 4rem 0;
 }
 
+@media only screen and (max-width: 40.625em) {
+  .project__game-save__heading {
+    font-size: 8rem;
+    margin: 4rem 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__heading {
+    font-size: 6rem;
+    margin: 4rem 0 0 0;
+  }
+}
+
 .project__game-save__subheading {
   font-size: 5rem;
   color: #faf9f6;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  line-height: 10rem;
   margin: 4rem 0;
 }
 
 .project__game-save__content {
-  padding: 0 9vw;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  padding: 0 15vw;
 }
 
 .project__game-save__content p {
@@ -1315,17 +1359,41 @@ nav {
   max-width: 115rem;
 }
 
-.project__game-save__content--tech {
-  display: flex;
-  gap: 4rem;
-  margin-bottom: 10rem;
+@media only screen and (max-width: 56.25em) {
+  .project__game-save__content {
+    padding: 7vw;
+  }
 }
 
-.project__game-save__content--tech h3 {
-  font-family: "Bebas Neue", sans-serif;
-  color: #faf9f6;
-  font-weight: 500;
-  opacity: 0.8;
+.project__game-save__banner {
+  width: 100%;
+  height: 30rem;
+  background-color: white;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__banner {
+    height: 19rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__game-save__banner {
+    height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__banner {
+    height: 8rem;
+  }
+}
+
+.project__game-save__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 14%;
 }
 
 .project__game-save__links {
@@ -1357,6 +1425,227 @@ nav {
   color: #faf9f6;
 }
 
+.project__game-save__search-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__search-showcase {
+    flex-direction: column-reverse;
+  }
+}
+
+.project__game-save__search-showcase img {
+  width: 121rem;
+  height: 65.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__game-save__search-showcase--text {
+  padding-right: 6rem;
+  width: 70rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__search-showcase--text {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.project__game-save__view-game-info-showcase {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__view-game-info-showcase {
+    flex-direction: column;
+  }
+}
+
+.project__game-save__view-game-info-showcase__container {
+  margin-bottom: 24rem;
+}
+
+.project__game-save__view-game-info-showcase .video__container {
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__view-game-info-showcase .video__container {
+    max-width: 100%;
+  }
+}
+
+.project__game-save__view-game-info-showcase img {
+  width: 121rem;
+  height: 65.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__game-save__view-game-info-showcase--text {
+  padding-left: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__view-game-info-showcase--text {
+    padding-left: 0;
+  }
+}
+
+.project__game-save__auth-showcase {
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__auth-showcase {
+    flex-direction: column-reverse;
+  }
+}
+
+.project__game-save__auth-showcase img {
+  width: 121rem;
+  height: 65.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__game-save__auth-showcase--text {
+  padding-right: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__auth-showcase--text {
+    padding: 0;
+  }
+}
+
+.project__game-save__auth-showcase .video__container {
+  max-width: 100%;
+}
+
+.project__game-save__challenges-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__challenges-showcase {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.project__game-save__challenges-showcase img {
+  max-width: 60rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__challenges-showcase img {
+    max-width: 100%;
+  }
+}
+
+.project__game-save__challenges-showcase--text {
+  padding-right: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__challenges-showcase--text {
+    padding: 0;
+  }
+}
+
+.project__game-save__tech-showcase {
+  margin: 24rem 0;
+}
+
+.project__game-save__tech-showcase--tech {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.project__game-save__tech-showcase--tech h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #faf9f6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.project__game-save__prev-next {
+  margin: 24rem 0;
+  width: 46.6rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__game-save__prev-next {
+    width: 100%;
+  }
+}
+
+.project__game-save__prev-next h2 {
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__game-save__prev-next h2 {
+    line-height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__prev-next h2 {
+    line-height: 5rem;
+  }
+}
+
+.project__game-save__prev-next h2:hover {
+  opacity: 1;
+}
+
+.project__game-save__prev-next p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__game-save__prev-next p {
+    font-size: 1.2rem;
+  }
+}
+
+.project__game-save__prev-next a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__game-save__prev-next--next {
+  display: flex;
+}
+
+.project__game-save__prev-next__icon {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
 .number {
   font-family: mono45-headline, monospace;
   font-style: normal;
@@ -1372,6 +1661,16 @@ nav {
   width: min-content;
   padding-bottom: 3rem;
   margin-bottom: 5rem;
+}
+
+.video__container {
+  max-width: 60rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .video__container {
+    max-width: 100%;
+  }
 }
 
 .project__burgerlords {
@@ -1401,15 +1700,12 @@ nav {
 }
 
 .project__burgerlords__header--heading {
-  font-size: 19rem;
-  font-weight: 300;
   margin: 0;
-  font-size: 2.4rem;
   font-weight: 300;
   font-size: 19rem;
   writing-mode: vertical-rl;
   line-height: 0.7;
-  min-height: 100.5rem;
+  min-height: 120rem;
   margin-left: auto;
 }
 
@@ -1690,13 +1986,11 @@ nav {
 
 .project__burgerlords__challenges-showcase--text {
   padding-right: 6rem;
-  max-width: 49.6rem;
 }
 
 @media only screen and (max-width: 75em) {
   .project__burgerlords__challenges-showcase--text {
     padding: 0;
-    max-width: 100%;
   }
 }
 
@@ -2227,6 +2521,353 @@ nav {
 }
 
 .project__bookmark__prev-next__icon {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.number {
+  font-family: mono45-headline, monospace;
+  font-style: normal;
+}
+
+.number__01 {
+  writing-mode: vertical-rl;
+  font-size: 19rem;
+  margin: 0;
+  font-weight: 300;
+  line-height: 0.7;
+  border-bottom: 5px solid #faf9f6;
+  width: min-content;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+}
+
+.video__container {
+  max-width: 60rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .video__container {
+    max-width: 100%;
+  }
+}
+
+.project__stanza {
+  grid-column: 2 /3;
+  grid-row: 2 / 3;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__stanza {
+    margin-top: 0rem;
+  }
+}
+
+.project__stanza__header {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__header {
+    display: none;
+  }
+}
+
+.project__stanza__header--heading {
+  margin: 0;
+  font-weight: 300;
+  font-size: 19rem;
+  writing-mode: vertical-rl;
+  line-height: 0.7;
+  min-height: 100.5rem;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__header--heading {
+    writing-mode: unset;
+    min-height: unset;
+    font-size: 17rem;
+    padding: 0 15vw;
+    word-break: break-all;
+  }
+}
+
+.project__stanza__heading {
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 10rem;
+  margin: 4rem 0;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__stanza__heading {
+    font-size: 8rem;
+    margin: 4rem 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__stanza__heading {
+    font-size: 6rem;
+    margin: 4rem 0 0 0;
+  }
+}
+
+.project__stanza__subheading {
+  font-size: 5rem;
+  color: #faf9f6;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  margin: 4rem 0;
+}
+
+.project__stanza__content {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  padding: 0 15vw;
+}
+
+.project__stanza__content p {
+  text-transform: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.project__stanza__content--about-container {
+  max-width: 115rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__stanza__content {
+    padding: 7vw;
+  }
+}
+
+.project__stanza__banner {
+  width: 100%;
+  height: 30rem;
+  background-color: white;
+  margin-top: 11.7rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__banner {
+    height: 19rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .project__stanza__banner {
+    height: 16rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__stanza__banner {
+    height: 8rem;
+  }
+}
+
+.project__stanza__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
+.project__stanza__search-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__search-showcase {
+    flex-direction: column-reverse;
+  }
+}
+
+.project__stanza__search-showcase img {
+  width: 121rem;
+  height: 65.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__stanza__search-showcase--text {
+  padding-right: 6rem;
+  width: 70rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__search-showcase--text {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.project__stanza__view-game-info-showcase {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__view-game-info-showcase {
+    flex-direction: column;
+  }
+}
+
+.project__stanza__view-game-info-showcase__container {
+  margin-bottom: 24rem;
+}
+
+.project__stanza__view-game-info-showcase .video__container {
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__view-game-info-showcase .video__container {
+    max-width: 100%;
+  }
+}
+
+.project__stanza__view-game-info-showcase img {
+  width: 121rem;
+  height: 65.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__stanza__view-game-info-showcase--text {
+  padding-left: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__view-game-info-showcase--text {
+    padding-left: 0;
+  }
+}
+
+.project__stanza__auth-showcase {
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__auth-showcase {
+    flex-direction: column-reverse;
+  }
+}
+
+.project__stanza__auth-showcase img {
+  width: 121rem;
+  height: 65.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__stanza__auth-showcase--text {
+  padding-right: 6rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__auth-showcase--text {
+    padding: 0;
+  }
+}
+
+.project__stanza__auth-showcase .video__container {
+  max-width: 100%;
+}
+
+.project__stanza__tech-showcase {
+  margin: 24rem 0;
+}
+
+.project__stanza__tech-showcase--tech {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.project__stanza__tech-showcase--tech h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #faf9f6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.project__stanza__prev-next {
+  margin: 24rem 0;
+  width: 46.6rem;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__stanza__prev-next {
+    width: 100%;
+  }
+}
+
+.project__stanza__prev-next h2 {
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__stanza__prev-next h2 {
+    line-height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__stanza__prev-next h2 {
+    line-height: 5rem;
+  }
+}
+
+.project__stanza__prev-next h2:hover {
+  opacity: 1;
+}
+
+.project__stanza__prev-next p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .project__stanza__prev-next p {
+    font-size: 1.2rem;
+  }
+}
+
+.project__stanza__prev-next a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__stanza__prev-next--next {
+  display: flex;
+}
+
+.project__stanza__prev-next__icon {
   width: 2rem;
   margin-left: 1rem;
 }

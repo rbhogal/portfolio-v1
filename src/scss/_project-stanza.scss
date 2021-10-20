@@ -1,0 +1,303 @@
+.project__stanza {
+  grid-column: 2 /3;
+  grid-row: 2 / 3;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 0rem;
+  }
+
+  &__header {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
+
+    &--heading {
+      margin: 0;
+      font-weight: 300;
+      font-size: 19rem;
+      writing-mode: vertical-rl;
+      line-height: 0.7;
+      min-height: 100.5rem;
+      margin-left: auto;
+
+      @media only screen and (max-width: $bp-large) {
+        writing-mode: unset;
+        min-height: unset;
+        font-size: 17rem;
+        padding: 0 15vw;
+        word-break: break-all;
+      }
+    }
+  }
+
+  &__heading {
+    color: $color-off-white;
+    font-family: $font-intro-text;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 10rem;
+    margin: 4rem 0;
+
+    @media only screen and (max-width: $bp-x-medium) {
+      font-size: 8rem;
+      margin: 4rem 0 2rem 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 6rem;
+      margin: 4rem 0 0 0;
+    }
+  }
+
+  &__subheading {
+    font-size: 5rem;
+    color: $color-off-white;
+    font-family: $font-intro-text;
+    font-weight: 400;
+    margin: 4rem 0;
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    padding: 0 15vw;
+
+    p {
+      text-transform: none;
+      font-size: 1.4rem;
+      font-weight: 300;
+      opacity: 0.8;
+    }
+
+    &--about-container {
+      max-width: 115rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 7vw;
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    margin-top: 11.7rem;
+
+    @media only screen and (max-width: $bp-large) {
+      height: 19rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 16rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 8rem;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 10%;
+    }
+  }
+
+  &__search-showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24rem 0;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column-reverse;
+    }
+
+    & img {
+      width: 121rem;
+      height: 65.5rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    &--text {
+      padding-right: 6rem;
+      width: 70rem;
+
+      @media only screen and (max-width: $bp-large) {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &__view-game-info-showcase {
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column;
+    }
+
+    &__container {
+      margin-bottom: 24rem;
+    }
+
+    & .video__container {
+      max-width: 80%;
+
+      @media only screen and (max-width: $bp-large) {
+        max-width: 100%;
+      }
+    }
+
+    & img {
+      width: 121rem;
+      height: 65.5rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    &--text {
+      padding-left: 6rem;
+      @media only screen and (max-width: $bp-large) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__auth-showcase {
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24rem 0;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column-reverse;
+    }
+
+    & img {
+      width: 121rem;
+      height: 65.5rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    &--text {
+      padding-right: 6rem;
+
+      @media only screen and (max-width: $bp-large) {
+        padding: 0;
+      }
+    }
+
+    & .video__container {
+      max-width: 100%;
+    }
+  }
+
+  &__tech-showcase {
+    margin: 24rem 0;
+
+    &--tech {
+      display: flex;
+      gap: 4rem;
+      flex-wrap: wrap;
+
+      & h3 {
+        font-family: $font-intro-text;
+        color: $color-off-white;
+        font-weight: 500;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__prev-next {
+    margin: 24rem 0;
+    width: 46.6rem;
+
+    @media only screen and (max-width: $bp-x-medium) {
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+
+      @media only screen and (max-width: $bp-x-medium) {
+        line-height: 8rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        line-height: 5rem;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    p {
+      margin: 0;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: $bp-x-medium) {
+        font-size: 1.2rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    &--next {
+      display: flex;
+    }
+
+    &__icon {
+      width: 2rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.number {
+  font-family: $font-heading;
+  font-style: normal;
+
+  &__01 {
+    writing-mode: vertical-rl;
+    font-size: 19rem;
+    margin: 0;
+    font-weight: 300;
+    line-height: 0.7;
+    border-bottom: 5px solid $color-off-white;
+    width: min-content;
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.video__container {
+  max-width: 60rem;
+
+  @media only screen and (max-width: $bp-large) {
+    max-width: 100%;
+  }
+}

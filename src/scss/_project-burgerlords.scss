@@ -19,16 +19,13 @@
     }
 
     &--heading {
-      font-size: 19rem;
-      font-weight: 300;
       margin: 0;
-      font-size: 2.4rem;
       font-weight: 300;
       font-size: 19rem;
       writing-mode: vertical-rl;
 
       line-height: 0.7;
-      min-height: 100.5rem;
+      min-height: 120rem;
       margin-left: auto;
 
       @media only screen and (max-width: $bp-large) {
@@ -278,11 +275,9 @@
 
     &--text {
       padding-right: 6rem;
-      max-width: 49.6rem;
 
       @media only screen and (max-width: $bp-large) {
         padding: 0;
-        max-width: 100%;
       }
     }
   }

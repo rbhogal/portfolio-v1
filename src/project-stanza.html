@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/rgy3utt.css" />
+
+    <title>Rohit Bhogal | Project Stanza</title>
+  </head>
+  <body id="#container" class="container">
+    <div class="cursor"></div>
+    <div class="cursor-2"></div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__content">
+        <a class="mobile-menu__link" href="./about.html">
+          <h2>About</h2>
+        </a>
+        <a class="mobile-menu__link" href="./index.html">
+          <h2>Projects</h2>
+        </a>
+      </div>
+
+      <div class="mobile-menu__contacts"></div>
+    </div>
+
+    <!-- <div class="loading-screen"></div> -->
+    <!-- <div class="loading-screen-addition"></div> -->
+    <!-- 
+    <div class="loading-intro">
+      <div class="loading-intro__cover"></div>
+      <h2 class="loading-intro__text loading-intro__text--first-name">Rohit</h2>
+      <h2 class="loading-intro__text loading-intro__text--last-name">Bhogal</h2>
+      <div class="loading-intro__cover"></div>
+    </div>
+ -->
+    <!-- <div class="navbar-item__cover"></div> -->
+    <!-- <header class="header">
+      <nav>
+        <a class="nav-link__about" href="./about.html"><p>About</p></a>
+ 
+      </nav>
+    </header> -->
+
+    <div class="nav-wrapper">
+      <nav>
+        <div class="nav__links">
+          <a class="hover-this nav__link" href="./about.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 nav__arrow-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>About</span>
+          </a>
+
+          <a class="hover-this nav__link" href="./index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 nav__arrow-icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>Projects</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <section class="home">
+      <div class="home__header">
+        <div class="home__heading__container">
+          <a href="./index.html">
+            <div class="home__heading hover-this">Rohit Bhogal</div>
+            <div class="home__subheading">
+              <div class="hover-this">Frontend Web Developer</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="home__folio">Folio</div>
+        <div class="home__hamburger-btn__container">
+          <div class="home__hamburger-btn"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project__stanza">
+      <div class="project__stanza__header">
+        <h1 class="project__stanza__header--heading">Stanza 01</h1>
+      </div>
+
+      <div class="project__stanza__content">
+        <h2 class="project__stanza__heading">Stanza</h2>
+        <p>
+          An admin tool for the Stanza mobile app . 
+        </p>
+        <p>
+          This was made for a client. They needed an admin tool to view their analytics from their database, create, add, and edit content for their mobile app by accessing two APIs, the Spotify and Genius APIs, and to be sent to their GraphQL backend. My role as the sole frontend developer was to develop up with the frontend and I was given free reign with the UI design. 
+        </p>
+
+
+        <div class="project__stanza__banner">
+          <img
+            src="../images/projects/stanza/stanza_addlyrics(Macbook Pro).png"
+            alt="project stanza banner"
+          />
+        </div>
+
+        <div class="project__stanza__search-showcase">
+          <div class="project__stanza__search-showcase--text">
+            <h2 class="project__stanza__subheading">Search Games</h2>
+            <p>
+              Searching game titles via search or drop down select genre makes an API request to the IGDB database and
+              returns a list of games in a carousel. 
+            </p>
+          </div>
+
+          <div class="project__burgerlords__search-showcase">
+            <img
+              src="../images/projects/stanza/stanza_search.png"
+              alt="Game save search bar"
+            />
+          </div>
+        </div>
+
+        <div class="project__stanza__view-game-info-showcase__container">
+          <div class="project__stanza__view-game-info-showcase">
+            <div  class="video__container">
+              <video
+                width="100%"
+                autoplay
+                loop="true"
+                style="border-style: none"
+                title="Game Save - Search and view game info"
+              >
+                <source
+                  src="../images/projects/stanza/stanza__view-game-info.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+          <div class="project__stanza__view-game-info-showcase--text">
+            <h2 class="project__stanza__subheading">View Game info</h2>
+            <p>
+              View game rating, summary, storyline, social links, videos of trailers/gameplay, screenshots, and artwork.
+            </p>
+          </div>
+        </div>
+
+        <div class="project__stanza__auth-showcase">
+
+          <div class="video__container">
+            <video
+              width="100%"
+              autoplay
+              loop="true"
+              style="border-style: none"
+              title="Game Save authentication via Google - Save and remove game titles to your list"
+            >
+              <source
+                src="../images/projects/stanza/stanza__auth.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+
+          
+          <div class="project__stanza__auth-showcase--text">
+            <h2 class="project__stanza__subheading">Authentication (OAuth) // Save game Titles</h2>
+            <p>
+              Sign in with user authentication via Google (firebase) and save or remove game titles to or from your list. Game titles get saved to your list. Quick save from carousel or the game information page.
+            </p>
+          </div>
+
+          
+        </div>
+
+        
+
+
+
+        
+
+        <div class="project__stanza__tech-showcase">
+          <h2 class="project__stanza__subheading">Tech</h2>
+          <div class="project__stanza__tech-showcase--tech">
+            <h3>JSX</h3>
+            <h3>React JS</h3>
+            <h3>Redux/Toolkit</h3>
+            <h3>NPM</h3>
+            <h3>Heroku(Proxy)</h3>
+            <h3>Firebase</h3>
+            <h3>IGDB API</h3>
+            <h3>0Auth</h3>
+          </div>
+        </div>
+
+        
+
+        <div class="project__stanza__prev-next">
+          <p style="margin-bottom: 0.5rem">Next Project</p>
+
+          <a class="hover-this-big" href="./project-game-save.html">
+            <h2 class="project__stanza__heading">Game Save &nbsp; 02</h2>
+            <div class="project__stanza__prev-next--next">
+              <p class="project__stanza__prev-next__subheading">
+                Web App using IGDB API
+              </p>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 project__stanza__prev-next__icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <hr
+        class="footer__line-break"
+        width="25%"
+        style="margin: 1.1rem 0 2.2rem 0"
+      />
+      <p style="margin-bottom: 0">Contacts</p>
+
+      <div class="contacts">
+        <a href="mailto:rbhogal23@gmail.com">
+          <h1 class="contacts footer__link--email hover-this-big">
+            rbhogal23@gmail.com
+          </h1>
+        </a>
+      </div>
+
+      <div class="contacts navbar-links">
+        <a class="footer__link hover-this" href="#"
+          ><p>Resume</p>
+          <span class="footer__icon">
+            <i class="fas fa-download"></i>
+          </span>
+        </a>
+
+        <a
+          class="footer__link hover-this"
+          href="https://github.com/rbhogal"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><p>Github</p>
+          <span class="footer__icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+      </div>
+    </section>
+    <small style="grid-column: 2 /3; opacity: 0.2">
+      <p style="text-align: center">
+        Copyright © 2021 Rohit Bhogal.<br />
+        All Rights Reserved
+      </p>
+    </small>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script defer type="module" src="./js/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/d98540feba.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
