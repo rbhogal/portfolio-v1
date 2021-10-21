@@ -2684,7 +2684,7 @@ nav {
   object-position: 50% 10%;
 }
 
-.project__stanza__search-showcase {
+.project__stanza__dashboard-analytics-showcase {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2692,58 +2692,56 @@ nav {
 }
 
 @media only screen and (max-width: 75em) {
-  .project__stanza__search-showcase {
+  .project__stanza__dashboard-analytics-showcase {
     flex-direction: column-reverse;
   }
 }
 
-.project__stanza__search-showcase img {
-  width: 121rem;
-  height: 65.5rem;
-  width: 100%;
+.project__stanza__dashboard-analytics-showcase img {
+  max-width: 60rem;
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
 }
 
-.project__stanza__search-showcase--text {
+.project__stanza__dashboard-analytics-showcase--text {
   padding-right: 6rem;
   width: 70rem;
 }
 
 @media only screen and (max-width: 75em) {
-  .project__stanza__search-showcase--text {
+  .project__stanza__dashboard-analytics-showcase--text {
     padding: 0;
     width: 100%;
   }
 }
 
-.project__stanza__view-game-info-showcase {
+.project__stanza__add-lyrics-showcase {
   display: flex;
   align-items: center;
 }
 
 @media only screen and (max-width: 75em) {
-  .project__stanza__view-game-info-showcase {
+  .project__stanza__add-lyrics-showcase {
     flex-direction: column;
   }
 }
 
-.project__stanza__view-game-info-showcase__container {
+.project__stanza__add-lyrics-showcase__container {
   margin-bottom: 24rem;
 }
 
-.project__stanza__view-game-info-showcase .video__container {
-  max-width: 80%;
+.project__stanza__add-lyrics-showcase .video__container {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 75em) {
-  .project__stanza__view-game-info-showcase .video__container {
+  .project__stanza__add-lyrics-showcase .video__container {
     max-width: 100%;
   }
 }
 
-.project__stanza__view-game-info-showcase img {
+.project__stanza__add-lyrics-showcase img {
   width: 121rem;
   height: 65.5rem;
   width: 100%;
@@ -2752,49 +2750,49 @@ nav {
   object-position: 50% 50%;
 }
 
-.project__stanza__view-game-info-showcase--text {
+.project__stanza__add-lyrics-showcase--text {
   padding-left: 6rem;
+  max-width: 35rem;
 }
 
 @media only screen and (max-width: 75em) {
-  .project__stanza__view-game-info-showcase--text {
+  .project__stanza__add-lyrics-showcase--text {
     padding-left: 0;
+    max-width: 100%;
   }
 }
 
-.project__stanza__auth-showcase {
+.project__stanza__challenges-showcase {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24rem 0;
 }
 
 @media only screen and (max-width: 75em) {
-  .project__stanza__auth-showcase {
+  .project__stanza__challenges-showcase {
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
 
-.project__stanza__auth-showcase img {
-  width: 121rem;
-  height: 65.5rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
+.project__stanza__challenges-showcase img {
+  max-width: 60rem;
 }
 
-.project__stanza__auth-showcase--text {
+@media only screen and (max-width: 75em) {
+  .project__stanza__challenges-showcase img {
+    max-width: 100%;
+  }
+}
+
+.project__stanza__challenges-showcase--text {
   padding-right: 6rem;
 }
 
 @media only screen and (max-width: 75em) {
-  .project__stanza__auth-showcase--text {
+  .project__stanza__challenges-showcase--text {
     padding: 0;
   }
-}
-
-.project__stanza__auth-showcase .video__container {
-  max-width: 100%;
 }
 
 .project__stanza__tech-showcase {

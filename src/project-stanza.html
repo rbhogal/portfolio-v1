@@ -117,13 +117,22 @@
 
       <div class="project__stanza__content">
         <h2 class="project__stanza__heading">Stanza</h2>
+        <p>An admin tool for the Stanza mobile app.</p>
         <p>
-          An admin tool for the Stanza mobile app . 
+          This was made for a client. They required an admin tool for multiple
+          admin/moderators with a secure login in order to view their analytics
+          from their database, and to create, add, delete, and edit content for
+          their mobile app. The app required accessing two APIs, the Spotify and
+          Genius APIs, and also sending data to their GraphQL based backend. My
+          role as the sole frontend/UI developer was to work alongside the
+          backend dev, and to develop and implement a solution for the frontend
+          given the requirements and wireframe, as well as to provide an
+          aesthetically pleasing UI, all with future scalability in mind.
         </p>
         <p>
-          This was made for a client. They needed an admin tool to view their analytics from their database, create, add, and edit content for their mobile app by accessing two APIs, the Spotify and Genius APIs, and to be sent to their GraphQL backend. My role as the sole frontend developer was to develop up with the frontend and I was given free reign with the UI design. 
+          I decided to learn and use a visual library, Material UI, and the app
+          was written using React JS and Redux.
         </p>
-
 
         <div class="project__stanza__banner">
           <img
@@ -132,81 +141,104 @@
           />
         </div>
 
-        <div class="project__stanza__search-showcase">
-          <div class="project__stanza__search-showcase--text">
-            <h2 class="project__stanza__subheading">Search Games</h2>
+        <div class="project__stanza__dashboard-analytics-showcase">
+          <div class="project__stanza__dashboard-analytics-showcase--text">
+            <h2 class="project__stanza__subheading">Dashboard Analytics</h2>
             <p>
-              Searching game titles via search or drop down select genre makes an API request to the IGDB database and
-              returns a list of games in a carousel. 
+              Signing in leads to the dashboard where admins can view and keep
+              track of their data stored in their database. Cards are applied to
+              a grid layout allowing for easily adding in new cards.
             </p>
           </div>
 
-          <div class="project__burgerlords__search-showcase">
+          <div class="project__burgerlords__dashboard-analytics-showcase">
             <img
-              src="../images/projects/stanza/stanza_search.png"
-              alt="Game save search bar"
+              src="../images/projects/stanza/stanza_dashboard(1080).png"
+              alt="Stanza - Dashboard Analytics"
             />
           </div>
         </div>
 
-        <div class="project__stanza__view-game-info-showcase__container">
-          <div class="project__stanza__view-game-info-showcase">
-            <div  class="video__container">
+        <div class="project__stanza__add-lyrics-showcase__container">
+          <div class="project__stanza__add-lyrics-showcase">
+            <div class="video__container">
               <video
                 width="100%"
                 autoplay
                 loop="true"
                 style="border-style: none"
-                title="Game Save - Search and view game info"
+                title="Stanza - Add Lyrics"
               >
                 <source
-                  src="../images/projects/stanza/stanza__view-game-info.mp4"
+                  src="../images/projects/stanza/stanza_addlyrics.mp4"
                   type="video/mp4"
                 />
               </video>
             </div>
 
-          <div class="project__stanza__view-game-info-showcase--text">
-            <h2 class="project__stanza__subheading">View Game info</h2>
-            <p>
-              View game rating, summary, storyline, social links, videos of trailers/gameplay, screenshots, and artwork.
-            </p>
+            <div class="project__stanza__add-lyrics-showcase--text">
+              <h2 class="project__stanza__subheading">Create and Add</h2>
+              <p>
+                Client requested a search functionality to search either a
+                track, album, or playlist using the Spotify API, and to display
+                it with cards.
+              </p>
+              <p>
+                Clicking an item then leads to another page where song lyrics
+                are fetched using the Genius API. Selecting an album or playlist
+                allows you to cycle through the songs on it.
+              </p>
+              <p>
+                Admin/mods can then select the lyrics they want, assign it a
+                category, genre, explicit, and add it to their database.
+              </p>
+              <p>
+                Three sections were requested for the page. One to select the
+                lyrics, another to preview the selected lyrics, and lastly a
+                section populated by other lyrics already existing in the
+                database from the selected song.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="project__stanza__auth-showcase">
-
-          <div class="video__container">
-            <video
-              width="100%"
-              autoplay
-              loop="true"
-              style="border-style: none"
-              title="Game Save authentication via Google - Save and remove game titles to your list"
-            >
-              <source
-                src="../images/projects/stanza/stanza__auth.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-
-          
-          <div class="project__stanza__auth-showcase--text">
-            <h2 class="project__stanza__subheading">Authentication (OAuth) // Save game Titles</h2>
+        <div class="project__stanza__challenges-showcase">
+          <div class="project__stanza__challenges-showcase--text">
+            <h2 class="project__stanza__subheading">Challenges</h2>
             <p>
-              Sign in with user authentication via Google (firebase) and save or remove game titles to or from your list. Game titles get saved to your list. Quick save from carousel or the game information page.
+              The greatest challenge from this project was once again handling
+              asynchronous data.
+            </p>
+            <p>
+              Despite being more aware and cautious this time around, I still
+              ran into an issue where upon refresh that same state in a useState
+              hook would be updated in more places than one, causing a bug in my
+              code. Thankfully due to past experience I was quickly able to
+              identify the bug.
+            </p>
+            <p>
+              Although not so much of a challenge, I did learn Material UI on
+              the fly. It wasn't required but I felt it was going to be the best
+              decision, as it would save time, and I could worry less on how it
+              looks and focus more on the javascript. I was more than happy with
+              making that decision.Each project I've worked on has always
+              demanded learning something new and I feel it's made me a more
+              capable programmer.
+            </p>
+            <p>
+              Overall my confidence in developing web apps has grew. I feel much
+              more comfortable and closer in feeling like I can take on almost
+              any project.
             </p>
           </div>
 
-          
+          <div class="project__stanza__challenges-showcase">
+            <img
+              src="../images/projects/stanza/stanza_addlyrics(Macbook Pro).png"
+              alt="Game save search bar"
+            />
+          </div>
         </div>
-
-        
-
-
-
-        
 
         <div class="project__stanza__tech-showcase">
           <h2 class="project__stanza__subheading">Tech</h2>
@@ -215,14 +247,11 @@
             <h3>React JS</h3>
             <h3>Redux/Toolkit</h3>
             <h3>NPM</h3>
-            <h3>Heroku(Proxy)</h3>
-            <h3>Firebase</h3>
-            <h3>IGDB API</h3>
-            <h3>0Auth</h3>
+            <h3>Spotify API</h3>
+            <h3>Genius API API</h3>
+            <h3>Material UI</h3>
           </div>
         </div>
-
-        
 
         <div class="project__stanza__prev-next">
           <p style="margin-bottom: 0.5rem">Next Project</p>
