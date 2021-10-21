@@ -126,6 +126,16 @@
       height: 100%;
       object-fit: cover;
       object-position: 50% 50%;
+
+      @media only screen and (max-width: $bp-large) {
+        max-width: 100%;
+      }
+    }
+
+    & .video__container {
+      @media only screen and (max-width: $bp-large) {
+        max-width: 100%;
+      }
     }
 
     &--text {
@@ -149,14 +159,6 @@
 
     &__container {
       margin-bottom: 24rem;
-    }
-
-    & .video__container {
-      max-width: 100%;
-
-      @media only screen and (max-width: $bp-large) {
-        max-width: 100%;
-      }
     }
 
     & img {

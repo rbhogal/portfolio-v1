@@ -1538,6 +1538,83 @@ nav {
   max-width: 100%;
 }
 
+.project__game-save__mobile-friendly-showcase {
+  margin: 24rem 0;
+}
+
+.project__game-save__mobile-friendly-showcase p {
+  margin: 1.2rem auto;
+}
+
+.project__game-save__mobile-friendly-showcase--grid-container {
+  align-items: flex-end;
+  display: flex;
+  gap: 5rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__mobile-friendly-showcase--grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__mobile-friendly-showcase--desktop {
+    grid-column: 1 /-1;
+    grid-row: 1 / 2;
+  }
+}
+
+.project__game-save__mobile-friendly-showcase--desktop-img {
+  width: 30vw;
+  border: 0.5vw solid black;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__mobile-friendly-showcase--desktop-img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__mobile-friendly-showcase--tablet {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.project__game-save__mobile-friendly-showcase--tablet-img {
+  width: 10vw;
+  border: 0.5vw solid black;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__mobile-friendly-showcase--tablet-img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__mobile-friendly-showcase--mobile {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.project__game-save__mobile-friendly-showcase--mobile-img {
+  width: 6vw;
+  border: 0.5vw solid black;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__mobile-friendly-showcase--mobile-img {
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
 .project__game-save__challenges-showcase {
   display: flex;
   justify-content: space-between;
@@ -2704,6 +2781,18 @@ nav {
   object-position: 50% 50%;
 }
 
+@media only screen and (max-width: 75em) {
+  .project__stanza__dashboard-analytics-showcase img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__dashboard-analytics-showcase .video__container {
+    max-width: 100%;
+  }
+}
+
 .project__stanza__dashboard-analytics-showcase--text {
   padding-right: 6rem;
   width: 70rem;
@@ -2729,16 +2818,6 @@ nav {
 
 .project__stanza__add-lyrics-showcase__container {
   margin-bottom: 24rem;
-}
-
-.project__stanza__add-lyrics-showcase .video__container {
-  max-width: 100%;
-}
-
-@media only screen and (max-width: 75em) {
-  .project__stanza__add-lyrics-showcase .video__container {
-    max-width: 100%;
-  }
 }
 
 .project__stanza__add-lyrics-showcase img {
