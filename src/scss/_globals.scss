@@ -20,7 +20,7 @@ body {
   display: grid;
   grid-template-rows: min-content min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
-  // overflow: hidden;
+  overflow: hidden;
 
   &.scroll-lock {
     overflow: hidden;
@@ -227,6 +227,7 @@ p {
   position: absolute;
   z-index: 9002;
   width: 100%;
+  visibility: hidden;
 
   &__text {
     margin: 0;

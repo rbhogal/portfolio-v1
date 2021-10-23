@@ -20,6 +20,7 @@ body {
   display: grid;
   grid-template-rows: min-content min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
+  overflow: hidden;
 }
 
 .container.scroll-lock {
@@ -211,6 +212,7 @@ p {
   position: absolute;
   z-index: 9002;
   width: 100%;
+  visibility: hidden;
 }
 
 .loading-intro__text {
@@ -286,6 +288,7 @@ body {
   display: grid;
   grid-template-rows: min-content min-content min-content;
   grid-template-columns: 3vw 1fr 3vw;
+  overflow: hidden;
 }
 
 .container.scroll-lock {
@@ -477,6 +480,7 @@ p {
   position: absolute;
   z-index: 9002;
   width: 100%;
+  visibility: hidden;
 }
 
 .loading-intro__text {
