@@ -19,7 +19,6 @@ gsap.to(bodyContainer, {
 
 // For mobile
 if (window.innerWidth <= 1200) {
-  console.log("ld");
   const projectsHeading = document.querySelector(".projects__heading");
   const projectCard01 = document.querySelector(".projects__card--01");
   const projectCard02 = document.querySelector(".projects__card--02");
@@ -33,20 +32,28 @@ if (window.innerWidth <= 1200) {
       top: "-100%",
       ease: Expo.easeInOut,
     })
-    .from(projectsHeading, {
-      delay: -0.1,
-      y: 60,
-      opacity: 0,
-      duration: 0.8,
-      ease: '"power3.out"',
-    })
-    .from([projectCard01, projectCard02, projectCard03, projectCard04], {
-      delay: -0.6,
-      opacity: 0,
-      duration: 0.8,
-      ease: '"power3.out"',
-      stagger: 0.2,
-    });
+    .from(
+      projectsHeading,
+      {
+        // delay: -0.1,
+        y: 60,
+        opacity: 0,
+        duration: 0.8,
+        ease: '"power3.out"',
+      },
+      "-=.1"
+    )
+    .from(
+      [projectCard01, projectCard02, projectCard03, projectCard04],
+      {
+        // delay: -0.6,
+        opacity: 0,
+        duration: 0.8,
+        ease: '"power3.out"',
+        stagger: 0.2,
+      },
+      "-=0.6"
+    );
 
   // Footer
   const footerTL = gsap.timeline();
