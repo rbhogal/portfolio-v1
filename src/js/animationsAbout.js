@@ -36,6 +36,11 @@ const nameHeader = document.querySelector(".hover-text-full-name");
 const aboutSubheading = document.querySelector(".about__intro__subheading");
 const aboutLineBreak = document.querySelector(".about__line-break");
 const aboutContentP = document.querySelectorAll(".about__intro__content p");
+const profilePic = document.querySelector(".profile-pic__container--mobile");
+const youSmartGif = document.querySelector(".you-smart-gif-mobile");
+const troyAbedHandshakeGif = document.querySelector(
+  ".troy-abed-handshake-gif--mobile"
+);
 
 ////////////////////////////////////////////////////
 // For Mobile
@@ -76,14 +81,25 @@ if (window.innerWidth <= 1200) {
       top: "-110%",
       ease: Expo.easeInOut,
     })
-    .from([nameHeader, aboutSubheading, aboutLineBreak, aboutContentP], {
-      delay: 0,
-      y: 16,
-      opacity: 0,
-      duration: 0.8,
-      ease: '"power3.out"',
-      stagger: 0.1,
-    });
+    .from(
+      [
+        nameHeader,
+        profilePic,
+        aboutSubheading,
+        aboutLineBreak,
+        aboutContentP,
+        youSmartGif,
+        troyAbedHandshakeGif,
+      ],
+      {
+        delay: 0,
+        y: 16,
+        opacity: 0,
+        duration: 0.8,
+        ease: '"power3.out"',
+        stagger: 0.1,
+      }
+    );
 
   //////////////////////////////////////////////////////////////////////////////
   // Footer

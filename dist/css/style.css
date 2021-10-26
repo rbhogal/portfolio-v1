@@ -1272,7 +1272,7 @@ nav {
 
 @media only screen and (max-width: 31.25em) {
   .about__intro__heading {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 
@@ -1339,8 +1339,61 @@ nav {
   }
 }
 
+.mobile-text--question {
+  margin-top: 4rem;
+}
+
 @media only screen and (max-width: 31.25em) {
   .hover-texts {
+    display: none;
+  }
+}
+
+.you-smart-gif-mobile {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 31.25em) {
+  .you-smart-gif-mobile {
+    display: none;
+  }
+}
+
+.troy-abed-handshake-gif-mobile {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 31.25em) {
+  .troy-abed-handshake-gif-mobile {
+    display: none;
+  }
+}
+
+.profile-pic__container--mobile {
+  position: relative;
+}
+
+.profile-pic__container--mobile img {
+  width: 100%;
+}
+
+.profile-pic__container--mobile .profile-pic {
+  height: auto;
+}
+
+.profile-pic__container--mobile .profile-pic--wave-emoji {
+  font-size: 4rem;
+  position: absolute;
+  left: 3.5rem;
+  bottom: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media only screen and (min-width: 31.25em) {
+  .profile-pic__container--mobile {
     display: none;
   }
 }
