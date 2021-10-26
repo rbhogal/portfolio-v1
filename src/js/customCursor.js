@@ -185,6 +185,7 @@ hamburgerMenuContainer.addEventListener("click", () => {
   // Open
   hamburgerBtn.classList.toggle("animate-btn");
   mobileMenu.classList.add("open");
+  body.classList.add("scroll-lock");
   mobileLink1.classList.add("fade-in-links--about");
   mobileLink2.classList.add("fade-in-links--projects");
 });

@@ -1448,6 +1448,12 @@ nav {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  .project__game-save__content {
+    padding: 0;
+  }
+}
+
 .project__game-save__banner {
   width: 100%;
   height: 30rem;
@@ -1933,6 +1939,12 @@ nav {
   }
 }
 
+@media only screen and (max-width: 31.25em) {
+  .project__burgerlords__content {
+    padding: 0;
+  }
+}
+
 .project__burgerlords__banner {
   width: 100%;
   height: 30rem;
@@ -2359,6 +2371,12 @@ nav {
 @media only screen and (max-width: 56.25em) {
   .project__bookmark__content {
     padding: 7vw;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__bookmark__content {
+    padding: 0;
   }
 }
 
@@ -2809,6 +2827,12 @@ nav {
 @media only screen and (max-width: 56.25em) {
   .project__stanza__content {
     padding: 7vw;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .project__stanza__content {
+    padding: 0;
   }
 }
 
