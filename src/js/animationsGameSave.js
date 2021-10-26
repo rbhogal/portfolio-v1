@@ -96,7 +96,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(searchGamesTL)
     .addTo(controller);
 
@@ -121,7 +120,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(viewGameInfoTL)
     .addTo(controller);
 
@@ -144,7 +142,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(authTL)
     .addTo(controller);
 
@@ -169,7 +166,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(mobileFriendlyTL)
     .addTo(controller);
 
@@ -194,7 +190,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(challengesTL)
     .addTo(controller);
 
@@ -219,7 +214,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(techTL)
     .addTo(controller);
 
@@ -240,7 +234,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(footerTL)
     .addTo(controller);
 }
@@ -333,7 +326,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(searchGamesTL)
     .addTo(controller);
 
@@ -358,7 +350,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(viewGameInfoTL)
     .addTo(controller);
 
@@ -381,7 +372,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(authTL)
     .addTo(controller);
 
@@ -406,7 +396,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(mobileFriendlyTL)
     .addTo(controller);
 
@@ -431,7 +420,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(challengesTL)
     .addTo(controller);
 
@@ -456,7 +444,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(techTL)
     .addTo(controller);
 
@@ -477,7 +464,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(footerTL)
     .addTo(controller);
 }

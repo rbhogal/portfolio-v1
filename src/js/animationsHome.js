@@ -172,7 +172,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(project3TL)
     .addTo(controller);
 
@@ -201,7 +200,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(project4TL)
     .addTo(controller);
 

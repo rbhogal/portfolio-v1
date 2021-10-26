@@ -19,9 +19,6 @@ gsap.to(bodyContainer, {
 
 // For mobile
 if (window.innerWidth <= 1200) {
-  const projectStanzaHeader = document.querySelector(
-    ".project__stanza__header"
-  );
   const projectStanzaHeading = document.querySelector(
     ".project__stanza__heading"
   );
@@ -79,7 +76,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(dashboardTL)
     .addTo(controller);
 
@@ -103,7 +99,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(addLyricsTL)
     .addTo(controller);
 
@@ -128,7 +123,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(challengesTL)
     .addTo(controller);
 
@@ -153,7 +147,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(techTL)
     .addTo(controller);
 
@@ -174,7 +167,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(footerTL)
     .addTo(controller);
 }
@@ -254,7 +246,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(dashboardTL)
     .addTo(controller);
 
@@ -278,7 +269,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(addLyricsTL)
     .addTo(controller);
 
@@ -303,7 +293,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(challengesTL)
     .addTo(controller);
 
@@ -328,7 +317,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(techTL)
     .addTo(controller);
 
@@ -349,7 +337,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(footerTL)
     .addTo(controller);
 }

@@ -96,7 +96,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(hoverEffectsTL)
     .addTo(controller);
 
@@ -121,7 +120,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(gridTL)
     .addTo(controller);
 
@@ -146,7 +144,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(featureTabsTL)
     .addTo(controller);
 
@@ -171,7 +168,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(faqTL)
     .addTo(controller);
 
@@ -196,7 +192,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(emailValidationTL)
     .addTo(controller);
 
@@ -221,7 +216,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(mobileFriendlyTL)
     .addTo(controller);
 
@@ -246,7 +240,6 @@ if (window.innerWidth <= 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(challengesTL)
     .addTo(controller);
 
@@ -383,7 +376,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(hoverEffectsTL)
     .addTo(controller);
 
@@ -408,7 +400,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(gridTL)
     .addTo(controller);
 
@@ -433,7 +424,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(featureTabsTL)
     .addTo(controller);
 
@@ -458,7 +448,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(faqTL)
     .addTo(controller);
 
@@ -483,7 +472,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(emailValidationTL)
     .addTo(controller);
 
@@ -508,7 +496,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(mobileFriendlyTL)
     .addTo(controller);
 
@@ -533,7 +520,6 @@ if (window.innerWidth > 1200) {
     triggerHook: 0,
     reverse: false,
   })
-    .addIndicators()
     .setTween(challengesTL)
     .addTo(controller);
 

@@ -5,17 +5,21 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "prod": "parcel build src/index.html"
+    "prod": "parcel build src/index.html",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rbhogal/personal-portfolio-01.git"
+    "url": "git+https://github.com/rbhogal/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rbhogal/personal-portfolio-01/issues"
+    "url": "https://github.com/rbhogal/portfolio/issues"
   },
-  "homepage": "https://github.com/rbhogal/personal-portfolio-01#readme"
+  "homepage": "https://rbhogal.github.io/portfolio/src",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
