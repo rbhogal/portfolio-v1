@@ -170,6 +170,18 @@ const mobileMenuTL = gsap.timeline();
 const mobileLink1 = document.querySelector(".mobile-menu__link--about");
 const mobileLink2 = document.querySelector(".mobile-menu__link--projects");
 
+const scrollLock = () => {
+  gsap.to(body, {
+    overflow: "hidden",
+  });
+};
+
+const scrollUnlock = () => {
+  gsap.to(body, {
+    overflow: "visible",
+  });
+};
+
 hamburgerMenuContainer.addEventListener("click", () => {
   // Close
   if (mobileMenu.classList.contains("open")) {
@@ -178,6 +190,7 @@ hamburgerMenuContainer.addEventListener("click", () => {
     body.classList.remove("scroll-lock");
     mobileLink1.classList.remove("fade-in-links--about");
     mobileLink2.classList.remove("fade-in-links--projects");
+    scrollUnlock();
 
     return;
   }
@@ -188,4 +201,5 @@ hamburgerMenuContainer.addEventListener("click", () => {
   body.classList.add("scroll-lock");
   mobileLink1.classList.add("fade-in-links--about");
   mobileLink2.classList.add("fade-in-links--projects");
+  scrollLock();
 });
