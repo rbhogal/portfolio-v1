@@ -20,151 +20,179 @@ const loadingLastName = document.querySelector(
 );
 
 const bodyContainer = document.querySelector(".container");
-const header = document.querySelector(".header");
-const aboutLink = document.querySelector(".navbar-item__about");
-const footer = document.querySelector(".footer");
+
+// Header
+const header = document.querySelector(".home__header");
+const navLink = document.querySelectorAll(".nav__link");
+
 const loadingCoverTop = document.querySelector(".loading-intro__cover--top");
-
-//Home
-// const projectsBtn = document.querySelector(".projects__btn");
-
-//Projects
-// const projectsNumber02 = document.querySelector(".number__02");
-// const projectsHeading = document.querySelector(".projects__heading");
-// const projectsCard = document.querySelectorAll(".projects__card");
 
 // Loading Text (Name) - Enter
 const loadingScreenTL = gsap.timeline();
 const loadingNameEnterTL = gsap.timeline();
 
-loadingNameEnterTL
-  .from(loadingFirstName, {
+// About
+const nameHeader = document.querySelector(".hover-text-full-name");
+const aboutSubheading = document.querySelector(".about__intro__subheading");
+const aboutLineBreak = document.querySelector(".about__line-break");
+const aboutContentP = document.querySelectorAll(".about__intro__content p");
+
+////////////////////////////////////////////////////
+// For Mobile
+if (window.innerWidth <= 1200) {
+  loadingNameEnterTL
+    .from(loadingFirstName, {
+      duration: 1.5,
+      y: 26,
+      ease: Expo.easeInOut,
+    })
+    .to([loadingCoverTop], {
+      duration: 0.5,
+      y: -100,
+      ease: Expo.ease,
+    });
+
+  gsap.from(loadingLastName, {
     duration: 1.5,
-    y: 26,
+    y: -25,
     ease: Expo.easeInOut,
-  })
-  .to([loadingCoverTop], {
-    duration: 0.5,
-    y: -100,
-    ease: Expo.ease,
   });
 
-gsap.from(loadingLastName, {
-  duration: 1.5,
-  y: -25,
-  ease: Expo.easeInOut,
-});
+  // Loading Text (Name) - Exit
+  const loadingNameTL = gsap.timeline();
 
-// Loading Text (Name) - Exit
-const loadingNameTL = gsap.timeline();
-
-loadingNameTL.to([loadingFirstName, loadingLastName], {
-  duration: 1,
-  delay: 1.5,
-  ease: Expo.easeInOut,
-  y: -25,
-});
-
-// Loading Screen Exit
-loadingScreenTL.to([loadingScreen, loadingIntro], {
-  duration: 1.5,
-  delay: 1.5,
-  top: "-110%",
-  ease: Expo.easeInOut,
-});
-// .from([projectsNumber02, projectsHeading], {
-//   opacity: 0,
-//   delay: -0.7,
-//   y: 110,
-//   duration: 1.5,
-//   ease: "power3.out",
-//   stagger: 0.2,
-// });
-
-gsap.to(bodyContainer, {
-  duration: 0,
-  delay: 2.3,
-  overflow: "visible",
-});
-
-/*
-//Projects Section
-const projectsHeaderTL = gsap.timeline();
-
-// projectsHeaderTL.
-
-const projectCardsTL = gsap.timeline();
-
-projectCardsTL.from(projectsCard, {
-  opacity: 0,
-  y: 200,
-  duration: 0.3,
-  ease: "power3.out",
-  stagger: 0.2,
-});
- */
-const controller = new ScrollMagic.Controller();
-/* 
-new ScrollMagic.Scene({
-  triggerElement: "#projectsBtn",
-  triggerHook: 0,
-  reverse: true,
-})
-  .addIndicators()
-  .setTween(projectsHeaderTL)
-  .addTo(controller);
-
-new ScrollMagic.Scene({
-  triggerElement: "#projectsBtn",
-  triggerHook: 0,
-  reverse: true,
-})
-  .addIndicators()
-  .setTween(projectCardsTL)
-  .addTo(controller);
- */
-// .from([aboutLink, footer, projectsBtn], {
-//   y: 50,
-//   duration: 1.5,
-//   ease: "power3.inOut",
-// });
-
-/* 
-  gsap.to(loadingScreenAddition, {
-    duration: 2.5,
-    delay: 2.3,
-    top: "-110%",
+  loadingNameTL.to([loadingFirstName, loadingLastName], {
+    duration: 1,
+    delay: 1.5,
     ease: Expo.easeInOut,
+    y: -25,
+  });
+
+  // Loading Screen Exit
+  loadingScreenTL
+    .to([loadingScreen, loadingIntro], {
+      duration: 1.5,
+      delay: 1.5,
+      top: "-110%",
+      ease: Expo.easeInOut,
+    })
+    .from([nameHeader, aboutSubheading, aboutLineBreak, aboutContentP], {
+      delay: 0,
+      y: 16,
+      opacity: 0,
+      duration: 0.8,
+      ease: '"power3.out"',
+      stagger: 0.1,
+    });
+
+  //////////////////////////////////////////////////////////////////////////////
+  // Footer
+
+  const footerTL = gsap.timeline();
+  const footer = document.querySelector(".footer");
+  const controller = new ScrollMagic.Controller();
+
+  footerTL.from(footer, {
+    duration: 0.8,
+    opacity: 0,
+    ease: Expo.out,
+  });
+
+  new ScrollMagic.Scene({
+    triggerElement: "#footerScrollTrigger",
+    triggerHook: 0,
+    reverse: false,
   })
-*/
+    .setTween(footerTL)
+    .addTo(controller);
 
-// pageLoadTL.to([loadingScreen, loadingIntro], {
-//   duration: 4,
-//   delay: 2,
-//   top: "-110%",
-//   ease: Expo.easeInOut,
-// });
-// .to(loadingScreen, {
-//   duration: 4,
-//   delay: 6.6,
-//   top: "-110%",
-//   ease: Expo.easeInOut,
-// });
+  gsap.to(bodyContainer, {
+    duration: 0,
+    delay: 2.3,
+    overflow: "visible",
+  });
+}
 
-// gsap.from(loadingIntro, {
-//   duration: 3,
-//   delay: 8.4,
-//   opacity: 0,
-//   y: 20,
-//   top: "-110%",
-//   ease: Expo.easeInOut,
-// });
+if (window.innerWidth > 1200) {
+  loadingNameEnterTL
+    .from(loadingFirstName, {
+      duration: 1.5,
+      y: 26,
+      ease: Expo.easeInOut,
+    })
+    .to([loadingCoverTop], {
+      duration: 0.5,
+      y: -100,
+      ease: Expo.ease,
+    });
 
-// gsap.from(loadingIntro, {
-//   duration: 3,
-//   delay: 8.4,
-//   opacity: 0,
-//   y: 20,
-//   top: "-110%",
-//   ease: Expo.easeInOut,
-// });
+  gsap.from(loadingLastName, {
+    duration: 1.5,
+    y: -25,
+    ease: Expo.easeInOut,
+  });
+
+  // Loading Text (Name) - Exit
+  const loadingNameTL = gsap.timeline();
+
+  loadingNameTL.to([loadingFirstName, loadingLastName], {
+    duration: 1,
+    delay: 1.5,
+    ease: Expo.easeInOut,
+    y: -25,
+  });
+
+  // Loading Screen Exit
+  loadingScreenTL
+    .to([loadingScreen, loadingIntro], {
+      duration: 1.5,
+      delay: 1.5,
+      top: "-110%",
+      ease: Expo.easeInOut,
+    })
+    .from(
+      [header, navLink],
+      {
+        y: 16,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.inOut",
+      },
+      "-=.5"
+    )
+    .from([nameHeader, aboutSubheading, aboutLineBreak, aboutContentP], {
+      delay: 0,
+      y: 16,
+      opacity: 0,
+      duration: 0.8,
+      ease: '"power3.out"',
+      stagger: 0.1,
+    });
+
+  //////////////////////////////////////////////////////////////////////////////
+  // Footer
+
+  const footerTL = gsap.timeline();
+  const footer = document.querySelector(".footer");
+  const controller = new ScrollMagic.Controller();
+
+  footerTL.from(footer, {
+    duration: 0.8,
+    opacity: 0,
+    ease: Expo.out,
+  });
+
+  new ScrollMagic.Scene({
+    triggerElement: "#footerScrollTrigger",
+    triggerHook: 0,
+    reverse: false,
+  })
+    .setTween(footerTL)
+    .addTo(controller);
+
+  gsap.to(bodyContainer, {
+    duration: 0,
+    delay: 2.3,
+    overflow: "visible",
+  });
+}

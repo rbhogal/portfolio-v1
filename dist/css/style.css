@@ -1259,11 +1259,47 @@ nav {
   align-items: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .about__intro__heading {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__intro__heading {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .about__intro__heading {
+    font-size: 4rem;
+  }
+}
+
 .about__intro__subheading {
   width: 50%;
   letter-spacing: 0.2rem;
   letter-spacing: 0.322vw;
   line-height: 2.8rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .about__intro__subheading {
+    width: 73%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about__intro__subheading {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .about__intro__subheading {
+    width: 100%;
+  }
 }
 
 .about__intro__content {
@@ -1298,15 +1334,16 @@ nav {
   font-size: 7rem;
 }
 
-.number__03 {
-  font-size: 19rem;
-  margin: 0;
-  font-weight: 300;
-  line-height: 0.8;
-  margin-bottom: 5rem;
-  border-bottom: 5px solid #faf9f6;
-  width: min-content;
-  padding-bottom: 5rem;
+@media only screen and (min-width: 31.25em) {
+  .mobile-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .hover-texts {
+    display: none;
+  }
 }
 
 .project__game-save {

@@ -25,9 +25,6 @@ if (window.innerWidth <= 1200) {
   const projectBurgerlordsHeading = document.querySelector(
     ".project__burgerlords__heading"
   );
-  const projectBurgerlordsHeader = document.querySelector(
-    ".project__burgerlords__header"
-  );
   const projectBurgerlordsContentP = document.querySelectorAll(
     ".project__burgerlords__content p"
   );
