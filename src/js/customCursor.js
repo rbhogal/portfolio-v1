@@ -41,6 +41,12 @@ const trailEffect = (e) => {
 
 trailEffect();
 
+// Mobile (disable custom cursors)
+if (window.innerWidth <= 1200) {
+  cursor.style.display = "none";
+  cursor2.style.display = "none";
+}
+
 /* 
 // Regular Cursor Movement
 const editCursor = (e) => {
@@ -152,6 +158,7 @@ if (location.pathname === "/src/about.html") {
 
 //////////////////////////////////////////////////////////////////
 //Hamburger Menu
+
 const hamburgerMenuContainer = document.querySelector(
   ".home__hamburger-btn__container"
 );
@@ -159,9 +166,25 @@ const hamburgerBtn = document.querySelector(".home__hamburger-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const body = document.querySelector(".container");
 
+const mobileMenuTL = gsap.timeline();
+const mobileLink1 = document.querySelector(".mobile-menu__link--about");
+const mobileLink2 = document.querySelector(".mobile-menu__link--projects");
+
 hamburgerMenuContainer.addEventListener("click", () => {
-  console.log("click");
+  // Close
+  if (mobileMenu.classList.contains("open")) {
+    hamburgerBtn.classList.toggle("animate-btn");
+    mobileMenu.classList.remove("open");
+    body.classList.remove("scroll-lock");
+    mobileLink1.classList.remove("fade-in-links--about");
+    mobileLink2.classList.remove("fade-in-links--projects");
+
+    return;
+  }
+
+  // Open
   hamburgerBtn.classList.toggle("animate-btn");
-  mobileMenu.classList.toggle("open");
-  body.classList.toggle("scroll-lock");
+  mobileMenu.classList.add("open");
+  mobileLink1.classList.add("fade-in-links--about");
+  mobileLink2.classList.add("fade-in-links--projects");
 });

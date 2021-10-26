@@ -8,6 +8,7 @@
   width: 100%;
   width: min-content;
   mix-blend-mode: difference;
+  z-index: 9003;
 
   & span {
     font-family: $font-secondary;

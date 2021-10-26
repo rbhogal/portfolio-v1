@@ -26,10 +26,10 @@
     <div class="mobile-menu">
       <div class="mobile-menu__content">
         <a class="mobile-menu__link" href="./about.html">
-          <h2>About</h2>
+          <h2 class="mobile-menu__link--about">About</h2>
         </a>
         <a class="mobile-menu__link" href="./index.html">
-          <h2>Projects</h2>
+          <h2 class="mobile-menu__link--projects">Projects</h2>
         </a>
       </div>
 
@@ -132,14 +132,17 @@
           </a>
         </div>
 
-        <div class="project__game-save__banner">
+        <div id="searchGamesTrigger" class="project__game-save__banner">
           <img
             src="../images/projects/game-save/Game-Save__BOTW_game_page.png"
             alt="project game-save banner"
           />
         </div>
 
-        <div class="project__game-save__search-showcase">
+        <div
+          id="viewGameInfoTrigger"
+          class="project__game-save__search-showcase"
+        >
           <div class="project__game-save__search-showcase--text">
             <h2 class="project__game-save__subheading">Search Games</h2>
             <p>
@@ -157,7 +160,10 @@
           </div>
         </div>
 
-        <div class="project__game-save__view-game-info-showcase__container">
+        <div
+          id="authTrigger"
+          class="project__game-save__view-game-info-showcase__container"
+        >
           <div class="project__game-save__view-game-info-showcase">
             <div class="video__container">
               <video
@@ -201,8 +207,11 @@
           </div>
 
           <div class="project__game-save__auth-showcase--text">
-            <h2 class="project__game-save__subheading">
-              Authentication (OAuth) // Save game Titles
+            <h2
+              id="mobileFriendlyTrigger"
+              class="project__game-save__subheading"
+            >
+              Authentication (OAuth) / Save game Titles
             </h2>
             <p>
               Sign in with user authentication via Google (firebase) and save or
@@ -212,7 +221,10 @@
           </div>
         </div>
 
-        <div class="project__game-save__mobile-friendly-showcase">
+        <div
+          id="challengesTrigger"
+          class="project__game-save__mobile-friendly-showcase"
+        >
           <div
             class="project__game-save__mobile-friendly-showcase--grid-container"
           >
@@ -252,7 +264,7 @@
           </div>
         </div>
 
-        <div class="project__game-save__challenges-showcase">
+        <div id="techTrigger" class="project__game-save__challenges-showcase">
           <div class="project__game-save__challenges-showcase--text">
             <h2 class="project__game-save__subheading">Challenges</h2>
             <p>
@@ -298,7 +310,7 @@
           </div>
         </div>
 
-        <div class="project__game-save__tech-showcase">
+        <div id="footerTrigger" class="project__game-save__tech-showcase">
           <h2 class="project__game-save__subheading">Tech</h2>
           <div class="project__game-save__tech-showcase--tech">
             <h3>JSX</h3>
@@ -441,8 +453,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <script defer type="module" src="./js/animations.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+  <script defer type="module" src="./js/animationsGameSave.js"></script>
   <script defer type="module" src="./js/customCursor.js"></script>
   <script
     src="https://kit.fontawesome.com/d98540feba.js"

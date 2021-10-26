@@ -32,10 +32,10 @@
     <div class="mobile-menu">
       <div class="mobile-menu__content">
         <a class="mobile-menu__link" href="./about.html">
-          <h2>About</h2>
+          <h2 class="mobile-menu__link--about">About</h2>
         </a>
         <a class="mobile-menu__link" href="./index.html">
-          <h2>Projects</h2>
+          <h2 class="mobile-menu__link--projects">Projects</h2>
         </a>
       </div>
 
@@ -100,14 +100,23 @@
 
       <div class="projects__card__container">
         <a class="hover-this" href="./project-stanza.html">
-          <div class="projects__card projects__card--01">
+          <div
+            id="footerMobileTrigger"
+            class="projects__card projects__card--01"
+          >
             <div class="projects__card__text">
               <div class="projects__card__wrapper">
-                <div class="projects__card__headings">
+                <div
+                  class="projects__card__headings projects__card__headings--01"
+                >
                   <h3>Stanza</h3>
                   <h3>01</h3>
                 </div>
-                <div class="projects__card__subheading">
+                <div
+                  class="
+                    projects__card__subheading projects__card__subheading--01
+                  "
+                >
                   <h4>Web App using Spotify & Genius APIs (Admin Tool)</h4>
                 </div>
               </div>
@@ -122,14 +131,20 @@
         </a>
 
         <a class="hover-this" href="./project-game-save.html">
-          <div id="projectsTrigger" class="projects__card projects__card--02">
+          <div id="project3Trigger" class="projects__card projects__card--02">
             <div class="projects__card__text">
               <div class="projects__card__wrapper">
-                <div class="projects__card__headings">
+                <div
+                  class="projects__card__headings projects__card__headings--02"
+                >
                   <h3>Game Save</h3>
                   <h3>02</h3>
                 </div>
-                <div class="projects__card__subheading">
+                <div
+                  class="
+                    projects__card__subheading projects__card__subheading--02
+                  "
+                >
                   <h4>Web App using IGDB API</h4>
                 </div>
               </div>
@@ -144,14 +159,20 @@
         </a>
 
         <a href="./project-burgerlords.html" class="hover-this">
-          <div class="projects__card projects__card--03">
+          <div id="project4Trigger" class="projects__card projects__card--03">
             <div class="projects__card__text">
               <div class="projects__card__wrapper">
-                <div class="projects__card__headings">
+                <div
+                  class="projects__card__headings projects__card__headings--03"
+                >
                   <h3>Burgerlords</h3>
                   <h3>03</h3>
                 </div>
-                <div class="projects__card__subheading">
+                <div
+                  class="
+                    projects__card__subheading projects__card__subheading--03
+                  "
+                >
                   <h4>Restaurant Landing Page</h4>
                 </div>
               </div>
@@ -169,11 +190,17 @@
           <div id="footerTrigger" class="projects__card projects__card--04">
             <div class="projects__card__text">
               <div class="projects__card__wrapper">
-                <div class="projects__card__headings">
+                <div
+                  class="projects__card__headings projects__card__headings--04"
+                >
                   <h3>Bookmark</h3>
                   <h3>04</h3>
                 </div>
-                <div class="projects__card__subheading">
+                <div
+                  class="
+                    projects__card__subheading projects__card__subheading--04
+                  "
+                >
                   <h4>Chrome Extension Landing Page</h4>
                 </div>
               </div>
@@ -297,5 +324,5 @@
     crossorigin="anonymous"
   ></script>
   <script defer type="module" src="./js/customCursor.js"></script>
-  <script defer type="module" src="./js/animations.js"></script>
+  <script defer type="module" src="./js/animationsHome.js"></script>
 </html>
