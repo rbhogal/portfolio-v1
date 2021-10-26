@@ -37,7 +37,7 @@ if (window.innerWidth <= 1200) {
     .to(loadingScreen, {
       duration: 0.75,
       delay: 0.75,
-      top: "-100%",
+      top: "-110%",
       ease: Expo.easeInOut,
     })
     .from([projectBurgerlordsHeading, projectBurgerlordsContentP], {
@@ -256,7 +256,7 @@ if (window.innerWidth > 1200) {
     .to(loadingScreen, {
       duration: 0.75,
       delay: 0.75,
-      top: "-100%",
+      top: "-110%",
       ease: Expo.easeInOut,
     })
     .from([header, navLink], {
