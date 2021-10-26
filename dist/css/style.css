@@ -2835,13 +2835,11 @@ nav {
 
 .project__stanza__add-lyrics-showcase--text {
   padding-left: 6rem;
-  max-width: 35rem;
 }
 
 @media only screen and (max-width: 75em) {
   .project__stanza__add-lyrics-showcase--text {
     padding-left: 0;
-    max-width: 100%;
   }
 }
 

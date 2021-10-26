@@ -19,12 +19,6 @@
     font-size: 19rem;
     font-weight: 300;
     margin: 0;
-    // word-break: break-all;
-    // line-height: 0.8;
-    // position: fixed;
-    // top: 38rem;
-    // left: 11vw;
-    //  width: 30rem;
 
     //Option 2
     // font-family: "Bebas Neue", cursive;
@@ -83,9 +77,18 @@
       }
     }
 
-    &--03 {
-      // margin-right: 8vw;
-    }
+    // &--01 {
+    //   visibility: hidden;
+    // }
+    // &--02 {
+    //   visibility: hidden;
+    // }
+    // &--03 {
+    //   visibility: hidden;
+    // }
+    // &--04 {
+    //   visibility: hidden;
+    // }
 
     &__text {
       width: 100%;

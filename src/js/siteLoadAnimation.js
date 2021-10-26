@@ -19,15 +19,11 @@ const loadingLastName = document.querySelector(
   ".loading-intro__text--last-name"
 );
 
-//Body
 const bodyContainer = document.querySelector(".container");
-
-//Header
 const header = document.querySelector(".header");
 const aboutLink = document.querySelector(".navbar-item__about");
-
-//Footer
 const footer = document.querySelector(".footer");
+const loadingCoverTop = document.querySelector(".loading-intro__cover--top");
 
 //Home
 // const projectsBtn = document.querySelector(".projects__btn");
@@ -39,12 +35,19 @@ const footer = document.querySelector(".footer");
 
 // Loading Text (Name) - Enter
 const loadingScreenTL = gsap.timeline();
+const loadingNameEnterTL = gsap.timeline();
 
-gsap.from(loadingFirstName, {
-  duration: 1.5,
-  y: 26,
-  ease: Expo.easeInOut,
-});
+loadingNameEnterTL
+  .from(loadingFirstName, {
+    duration: 1.5,
+    y: 26,
+    ease: Expo.easeInOut,
+  })
+  .to([loadingCoverTop], {
+    duration: 0.5,
+    y: -100,
+    ease: Expo.ease,
+  });
 
 gsap.from(loadingLastName, {
   duration: 1.5,
