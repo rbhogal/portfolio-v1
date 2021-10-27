@@ -81,20 +81,20 @@ link.forEach((link) => {
 });
 
 // Cursor animations or View Project inks
-linkViewProject.forEach((link) => {
-  link.addEventListener("mouseover", () => {
-    cursor.classList.add("animate-cursor-view-project");
-    cursor2.classList.add("animate-cursor-2");
-    cursorText.classList.add("cursor-view-project-text-active");
-  });
-  link.addEventListener("mouseleave", () => {
-    cursor.classList.remove("animate-cursor-view-project");
-    cursor2.classList.remove("animate-cursor-2");
-    cursorText.classList.remove("cursor-view-project-text-active");
-  });
-});
+// linkViewProject.forEach((link) => {
+//   link.addEventListener("mouseover", () => {
+//     cursor.classList.add("animate-cursor-view-project");
+//     cursor2.classList.add("animate-cursor-2");
+//     cursorText.classList.add("cursor-view-project-text-active");
+//   });
+//   link.addEventListener("mouseleave", () => {
+//     cursor.classList.remove("animate-cursor-view-project");
+//     cursor2.classList.remove("animate-cursor-2");
+//     cursorText.classList.remove("cursor-view-project-text-active");
+//   });
+// });
 
-// Cursor animations for footer email
+// Cursor animations for BIG Cursor - footer email & next project link
 
 linkBig.forEach((link) => {
   link.addEventListener("mouseover", () => {
