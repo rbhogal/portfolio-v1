@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/rbhogal/rbhogal.github.io/issues"
   },
-  "homepage": "https://rbhogal.github.io",
+  "homepage": "https://rbhogal.github.io/src",
   "dependencies": {
     "gh-pages": "^3.2.3"
   }
