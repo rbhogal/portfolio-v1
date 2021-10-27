@@ -115,7 +115,7 @@ const troyAbedHandshakeGif = document.querySelector(".troy-abed-handshake-gif");
 const profilePic = document.querySelector(".profile-pic__container");
 
 // Cursor animations for you smart gif & profile pic
-if (location.pathname === "/about.html") {
+if (location.pathname === "/src/about.html") {
   text1.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor-gif");
     cursor2.classList.add("animate-cursor-2");
@@ -131,7 +131,6 @@ if (location.pathname === "/about.html") {
   // Cursor animations for troy and abed gif
   text2.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor-gif");
-
     cursor2.classList.add("animate-cursor-2");
     troyAbedHandshakeGif.classList.add("gif-active");
   });

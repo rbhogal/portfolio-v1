@@ -130,6 +130,7 @@ body {
 .animate-cursor-gif {
   mix-blend-mode: unset;
   border-radius: 100%;
+  background-color: transparent;
   padding: 0;
   display: block;
 }
@@ -419,6 +420,7 @@ body {
 .animate-cursor-gif {
   mix-blend-mode: unset;
   border-radius: 100%;
+  background-color: transparent;
   padding: 0;
   display: block;
 }
