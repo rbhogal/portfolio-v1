@@ -115,7 +115,7 @@ const troyAbedHandshakeGif = document.querySelector(".troy-abed-handshake-gif");
 const profilePic = document.querySelector(".profile-pic__container");
 
 // Cursor animations for you smart gif & profile pic
-if (location.pathname === "/portfolio/src/about.html") {
+if (location.pathname === "/about.html") {
   text1.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor-gif");
     cursor2.classList.add("animate-cursor-2");
