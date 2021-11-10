@@ -35,6 +35,10 @@ const troyAbedHandshakeGif = document.querySelector(
 );
 const easterEggsHint = document.querySelector(".easter-eggs-hint");
 
+gsap.to(loadingIntro, {
+  autoAlpha: 1,
+});
+
 ////////////////////////////////////////////////////
 // For Mobile
 if (window.innerWidth <= 1200) {
@@ -124,10 +128,6 @@ if (window.innerWidth <= 1200) {
 
 // Desktop
 if (window.innerWidth > 1200) {
-  gsap.to(loadingIntro, {
-    autoAlpha: 1,
-  });
-
   loadingNameEnterTL
     .from(loadingFirstName, {
       duration: 1.5,
