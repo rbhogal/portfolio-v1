@@ -288,6 +288,46 @@ p {
   animation: fade-in-links 0.6s ease-in-out forwards;
 }
 
+.easter-eggs-hint {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .easter-eggs-hint {
+    display: none;
+  }
+}
+
+.easter-eggs-hint--text {
+  position: fixed;
+  right: 10rem;
+  bottom: 2rem;
+  color: #faf9f6;
+  opacity: 0;
+  letter-spacing: 0.322vw;
+  line-height: 2.8rem;
+  transition: all 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+.easter-eggs-hint--text.open {
+  opacity: 1;
+}
+
+.easter-eggs-hint svg {
+  fill: #faf9f6;
+  opacity: 0.5;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.easter-eggs-hint svg:hover {
+  opacity: 1;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -576,6 +616,46 @@ p {
 
 .fade-in-links--projects {
   animation: fade-in-links 0.6s ease-in-out forwards;
+}
+
+.easter-eggs-hint {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .easter-eggs-hint {
+    display: none;
+  }
+}
+
+.easter-eggs-hint--text {
+  position: fixed;
+  right: 10rem;
+  bottom: 2rem;
+  color: #faf9f6;
+  opacity: 0;
+  letter-spacing: 0.322vw;
+  line-height: 2.8rem;
+  transition: all 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+.easter-eggs-hint--text.open {
+  opacity: 1;
+}
+
+.easter-eggs-hint svg {
+  fill: #faf9f6;
+  opacity: 0.5;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.easter-eggs-hint svg:hover {
+  opacity: 1;
 }
 
 .home__hamburger-btn,

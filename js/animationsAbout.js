@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-  // wait until window, stylesheets, images, links, and other media assets are loaded
-  window.onload = function () {
-    // Your code and/or method calls here
-    document.getElementById("loadingIntro").style.visibility = "visible";
-  };
-});
-
 //Loading screen
 const loadingScreen = document.querySelector(".loading-screen");
 const loadingScreenAddition = document.querySelector(
@@ -41,6 +33,7 @@ const youSmartGif = document.querySelector(".you-smart-gif-mobile");
 const troyAbedHandshakeGif = document.querySelector(
   ".troy-abed-handshake-gif--mobile"
 );
+const easterEggsHint = document.querySelector(".easter-eggs-hint");
 
 ////////////////////////////////////////////////////
 // For Mobile
@@ -129,7 +122,12 @@ if (window.innerWidth <= 1200) {
   });
 }
 
+// Desktop
 if (window.innerWidth > 1200) {
+  gsap.to(loadingIntro, {
+    autoAlpha: 1,
+  });
+
   loadingNameEnterTL
     .from(loadingFirstName, {
       duration: 1.5,
@@ -176,14 +174,23 @@ if (window.innerWidth > 1200) {
       },
       "-=.5"
     )
-    .from([nameHeader, aboutSubheading, aboutLineBreak, aboutContentP], {
-      delay: 0,
-      y: 16,
-      opacity: 0,
-      duration: 0.8,
-      ease: '"power3.out"',
-      stagger: 0.1,
-    });
+    .from(
+      [
+        nameHeader,
+        aboutSubheading,
+        aboutLineBreak,
+        aboutContentP,
+        easterEggsHint,
+      ],
+      {
+        delay: 0,
+        y: 16,
+        opacity: 0,
+        duration: 0.8,
+        ease: '"power3.out"',
+        stagger: 0.1,
+      }
+    );
 
   //////////////////////////////////////////////////////////////////////////////
   // Footer
@@ -212,3 +219,15 @@ if (window.innerWidth > 1200) {
     overflow: "visible",
   });
 }
+
+//////////////////////////////////////////////////////////////////////////////
+// Easter Eggs Hint
+
+const easterEggsHintText = document.querySelector(".easter-eggs-hint--text");
+
+easterEggsHint.addEventListener("mouseover", () => {
+  easterEggsHintText.classList.add("open");
+});
+easterEggsHint.addEventListener("mouseleave", () => {
+  easterEggsHintText.classList.remove("open");
+});
