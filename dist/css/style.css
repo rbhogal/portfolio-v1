@@ -1401,6 +1401,13 @@ nav {
   align-items: center;
   margin: 4rem 0;
   text-align: center;
+  height: 26vh;
+}
+
+@media only screen and (max-width: 75em) {
+  .about__intro__content {
+    height: 100%;
+  }
 }
 
 .about h1 {
