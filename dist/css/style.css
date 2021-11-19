@@ -254,6 +254,7 @@ p {
 .mobile-menu__content a {
   text-decoration: none;
   color: #faf9f6;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-menu__content h2 {
@@ -584,6 +585,7 @@ p {
 .mobile-menu__content a {
   text-decoration: none;
   color: #faf9f6;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-menu__content h2 {
@@ -740,6 +742,7 @@ p {
   background: #faf9f6;
   transition: all 0ms 300ms;
   z-index: 9002;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .home__hamburger-btn__container {
