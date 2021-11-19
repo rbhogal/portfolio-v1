@@ -87,6 +87,7 @@ $bar-spacing: 1rem;
     background: rgba(250, 249, 246, 1);
     transition: all 0ms 300ms;
     z-index: 9002;
+    -webkit-tap-highlight-color: transparent;
 
     &__container {
       display: none;
