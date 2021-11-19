@@ -266,7 +266,7 @@ p {
   padding-top: 7rem;
 
   &__link {
-    user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
   &__content {

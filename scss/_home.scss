@@ -8,7 +8,6 @@ $bar-spacing: 1rem;
 .home__hamburger-btn:before {
   width: $bar-width;
   height: $bar-height;
-  user-select: none;
 }
 
 .home {
@@ -98,7 +97,7 @@ $bar-spacing: 1rem;
       width: $bar-width;
       height: $bar-height + $bar-spacing * 2;
       cursor: pointer;
-      // margin-left: auto;
+      -webkit-tap-highlight-color: transparent;
 
       @media only screen and (max-width: $bp-medium) {
         display: block;
