@@ -265,6 +265,10 @@ p {
   padding: 2.5rem;
   padding-top: 7rem;
 
+  &__link {
+    user-select: none;
+  }
+
   &__content {
     & a {
       text-decoration: none;
