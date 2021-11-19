@@ -109,11 +109,11 @@
 
         <p id="dashboardTrigger">An admin tool for the Stanza mobile app.</p>
         <p>
-          Client required an admin tool for multiple admin/moderators with a
-          secure login in order to view analytics from their database, create,
-          add, delete, and edit content for their mobile app. The app required
-          consuming two APIs (Spotify and Genius APIs) along with sending data
-          back and forth from their GraphQL based backend.
+          Client required an admin tool for multiple admin/moderators. Created a
+          secure login page, dashboard connecting to thier GraphQL backend
+          database displaying analytics, multiple tools to create, add, delete,
+          and edit content for their mobile app. The app required consuming two
+          APIs (Spotify and Genius APIs).
         </p>
         <p>
           Developed alongside the backend dev and UX designer as the sole
@@ -139,9 +139,9 @@
             <h2 class="project__stanza__subheading">Dashboard Analytics</h2>
             <p>
               The dashboard allows admins to view and keep track of their data
-              stored in their database. Cards components are applied to a grid
-              layout allowing for easily adding in additional data for the
-              future.
+              stored in their database such as content and user data. Card
+              components are applied to a grid layout allowing for easily adding
+              in additional data for the future.
             </p>
           </div>
 
@@ -181,9 +181,9 @@
                 provided by the Spotify API. Results are displayed in cards.
               </p>
               <p>
-                Selecting an item then leads to another page where content is
-                fetched using the Genius API. Selecting an album or playlist
-                allows you to cycle through songs.
+                Selecting an item leads to another page where content is fetched
+                using the Genius API. Selecting an album or playlist allows you
+                to cycle through songs.
               </p>
               <p>
                 Admin/mods can then select the data they want, assign their
@@ -209,7 +209,8 @@
               I ran into an issue where upon refresh that same state in a
               useState hook was being updated in more places than one (at the
               same time), causing a bug in my code. Thankfully due to past
-              experience I was quickly able to identify and rectify the bug.
+              experience I was quickly able to identify and rectify the bug
+              making sure state was only updated in one place.
             </p>
             <p>
               I was given my choice of visual library or CSS to use, I decided
