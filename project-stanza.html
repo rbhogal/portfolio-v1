@@ -106,23 +106,21 @@
 
       <div class="project__stanza__content">
         <h2 class="project__stanza__heading">Stanza</h2>
+
         <p id="dashboardTrigger">An admin tool for the Stanza mobile app.</p>
         <p>
-          This was made for a client. They required an admin tool for multiple
-          admin/moderators with a secure login in order to view their analytics
-          from their database, and to create, add, delete, and edit content for
-          their mobile app. The app required accessing two APIs, the Spotify and
-          Genius APIs, and also sending data back and forth from their GraphQL
-          based backend. My role as the sole frontend/UI developer was to work
-          alongside the backend dev, and to develop and implement a solution for
-          the frontend given the requirements and wireframe, as well as to
-          provide an aesthetically pleasing UI, all with future scalability in
-          mind.
+          Client required an admin tool for multiple admin/moderators with a
+          secure login in order to view analytics from their database, create,
+          add, delete, and edit content for their mobile app. The app required
+          accessing two APIs (Spotify and Genius APIs) along with sending data
+          back and forth from their GraphQL based backend. Developed alongside
+          the backend dev and UX designer as the sole frontend developer,
+          provided and implemented solutions for the frontend given the
+          requirements, and provided direction on an aesthetically pleasing UI,
+          all coded with future scalability in mind.
         </p>
-        <p>
-          I decided to learn and use a visual library, Material UI, and the app
-          was written using React JS and Redux.
-        </p>
+
+        <p>React / Redux / NPM / Spotify API / Genius API / Material UI</p>
 
         <div class="project__stanza__banner">
           <img
@@ -157,7 +155,7 @@
             <div class="video__container">
               <video
                 width="100%"
-                autoplay
+                autoplay="autoplay"
                 loop="true"
                 style="border-style: none"
                 title="Stanza - Add"
@@ -175,24 +173,22 @@
             >
               <h2 class="project__stanza__subheading">Create and Add</h2>
               <p>
-                Client requested a search functionality to search either a
-                track, album, or playlist using the Spotify API, and to display
-                it with cards.
+                Admin/mods can search either a track, album, or playlist using
+                the Spotify API. Results are displayed in cards.
               </p>
               <p>
-                Clicking an item then leads to another page where song lyrics
-                are fetched using the Genius API. Selecting an album or playlist
+                Selecting an item then leads to another page where content is
+                fetched using the Genius API. Selecting an album or playlist
                 allows you to cycle through the songs on it.
               </p>
               <p>
-                Admin/mods can then select the lyrics they want, assign it a
-                category, genre, explicit, and add it to their database.
+                Admin/mods can then select the data they want, assign their
+                tags, and add it to their database.
               </p>
               <p>
-                Three sections were requested for the page. One to select the
-                lyrics, another to preview the selected lyrics, and lastly a
-                section populated by other lyrics already existing in the
-                database from the selected song.
+                Three sections were requested for the page. One to select
+                content, another to preview only selected content, and lastly a
+                section to view content already stored in their database.
               </p>
             </div>
           </div>
@@ -202,24 +198,22 @@
           <div class="project__stanza__challenges-showcase--text">
             <h2 class="project__stanza__subheading">Challenges</h2>
             <p>
-              The greatest challenge from this project was once again handling
-              asynchronous data.
+              The greatest challenge from this project was handling asynchronous
+              data.
             </p>
             <p>
-              Despite being more aware and cautious this time around, I still
-              ran into an issue where upon refresh that same state in a useState
-              hook would be updated in more places than one, causing a bug in my
-              code. Thankfully due to past experience I was quickly able to
-              identify the bug.
+              I ran into an issue where upon refresh that same state in a
+              useState hook was being updated in more places than one, causing a
+              bug in my code. Thankfully due to past experience I was quickly
+              able to identify and rectify the bug.
             </p>
             <p>
-              Although not so much of a challenge, I did learn Material UI on
-              the fly. It wasn't required but I felt it was going to be the best
-              decision, as it would save time, and I could worry less on how it
-              looks and focus more on the javascript. I was more than happy with
-              making that decision. Each project I've worked on has always
-              demanded learning something new and I feel it's made me a more
-              capable programmer.
+              I was given my choice of visual library or CSS to use, I decided
+              to learn Material UI specifically for this project I felt it was
+              as it would save time, and I could worry less on how it looks and
+              focus more on the javascript. I was more than happy with that
+              decision. Each project I've worked on has always demanded learning
+              something new and I feel it's made me a more capable programmer.
             </p>
             <p>
               Overall my confidence in developing web apps has grew. I feel much
@@ -239,9 +233,8 @@
         <div id="footerTrigger" class="project__stanza__tech-showcase">
           <h2 class="project__stanza__subheading">Tech</h2>
           <div class="project__stanza__tech-showcase--tech">
-            <h3>JSX</h3>
-            <h3>React JS</h3>
-            <h3>Redux/Toolkit</h3>
+            <h3>React</h3>
+            <h3>Redux</h3>
             <h3>NPM</h3>
             <h3>Spotify API</h3>
             <h3>Genius API</h3>
