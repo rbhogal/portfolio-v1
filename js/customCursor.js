@@ -42,7 +42,7 @@ const trailEffect = (e) => {
 trailEffect();
 
 // Mobile (disable custom cursors)
-if (window.innerWidth <= 1200) {
+if (window.innerWidth <= 540) {
   cursor.style.display = "none";
   cursor2.style.display = "none";
 }
