@@ -3025,6 +3025,50 @@ nav {
   object-position: 50% 10%;
 }
 
+.project__stanza__secure-login-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__secure-login-showcase {
+    flex-direction: column-reverse;
+  }
+}
+
+.project__stanza__secure-login-showcase img {
+  max-width: 60rem;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__secure-login-showcase img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__secure-login-showcase .video__container {
+    max-width: 100%;
+  }
+}
+
+.project__stanza__secure-login-showcase--text {
+  padding-left: 6rem;
+  width: 70rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__secure-login-showcase--text {
+    padding: 0;
+    width: 100%;
+  }
+}
+
 .project__stanza__dashboard-analytics-showcase {
   display: flex;
   justify-content: space-between;
@@ -3069,11 +3113,6 @@ nav {
   }
 }
 
-.project__stanza__add-lyrics-showcase {
-  display: flex;
-  align-items: center;
-}
-
 @media only screen and (max-width: 75em) {
   .project__stanza__add-lyrics-showcase {
     flex-direction: column;
@@ -3094,12 +3133,12 @@ nav {
 }
 
 .project__stanza__add-lyrics-showcase--text {
-  padding-left: 6rem;
+  padding: 0 11.5rem;
 }
 
 @media only screen and (max-width: 75em) {
   .project__stanza__add-lyrics-showcase--text {
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -3229,7 +3268,8 @@ nav {
 }
 
 .video__container {
-  max-width: 60rem;
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 75em) {

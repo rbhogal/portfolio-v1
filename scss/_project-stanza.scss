@@ -115,6 +115,44 @@
     }
   }
 
+  &__secure-login-showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24rem 0;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column-reverse;
+    }
+
+    & img {
+      max-width: 60rem;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+
+      @media only screen and (max-width: $bp-large) {
+        max-width: 100%;
+      }
+    }
+
+    & .video__container {
+      @media only screen and (max-width: $bp-large) {
+        max-width: 100%;
+      }
+    }
+
+    &--text {
+      padding-left: 6rem;
+      width: 70rem;
+
+      @media only screen and (max-width: $bp-large) {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
   &__dashboard-analytics-showcase {
     display: flex;
     justify-content: space-between;
@@ -154,8 +192,8 @@
   }
 
   &__add-lyrics-showcase {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     @media only screen and (max-width: $bp-large) {
       flex-direction: column;
@@ -175,10 +213,9 @@
     }
 
     &--text {
-      padding-left: 6rem;
-
+      padding: 0 11.5rem;
       @media only screen and (max-width: $bp-large) {
-        padding-left: 0;
+        padding: 0;
       }
     }
   }
@@ -299,7 +336,8 @@
 }
 
 .video__container {
-  max-width: 60rem;
+  max-width: 100rem;
+  margin: 0 auto;
 
   @media only screen and (max-width: $bp-large) {
     max-width: 100%;
