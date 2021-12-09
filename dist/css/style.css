@@ -1067,13 +1067,19 @@ nav {
 
 @media only screen and (max-width: 40.625em) {
   .footer__link--email {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
 .footer__link--email-border {
   width: 100%;
   margin-bottom: 9.1rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .footer__link--text {
+    display: none;
+  }
 }
 
 .footer__icon {
