@@ -161,6 +161,7 @@
 
     @media only screen and (max-width: $bp-large) {
       flex-direction: column-reverse;
+      margin: 24rem;
     }
 
     & img {

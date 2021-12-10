@@ -3085,6 +3085,7 @@ nav {
 @media only screen and (max-width: 75em) {
   .project__stanza__dashboard-analytics-showcase {
     flex-direction: column-reverse;
+    margin: 24rem;
   }
 }
 
