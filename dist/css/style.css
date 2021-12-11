@@ -3085,7 +3085,15 @@ nav {
 @media only screen and (max-width: 75em) {
   .project__stanza__dashboard-analytics-showcase {
     flex-direction: column-reverse;
-    margin: 24rem;
+    margin-top: 24rem;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .project__stanza__dashboard-analytics-showcase--container {
+    margin-top: 24rem;
+    margin-bottom: 24rem;
   }
 }
 
@@ -3098,12 +3106,6 @@ nav {
 
 @media only screen and (max-width: 75em) {
   .project__stanza__dashboard-analytics-showcase img {
-    max-width: 100%;
-  }
-}
-
-@media only screen and (max-width: 75em) {
-  .project__stanza__dashboard-analytics-showcase .video__container {
     max-width: 100%;
   }
 }

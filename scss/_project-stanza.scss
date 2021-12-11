@@ -161,7 +161,15 @@
 
     @media only screen and (max-width: $bp-large) {
       flex-direction: column-reverse;
-      margin: 24rem;
+      margin-top: 24rem;
+      margin-bottom: 0;
+    }
+
+    &--container {
+      @media only screen and (max-width: $bp-large) {
+        margin-top: 24rem;
+        margin-bottom: 24rem;
+      }
     }
 
     & img {
@@ -175,11 +183,11 @@
       }
     }
 
-    & .video__container {
-      @media only screen and (max-width: $bp-large) {
-        max-width: 100%;
-      }
-    }
+    // & .video__container {
+    //   @media only screen and (max-width: $bp-large) {
+    //     max-width: 100%;
+    //   }
+    // }
 
     &--text {
       padding-right: 6rem;
