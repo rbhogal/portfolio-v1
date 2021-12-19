@@ -1,3 +1,9 @@
+//////////////////////////////////////////////////////////////
+
+// * Cursor gif animations (desktop) are in customCursor.js *
+
+//////////////////////////////////////////////////////////////
+
 //Loading screen
 const loadingScreen = document.querySelector(".loading-screen");
 const loadingScreenAddition = document.querySelector(
@@ -33,6 +39,8 @@ const youSmartGif = document.querySelector(".you-smart-gif-mobile");
 const troyAbedHandshakeGif = document.querySelector(
   ".troy-abed-handshake-gif--mobile"
 );
+const callMeGif = document.querySelector(".call-me-gif-mobile");
+
 const easterEggsHint = document.querySelector(".easter-eggs-hint");
 
 gsap.to(loadingIntro, {
@@ -85,7 +93,7 @@ if (window.innerWidth <= 1200) {
         aboutSubheading,
         aboutLineBreak,
         aboutContentP,
-        youSmartGif,
+        callMeGif,
         troyAbedHandshakeGif,
       ],
       {

@@ -125,6 +125,16 @@
   }
 }
 
+.call-me-gif-mobile {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  @media only screen and (min-width: $bp-small) {
+    display: none;
+  }
+}
+
 .troy-abed-handshake-gif-mobile {
   width: 100%;
   margin-top: 1rem;

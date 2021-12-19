@@ -111,6 +111,7 @@ const fullNameText = document.querySelector(".hover-text-full-name");
 const text1 = document.querySelector(".hover-text-1");
 const text2 = document.querySelector(".hover-text-2");
 const youSmartGif = document.querySelector(".you-smart-gif");
+const callMeGif = document.querySelector(".call-me-gif");
 const troyAbedHandshakeGif = document.querySelector(".troy-abed-handshake-gif");
 const profilePic = document.querySelector(".profile-pic__container");
 
@@ -119,13 +120,13 @@ if (location.pathname === "/about.html") {
   text1.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor-gif");
     cursor2.classList.add("animate-cursor-2");
-    youSmartGif.classList.add("gif-active");
+    callMeGif.classList.add("gif-active");
   });
 
   text1.addEventListener("mouseleave", () => {
     cursor.classList.remove("animate-cursor-gif");
     cursor2.classList.remove("animate-cursor-2");
-    youSmartGif.classList.remove("gif-active");
+    callMeGif.classList.remove("gif-active");
   });
 
   // Cursor animations for troy and abed gif

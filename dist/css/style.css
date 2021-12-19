@@ -90,6 +90,10 @@ body {
   display: none;
 }
 
+.call-me-gif {
+  display: none;
+}
+
 .troy-abed-handshake-gif {
   display: none;
 }
@@ -418,6 +422,10 @@ body {
 }
 
 .you-smart-gif {
+  display: none;
+}
+
+.call-me-gif {
   display: none;
 }
 
@@ -1467,6 +1475,18 @@ nav {
 
 @media only screen and (min-width: 31.25em) {
   .you-smart-gif-mobile {
+    display: none;
+  }
+}
+
+.call-me-gif-mobile {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 31.25em) {
+  .call-me-gif-mobile {
     display: none;
   }
 }
