@@ -316,6 +316,17 @@ p {
   line-height: 2.8rem;
   transition: all 0.3s ease;
   mix-blend-mode: difference;
+  display: flex;
+  align-items: flex-start;
+}
+
+.easter-eggs-hint--text svg {
+  fill: #faf9f6;
+  opacity: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
 }
 
 .easter-eggs-hint--text.open {
@@ -651,6 +662,17 @@ p {
   line-height: 2.8rem;
   transition: all 0.3s ease;
   mix-blend-mode: difference;
+  display: flex;
+  align-items: flex-start;
+}
+
+.easter-eggs-hint--text svg {
+  fill: #faf9f6;
+  opacity: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
 }
 
 .easter-eggs-hint--text.open {
