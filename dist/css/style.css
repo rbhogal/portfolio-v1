@@ -318,6 +318,7 @@ p {
   mix-blend-mode: difference;
   display: flex;
   align-items: flex-start;
+  align-items: center;
 }
 
 .easter-eggs-hint--text svg {
@@ -325,8 +326,8 @@ p {
   opacity: 1;
   width: 2.5rem;
   height: 2.5rem;
-  margin-top: 0.8rem;
-  margin-left: 0.2rem;
+  margin-bottom: 1rem;
+  margin-left: 0.4rem;
 }
 
 .easter-eggs-hint--text.open {
@@ -664,6 +665,7 @@ p {
   mix-blend-mode: difference;
   display: flex;
   align-items: flex-start;
+  align-items: center;
 }
 
 .easter-eggs-hint--text svg {
@@ -671,8 +673,8 @@ p {
   opacity: 1;
   width: 2.5rem;
   height: 2.5rem;
-  margin-top: 0.8rem;
-  margin-left: 0.2rem;
+  margin-bottom: 1rem;
+  margin-left: 0.4rem;
 }
 
 .easter-eggs-hint--text.open {
