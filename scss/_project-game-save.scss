@@ -314,6 +314,47 @@
     }
   }
 
+  &__planning-showcase {
+    // display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    & img {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 5rem;
+      }
+
+      &:last-child {
+        margin-bottom: 24rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        max-width: 100%;
+      }
+    }
+
+    &--text {
+      padding-right: 6rem;
+      margin: 8rem 0;
+      margin-top: 24rem;
+
+      & h2 {
+        // margin-top: 0;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        padding: 0;
+      }
+    }
+  }
+
   &__challenges-showcase {
     display: flex;
     justify-content: space-between;

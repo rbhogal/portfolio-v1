@@ -1911,6 +1911,48 @@ nav {
   }
 }
 
+.project__game-save__planning-showcase {
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__planning-showcase {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.project__game-save__planning-showcase img {
+  width: 100%;
+}
+
+.project__game-save__planning-showcase img:first-child {
+  margin-bottom: 5rem;
+}
+
+.project__game-save__planning-showcase img:last-child {
+  margin-bottom: 24rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__planning-showcase img {
+    max-width: 100%;
+  }
+}
+
+.project__game-save__planning-showcase--text {
+  padding-right: 6rem;
+  margin: 8rem 0;
+  margin-top: 24rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .project__game-save__planning-showcase--text {
+    padding: 0;
+  }
+}
+
 .project__game-save__challenges-showcase {
   display: flex;
   justify-content: space-between;

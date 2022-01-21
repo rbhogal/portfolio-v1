@@ -170,6 +170,29 @@ if (window.innerWidth <= 1200) {
     .addTo(controller);
 
   //////////////////////////////////////////////////////////////////////////////
+  // Planning
+  const planningTL = gsap.timeline();
+  const planning = document.querySelector(
+    ".project__game-save__planning-showcase"
+  );
+
+  planningTL.from(planning, {
+    delay: 0,
+    y: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: '"power3.out"',
+  });
+
+  new ScrollMagic.Scene({
+    triggerElement: "#planningTrigger",
+    triggerHook: 0,
+    reverse: false,
+  })
+    .setTween(planningTL)
+    .addTo(controller);
+
+  //////////////////////////////////////////////////////////////////////////////
   // Challenges
 
   const challengesTL = gsap.timeline();
@@ -397,6 +420,30 @@ if (window.innerWidth > 1200) {
     reverse: false,
   })
     .setTween(mobileFriendlyTL)
+    .addTo(controller);
+
+  //////////////////////////////////////////////////////////////////////////////
+  // Planning
+
+  const planningTL = gsap.timeline();
+  const planning = document.querySelector(
+    ".project__game-save__planning-showcase"
+  );
+
+  planningTL.from(planning, {
+    delay: 0,
+    y: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: '"power3.out"',
+  });
+
+  new ScrollMagic.Scene({
+    triggerElement: "#planningTrigger",
+    triggerHook: 0,
+    reverse: false,
+  })
+    .setTween(planningTL)
     .addTo(controller);
 
   //////////////////////////////////////////////////////////////////////////////
