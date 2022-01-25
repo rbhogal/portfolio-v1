@@ -1,2 +1,0 @@
-# rbhogal.github.io
-Hi
