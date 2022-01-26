@@ -1983,6 +1983,10 @@ nav {
   padding-right: 6rem;
 }
 
+.project__game-save__challenges-showcase--text h3 {
+  color: #faf9f6;
+}
+
 @media only screen and (max-width: 75em) {
   .project__game-save__challenges-showcase--text {
     padding: 0;
