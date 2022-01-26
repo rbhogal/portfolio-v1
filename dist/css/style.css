@@ -2405,6 +2405,10 @@ nav {
   margin: 24rem 0;
 }
 
+.project__burgerlords__challenges-showcase h3 {
+  color: #faf9f6;
+}
+
 @media only screen and (max-width: 75em) {
   .project__burgerlords__challenges-showcase {
     flex-direction: column-reverse;
@@ -2878,6 +2882,10 @@ nav {
   max-width: 49.6rem;
 }
 
+.project__bookmark__challenges-showcase--text h3 {
+  color: #faf9f6;
+}
+
 @media only screen and (max-width: 75em) {
   .project__bookmark__challenges-showcase--text {
     padding: 0;
@@ -3248,6 +3256,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.project__stanza__challenges-showcase h3 {
+  color: #faf9f6;
 }
 
 @media only screen and (max-width: 75em) {

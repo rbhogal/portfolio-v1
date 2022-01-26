@@ -272,6 +272,10 @@
     align-items: center;
     margin: 24rem 0;
 
+    & h3 {
+      color: $color-off-white;
+    }
+
     @media only screen and (max-width: $bp-large) {
       flex-direction: column-reverse;
       align-items: flex-start;
