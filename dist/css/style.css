@@ -1448,6 +1448,14 @@ nav {
   margin-top: 5rem;
 }
 
+.about__intro__content--arrow-down svg {
+  fill: #faf9f6;
+  opacity: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 75em) {
   .about__intro__content {
     height: 100%;
