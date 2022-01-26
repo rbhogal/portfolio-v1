@@ -61,7 +61,11 @@
       align-items: center;
       margin: 4rem 0;
       text-align: center;
-      height: 26vh;
+      // height: 26vh;
+
+      &__get-in-touch {
+        margin-top: 5rem;
+      }
 
       @media only screen and (max-width: $bp-large) {
         height: 100%;

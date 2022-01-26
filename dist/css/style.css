@@ -1063,7 +1063,7 @@ nav {
 .footer {
   width: 100%;
   padding: 2.5rem 0;
-  grid-column: 2/3;
+  grid-column: 2 / 3;
   grid-row: 3 / 4;
   display: flex;
   flex-direction: column;
@@ -1442,7 +1442,10 @@ nav {
   align-items: center;
   margin: 4rem 0;
   text-align: center;
-  height: 26vh;
+}
+
+.about__intro__content__get-in-touch {
+  margin-top: 5rem;
 }
 
 @media only screen and (max-width: 75em) {
