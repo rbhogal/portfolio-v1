@@ -9,6 +9,8 @@ const bodyContainer = document.querySelector(".container");
 const header = document.querySelector(".home__header");
 const navLink = document.querySelectorAll(".nav__link");
 
+const scrollToTopBtn = document.querySelector(".scroll-to-top");
+
 const loadingScreenTL = gsap.timeline();
 
 gsap.to(bodyContainer, {
@@ -332,7 +334,7 @@ if (window.innerWidth > 1200) {
       stagger: 0.1,
     })
     .from(
-      projectBtns,
+      [projectBtns, scrollToTopBtn],
       {
         delay: 0,
         y: 16,
@@ -344,7 +346,7 @@ if (window.innerWidth > 1200) {
       "-=1.9"
     )
     .from(
-      projectBookmarkBanner,
+      [projectBookmarkBanner],
       {
         y: 30,
         opacity: 0,

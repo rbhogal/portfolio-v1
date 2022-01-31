@@ -108,6 +108,8 @@ if (window.innerWidth > 1200) {
     ".projects__card__subheading--04"
   );
 
+  const scrollToTopBtn = document.querySelector(".scroll-to-top");
+
   loadingScreenTL
     .to(loadingScreen, {
       duration: 0.75,
@@ -142,6 +144,7 @@ if (window.innerWidth > 1200) {
         projectCard01Subheading,
         projectCard02Heading,
         projectCard02Subheading,
+        scrollToTopBtn,
       ],
       {
         delay: 0,

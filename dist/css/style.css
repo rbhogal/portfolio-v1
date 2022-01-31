@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -343,11 +344,43 @@ p {
 
 .easter-eggs-hint svg:hover {
   opacity: 1;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  transition: all 0.3s ease;
+  background-color: #faf9f6;
+  color: #171717;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .scroll-to-top {
+    display: none;
+  }
+}
+
+.scroll-to-top:hover {
+  opacity: 0.5;
+}
+
+.scroll-to-top svg {
+  width: 3rem;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -690,6 +723,37 @@ p {
 
 .easter-eggs-hint svg:hover {
   opacity: 1;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  transition: all 0.3s ease;
+  background-color: #faf9f6;
+  color: #171717;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .scroll-to-top {
+    display: none;
+  }
+}
+
+.scroll-to-top:hover {
+  opacity: 0.5;
+}
+
+.scroll-to-top svg {
+  width: 3rem;
 }
 
 .home__hamburger-btn,

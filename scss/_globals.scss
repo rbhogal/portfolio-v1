@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%; // 100% of base font size set in browser (16px by default)
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -359,5 +360,34 @@ p {
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  transition: all 0.3s ease;
+  background-color: $color-off-white;
+  color: $color-dark-grey;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  & svg {
+    width: 3rem;
   }
 }

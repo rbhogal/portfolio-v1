@@ -9,6 +9,8 @@ const bodyContainer = document.querySelector(".container");
 const header = document.querySelector(".home__header");
 const navLink = document.querySelectorAll(".nav__link");
 
+const scrollToTopBtn = document.querySelector(".scroll-to-top");
+
 const loadingScreenTL = gsap.timeline();
 
 gsap.to(bodyContainer, {
@@ -206,7 +208,7 @@ if (window.innerWidth > 1200) {
       duration: 0.8,
       ease: '"power3.out"',
     })
-    .from([projectStanzaHeading, projectStanzaContentP], {
+    .from([projectStanzaHeading, projectStanzaContentP, scrollToTopBtn], {
       delay: 0,
       y: 16,
       opacity: 0,
