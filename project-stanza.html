@@ -126,10 +126,10 @@
 
         <p>React / Redux / NPM / Spotify API / Genius API / Material UI</p>
 
-        <p style="font-size: 1.8rem; margin-top: 4rem;">
+        <p style="font-size: 1.8rem; margin-top: 4rem">
           <i>*Site and repo are private</i>
           <br />
-          <i>*Images blurred per client's request</i> </br>
+          <i>*Images blurred per client's request</i>
         </p>
 
         <div class="project__stanza__banner">
@@ -167,7 +167,8 @@
               content and user data stored in their database. The data is
               fetched from the GraphQL backend and displayed in data tables
               using Material UI components. Card components are applied to a
-              grid layout providing easy scalability for the future.
+              grid layout. Adding additional cards/data to the dashboard is
+              easy.
             </p>
           </div>
 
@@ -201,20 +202,43 @@
               id="challengesTrigger"
               class="project__stanza__add-lyrics-showcase--text"
             >
-              <h2 class="project__stanza__subheading">Create and Add Data</h2>
+              <h2 class="project__stanza__subheading">
+                Create and Add Content
+              </h2>
 
               <p>
                 Admin/mods can search either a track, album, or playlist
-                provided by the Spotify API. Results are displayed in cards.
-                Selecting an item leads to another page where content is fetched
-                using the Genius API and displayed in a data table. Pagination
-                allows you to cycle through songs in an album or playlist.
-                Admin/mods can then select the data they want using checkboxes,
-                assign their tags, and add it to their database. Three sections
-                were requested for the page. One to select content, another to
-                preview the selected content, and lastly a section to view
-                content already stored in their database.
+                provided by the Spotify API.
               </p>
+
+              <ul>
+                <li>
+                  <p>
+                    Results are displayed in cards. Selecting an item leads to
+                    another page where content is fetched using the Genius API
+                    and displayed in a data table.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Pagination allows you to cycle through songs in an album or
+                    playlist.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Admin/mods can then select the data they want using
+                    checkboxes, assign their tags, and add it to their database.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Three sections were requested for the page. One to select
+                    content, another to preview the selected content, and lastly
+                    a section to view content already stored in their database.
+                  </p>
+                </li>
+              </ul>
 
               <!-- <p>
                 Admin/mods can search either a track, album, or playlist
@@ -241,32 +265,29 @@
         <div id="techTrigger" class="project__stanza__challenges-showcase">
           <div class="project__stanza__challenges-showcase--text">
             <h2 class="project__stanza__subheading">Challenges</h2>
-            <h3>
-              The biggest challenge was handling asynchronous
-              data.
-            </h3>
+            <h3>The biggest challenge was handling asynchronous data.</h3>
             <p>
-              I ran into an issue where, upon refresh, state in a useState hook
-              was being updated in more places than one (at the same time),
-              causing a bug in my code when sending data to the database. Thankfully due to my last project I had done (Game Save), I knew it must be an async issue. 
-              After some time I was able to identify and rectify the bug by making sure state
-              was only updated in one place.
+              Upon refresh, state in a useState hook was being updated in more
+              places than one (at the same time), causing a bug in the code when
+              sending data to the database. Knew it must be an async issue due
+              to previous experience. Identified and rectified the bug by
+              refactoring the code to make sure state was only updated in one
+              place.
             </p>
 
             <h3>Learning Material-UI</h3>
             <p>
-              With no UI design for the app I was given free reign on my choice
-              of visual library or CSS to use, and the design direction I would like to
-              take. I decided to learn Material UI specifically for this project
-              as I felt it would save time, and I could worry less on how it
-              looks and focus more on the javascript. However I did end up adding some custom css for a cleaner look. 
+              Priority for the client was functionality so no UI design was
+              provided for the app. I was given free reign on styling and the
+              design direction to take. Learned Material UI to save time, so I
+              could worry less on how it looks and focus more on the javascript.
+              However I did end up adding some custom css for a cleaner look.
             </p>
-            <p>I learned it in three hours with NetNinja's tutorial series. And anytime I got stuck I read the documentation and figured it out as I went along. </p>
-            <!-- <p>
-              Overall my confidence in developing web apps has grew. I feel much
-              more comfortable and closer in feeling like I can take on almost
-              any project.
-            </p> -->
+            <p>
+              I learned it in three hours with NetNinja's tutorial series.
+              Anytime I got stuck I read the documentation and figured it out as
+              I went along.
+            </p>
           </div>
 
           <div class="project__stanza__challenges-showcase">

@@ -2490,11 +2490,13 @@ nav {
 
 .project__burgerlords__challenges-showcase--text {
   padding-right: 6rem;
+  width: 100rem;
 }
 
 @media only screen and (max-width: 75em) {
   .project__burgerlords__challenges-showcase--text {
     padding: 0;
+    width: 100%;
   }
 }
 
