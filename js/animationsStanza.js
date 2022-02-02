@@ -173,6 +173,7 @@ if (window.innerWidth <= 1200) {
     .addTo(controller);
 }
 
+// For Desktop
 if (window.innerWidth > 1200) {
   const projectStanzaHeader = document.querySelector(
     ".project__stanza__header"
@@ -189,8 +190,8 @@ if (window.innerWidth > 1200) {
 
   loadingScreenTL
     .to(loadingScreen, {
-      duration: 0.75,
-      delay: 0.75,
+      duration: 0.25,
+      delay: 0.25,
       top: "-100%",
       ease: Expo.easeInOut,
     })
@@ -198,21 +199,21 @@ if (window.innerWidth > 1200) {
       delay: 0,
       y: 16,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.25,
       ease: "power3.inOut",
     })
     .from(projectStanzaHeader, {
       delay: 0,
       y: 60,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.25,
       ease: '"power3.out"',
     })
-    .from([projectStanzaHeading, projectStanzaContentP, scrollToTopBtn], {
+    .from([projectStanzaHeading, scrollToTopBtn, projectStanzaContentP], {
       delay: 0,
       y: 16,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.25,
       ease: '"power3.out"',
       stagger: 0.1,
     })
@@ -221,7 +222,7 @@ if (window.innerWidth > 1200) {
       {
         y: 30,
         opacity: 0,
-        duration: 3,
+        duration: 0.25,
         ease: '"power3.out"',
       },
       "-=1.8"

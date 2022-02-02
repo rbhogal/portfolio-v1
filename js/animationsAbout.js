@@ -158,7 +158,7 @@ if (window.innerWidth > 1200) {
   const loadingNameTL = gsap.timeline();
 
   loadingNameTL.to([loadingFirstName, loadingLastName], {
-    duration: 1,
+    duration: 0.8,
     delay: 1.5,
     ease: Expo.easeInOut,
     y: -25,
@@ -167,7 +167,7 @@ if (window.innerWidth > 1200) {
   // Loading Screen Exit
   loadingScreenTL
     .to([loadingScreen, loadingIntro], {
-      duration: 1.5,
+      duration: 0.8,
       delay: 1.5,
       top: "-110%",
       ease: Expo.easeInOut,
@@ -177,7 +177,7 @@ if (window.innerWidth > 1200) {
       {
         y: 16,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.25,
         ease: "power3.inOut",
       },
       "-=.5"
@@ -194,7 +194,7 @@ if (window.innerWidth > 1200) {
         delay: 0,
         y: 16,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.25,
         ease: '"power3.out"',
         stagger: 0.1,
       }

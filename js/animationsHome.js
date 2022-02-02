@@ -76,6 +76,7 @@ if (window.innerWidth <= 1200) {
     .addTo(controller2);
 }
 
+// For Desktop
 if (window.innerWidth > 1200) {
   const projectsHeading = document.querySelector(".projects__heading");
   const projectCard01 = document.querySelector(".projects__card--01");
@@ -112,8 +113,8 @@ if (window.innerWidth > 1200) {
 
   loadingScreenTL
     .to(loadingScreen, {
-      duration: 0.75,
-      delay: 0.75,
+      duration: 0.25,
+      delay: 0.25,
       top: "-110%",
       ease: Expo.easeInOut,
     })
@@ -121,22 +122,22 @@ if (window.innerWidth > 1200) {
       delay: -0.1,
       y: 16,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.25,
       ease: "power3.inOut",
     })
     .from(projectsHeading, {
       delay: -0.1,
       y: 60,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.25,
       ease: '"power3.out"',
     })
     .from([projectCard01, projectCard02], {
-      delay: -0.6,
+      delay: 0,
       opacity: 0,
-      duration: 0.2,
+      duration: 0.1,
       ease: '"power3.out"',
-      stagger: 0.2,
+      stagger: 0.25,
     })
     .from(
       [
@@ -150,7 +151,7 @@ if (window.innerWidth > 1200) {
         delay: 0,
         y: 16,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.25,
         ease: '"power3.out"',
         stagger: 0.1,
       }
@@ -163,7 +164,7 @@ if (window.innerWidth > 1200) {
   project3TL
     .from(projectCard03, {
       opacity: 0,
-      duration: 0.2,
+      duration: 0.1,
       ease: '"power3.out"',
       stagger: 0.2,
     })
@@ -171,7 +172,7 @@ if (window.innerWidth > 1200) {
       delay: 0,
       y: 16,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.25,
       ease: '"power3.out"',
       stagger: 0.1,
     });
@@ -192,7 +193,7 @@ if (window.innerWidth > 1200) {
   project4TL
     .from(projectCard04, {
       opacity: 0,
-      duration: 0.2,
+      duration: 0.1,
       ease: '"power3.out"',
       stagger: 0.2,
     })
@@ -200,7 +201,7 @@ if (window.innerWidth > 1200) {
       delay: 0,
       y: 16,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.25,
       ease: '"power3.out"',
       stagger: 0.1,
     });
