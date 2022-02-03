@@ -94,10 +94,6 @@ body {
   display: none;
 }
 
-.call-me-gif {
-  display: none;
-}
-
 .troy-abed-handshake-gif {
   display: none;
 }
@@ -107,7 +103,7 @@ body {
   position: relative;
 
   &--wave-emoji {
-    font-size: 4rem;
+    font-size: 5rem;
     position: absolute;
     left: 3.5rem;
     bottom: 3rem;
@@ -317,7 +313,7 @@ p {
   right: 2.5rem;
   transition: all 0.3s ease;
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-medium) {
     display: none;
   }
 

@@ -38,6 +38,10 @@ nav {
     &:hover .nav__arrow-icon {
       opacity: 1;
     }
+
+    &:hover .nav__arrow-icon--download {
+      opacity: 1;
+    }
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -46,9 +50,12 @@ nav {
 }
 
 .nav {
+  &__links {
+    // display: flex;
+  }
+
   &__link {
     display: flex;
-    // visibility: hidden;
   }
 
   &__arrow-icon {
@@ -58,6 +65,13 @@ nav {
     margin-top: 0.4rem;
     opacity: 0;
     transition: all 0.2s ease;
+
+    &--download {
+      width: 2rem;
+      margin-right: 0.2rem;
+      opacity: 0;
+      transition: all 0.2s ease;
+    }
   }
 }
 /* 

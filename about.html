@@ -16,6 +16,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
@@ -26,16 +30,18 @@
   </head>
   <body id="#container" class="container">
     <div class="cursor">
-      <!-- <img
+      <img
         class="you-smart-gif"
         src="https://media.giphy.com/media/toe7vOw1WPAmEDfKeZ/giphy.gif?cid=790b7611584b530bb2e77b81ca9b63635a636eeb1083bc72&rid=giphy.gif&ct=g"
         alt="you-smart-gif"
-      /> -->
+      />
+      <!--
       <img
         class="call-me-gif"
         src="https://media.giphy.com/media/3yRHVLXGeodopGpq7l/giphy.gif"
         alt="call-me-gif"
       />
+      -->
       <img
         class="troy-abed-handshake-gif"
         src="https://media.giphy.com/media/RLn2w2fLpcwTu/giphy.gif?cid=790b76119e40c57ee6b457d48f6668c00100eabfd4b2f4eb&rid=giphy.gif&ct=g"
@@ -128,96 +134,106 @@
 
     <section class="about">
       <div class="about__intro">
-        <div class="about__intro__heading">
-          <div class="hover-text-full-name">
-            Hi, I'm <span> Rohit</span> Bhogal
-          </div>
-          <div class="profile-pic__container--mobile">
-            <img
-              class="profile-pic"
-              src="../images/profile-pic.jpeg"
-              alt="Profile Pic"
-            />
-            <span class="profile-pic--wave-emoji">
-              Hi!
-              <div class="wave">👋🏼</div></span
-            >
-          </div>
-          <p class="about__intro__subheading">
-            A frontend developer with a passion for aesthetic design, problem
-            solving, and creating things. Both beautiful user-focused designs
-            into pixel-perfect websites with smooth animations, or web
-            applications that run FAST.
-          </p>
+        <div class="about__intro__container">
+          <h1 class="about__intro__heading hover-text-wave">ABOUT ME</h1>
+          <!-- <hr class="about__line-break" width="100%" style="margin: 1.1rem 0" /> -->
 
-          <hr class="about__line-break" width="50%" style="margin: 1.1rem 0" />
+          <div class="about__intro__bio hover-text-wave">
+            <p>
+              Hi I'm Rohit 👋🏼, a frontend developer with a passion for aesthetic
+              design, problem solving, and creating things. Both beautiful
+              user-focused designs into pixel-perfect websites with smooth
+              animations, or web applications that run FAST.
+            </p>
+            <p></p>
+            <p>
+              Some things I nerd out about: Hip Hop/Music, Photography, Cooking,
+              Fitness, Nutrition, Travel, Basketball, Video Games, Stand Up,
+              Movies...
+            </p>
+          </div>
+
+          <!-- <hr class="about__line-break" width="50%" style="margin: 1.1rem 0" /> -->
 
           <div class="about__intro__content">
-            <p><b>Languages:</b> JavaScript ES6+, HTML, CSS, Sass (SCSS)</p>
-            <p><b>Frameworks:</b> React & Redux, Material-UI (MUI)</p>
-            <p>
-              <b>Dev Tools:</b> Git, GitHub, Visual Studio Code, NPM, Parcel,
-              Firebase, Netlify, Postman, Adobe Photoshop
-            </p>
-            <p><b>Libraries:</b> GreenSock Animation Platform (GSAP), Lodash</p>
+            <h2 class="about__intro__subheading">Skills</h2>
 
-            <p>
-              <b>Some things I nerd out about:</b> hip hop/music, photography,
-              cooking, fitness, nutrition, basketball, travel, video games,
-              stand up, movies...
+            <div class="about__intro__content__skills">
+              <div class="about__intro__content__skills--languages">
+                <p><b>Languages</b></p>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Sass (Scss)</li>
+                </ul>
+              </div>
+
+              <div class="about__intro__content__skills--frameworks">
+                <p><b>Frameworks</b></p>
+
+                <ul>
+                  <li>React</li>
+                  <li>Material-UI</li>
+                </ul>
+              </div>
+
+              <div class="about__intro__content__skills--libraries">
+                <p><b>Libraries</b></p>
+
+                <ul>
+                  <li>React-Router</li>
+                  <li>Redux</li>
+                  <li>GSAP</li>
+                  <li>Lodash</li>
+                </ul>
+              </div>
+
+              <div class="about__intro__content__skills--devtools">
+                <p>
+                  <b>Dev Tools</b>
+                </p>
+
+                <ul>
+                  <li>Git / Github</li>
+                  <li>Visual Studio Code</li>
+                  <li>NPM</li>
+                  <li>Parcel</li>
+                  <li>Firebase</li>
+                  <li>Netlify</li>
+                  <li>Postman</li>
+                  <li>Adobe Photoshop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="outro-gifs">
+            <p class="about__intro__content__get-in-touch">
+              Like what you <span class="hover-text-1"> HEAR?</span>
             </p>
-            <p class="mobile-text mobile-text--question">Like what you hear?</p>
-            <!-- <img
-              class="you-smart-gif-mobile"
-              src="https://media.giphy.com/media/toe7vOw1WPAmEDfKeZ/giphy.gif?cid=790b7611584b530bb2e77b81ca9b63635a636eeb1083bc72&rid=giphy.gif&ct=g"
-              alt="you-smart-gif-mobile"
-            /> -->
+            <p>
+              Get in touch below and let's get to
+              <span class="hover-text-2">WORK</span>
+            </p>
+
             <img
-              class="call-me-gif-mobile"
+              class="gif"
               src="https://media.giphy.com/media/3yRHVLXGeodopGpq7l/giphy.gif"
-              alt="call-me-gif-mobile"
+              alt="call-me-gif"
             />
-            <p class="mobile-text">Let's work.</p>
-            <img
-              class="troy-abed-handshake-gif-mobile"
-              src="https://media.giphy.com/media/RLn2w2fLpcwTu/giphy.gif?cid=790b76119e40c57ee6b457d48f6668c00100eabfd4b2f4eb&rid=giphy.gif&ct=g"
-              alt="troy-abed-handshake-gif"
-            />
-
-            <p class="hover-texts about__intro__content__get-in-touch">
-              Like what you hear?
-              <span class="hover-text-1">GET IN TOUCH,</span> And let's get to
-              <span class="hover-text-2">WORK.</span>
-            </p>
-            <!-- 
-            <div class="about__intro__content--arrow-down">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </div> -->
           </div>
         </div>
       </div>
     </section>
 
     <section style="margin-top: 8rem" class="footer">
-      <hr
+      <!-- <hr
         class="footer__line-break"
         width="25%"
         style="margin: 1.1rem 0 2.2rem 0"
-      />
-      <p style="margin-bottom: 0">Contacts</p>
+      /> -->
+      <!-- <p style="margin-bottom: 0">Contacts</p> -->
 
       <div class="contacts">
         <a href="mailto:rbhogal23@gmail.com">

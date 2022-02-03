@@ -30,10 +30,13 @@ const loadingScreenTL = gsap.timeline();
 const loadingNameEnterTL = gsap.timeline();
 
 // About
-const nameHeader = document.querySelector(".hover-text-full-name");
+const nameHeader = document.querySelector(".hover-text-wave");
 const aboutSubheading = document.querySelector(".about__intro__subheading");
 const aboutLineBreak = document.querySelector(".about__line-break");
-const aboutContentP = document.querySelectorAll(".about__intro__content p");
+const aboutContentP = document.querySelectorAll(".about__intro__container p");
+const listItems = document.querySelectorAll(
+  ".about__intro__content__skills div"
+);
 const profilePic = document.querySelector(".profile-pic__container--mobile");
 const youSmartGif = document.querySelector(".you-smart-gif-mobile");
 const troyAbedHandshakeGif = document.querySelector(
@@ -93,6 +96,7 @@ if (window.innerWidth <= 1200) {
         aboutSubheading,
         aboutLineBreak,
         aboutContentP,
+        listItems,
         callMeGif,
         troyAbedHandshakeGif,
       ],
@@ -102,7 +106,7 @@ if (window.innerWidth <= 1200) {
         opacity: 0,
         duration: 0.8,
         ease: '"power3.out"',
-        stagger: 0.1,
+        // stagger: 0.1,
       }
     );
 
@@ -185,9 +189,10 @@ if (window.innerWidth > 1200) {
     .from(
       [
         nameHeader,
+        aboutContentP,
         aboutSubheading,
         aboutLineBreak,
-        aboutContentP,
+        listItems,
         easterEggsHint,
       ],
       {
@@ -196,7 +201,7 @@ if (window.innerWidth > 1200) {
         opacity: 0,
         duration: 0.25,
         ease: '"power3.out"',
-        stagger: 0.1,
+        // stagger: 0.1,
       }
     );
 

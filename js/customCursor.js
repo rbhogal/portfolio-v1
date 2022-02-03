@@ -107,7 +107,7 @@ linkBig.forEach((link) => {
   });
 });
 
-const fullNameText = document.querySelector(".hover-text-full-name");
+const textWaveEmoji = document.querySelectorAll(".hover-text-wave");
 const text1 = document.querySelector(".hover-text-1");
 const text2 = document.querySelector(".hover-text-2");
 const youSmartGif = document.querySelector(".you-smart-gif");
@@ -116,17 +116,18 @@ const troyAbedHandshakeGif = document.querySelector(".troy-abed-handshake-gif");
 const profilePic = document.querySelector(".profile-pic__container");
 
 // Cursor animations for you smart gif & profile pic
+
 if (location.pathname === "/about.html") {
   text1.addEventListener("mouseover", () => {
     cursor.classList.add("animate-cursor-gif");
     cursor2.classList.add("animate-cursor-2");
-    callMeGif.classList.add("gif-active");
+    youSmartGif.classList.add("gif-active");
   });
 
   text1.addEventListener("mouseleave", () => {
     cursor.classList.remove("animate-cursor-gif");
     cursor2.classList.remove("animate-cursor-2");
-    callMeGif.classList.remove("gif-active");
+    youSmartGif.classList.remove("gif-active");
   });
 
   // Cursor animations for troy and abed gif
@@ -142,17 +143,20 @@ if (location.pathname === "/about.html") {
     troyAbedHandshakeGif.classList.remove("gif-active");
   });
 
-  // Cursor animations for full name hover
-  fullNameText.addEventListener("mouseover", () => {
-    cursor.classList.add("animate-cursor-gif");
-    cursor2.classList.add("animate-cursor-2");
-    profilePic.classList.add("gif-active");
-  });
+  // Cursor animations for waving emoji
 
-  fullNameText.addEventListener("mouseleave", () => {
-    cursor.classList.remove("animate-cursor-gif");
-    cursor2.classList.remove("animate-cursor-2");
-    profilePic.classList.remove("gif-active");
+  textWaveEmoji.forEach((textBox) => {
+    textBox.addEventListener("mouseover", () => {
+      cursor.classList.add("animate-cursor-gif");
+      cursor2.classList.add("animate-cursor-2");
+      profilePic.classList.add("gif-active");
+    });
+
+    textBox.addEventListener("mouseleave", () => {
+      cursor.classList.remove("animate-cursor-gif");
+      cursor2.classList.remove("animate-cursor-2");
+      profilePic.classList.remove("gif-active");
+    });
   });
 }
 

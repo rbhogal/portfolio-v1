@@ -6,48 +6,31 @@
   margin-top: 5rem;
 
   &__intro {
-    // margin-bottom: 2rem;
     font-size: 2.4rem;
     font-family: $font-intro-text;
-    letter-spacing: 0.322vw;
     width: 100%;
     display: flex;
-
-    align-items: center;
     justify-content: center;
 
-    // padding-bottom: 10%;
-
     &__heading {
-      font-size: 12rem;
+      font-size: 5.6rem;
+      color: $color-off-white;
+      text-transform: none;
+      font-weight: 300;
+      margin: 0;
+      margin-top: 4rem;
+    }
+
+    &__container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 65rem;
 
       @media only screen and (max-width: $bp-medium) {
-        font-size: 8rem;
+        width: 50rem;
       }
-      @media only screen and (max-width: $bp-x-medium) {
-        font-size: 6rem;
-      }
-      @media only screen and (max-width: $bp-small) {
-        font-size: 5rem;
-      }
-    }
 
-    &__subheading {
-      width: 50%;
-      letter-spacing: 0.2rem;
-      letter-spacing: 0.322vw;
-      line-height: 2.8rem;
-      // text-align: center;
-
-      @media only screen and (max-width: $bp-large) {
-        width: 73%;
-      }
-      @media only screen and (max-width: $bp-medium) {
-        width: 70%;
-      }
       @media only screen and (max-width: $bp-x-medium) {
         width: 100%;
       }
@@ -55,13 +38,85 @@
       }
     }
 
+    &__bio {
+      & p {
+        text-transform: none;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        // width: 73%;
+      }
+      @media only screen and (max-width: $bp-medium) {
+        // width: 70%;
+      }
+      @media only screen and (max-width: $bp-x-medium) {
+        // width: 100%;
+      }
+    }
+
     &__content {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      margin: 4rem 0;
-      text-align: center;
-      // height: 26vh;
+      width: 100%;
+
+      & ul {
+        font-size: 1.2rem;
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+        padding-left: 3rem;
+      }
+
+      & h2 {
+        font-size: 2.4rem;
+        font-family: $font-heading;
+        font-weight: 300;
+        border-bottom: 2.5px solid $color-off-white;
+      }
+
+      &__skills {
+        display: grid;
+        grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end col-3-start] 1fr [col-3-end col-4-start] 1fr [col-4-end];
+        grid-template-rows: 1fr;
+
+        @media only screen and (max-width: $bp-small) {
+          grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end];
+          grid-template-rows: 1fr 1fr;
+        }
+
+        &--languages {
+          @media only screen and (max-width: $bp-small) {
+            grid-column: col-1-start / col-1-end;
+            grid-row: 1 / 2;
+          }
+        }
+
+        &--frameworks {
+          @media only screen and (max-width: $bp-small) {
+            grid-column: col-2-start / col-2-end;
+            grid-row: 1 / 2;
+          }
+        }
+
+        &--libraries {
+          @media only screen and (max-width: $bp-small) {
+            grid-column: col-1-start / col-1-end;
+
+            grid-row: 2 / 3;
+          }
+        }
+
+        &--devtools {
+          @media only screen and (max-width: $bp-small) {
+            grid-column: col-2-start / col-2-end;
+            grid-row: 2 / 3;
+          }
+        }
+      }
 
       &__get-in-touch {
         margin-top: 5rem;
@@ -83,22 +138,6 @@
         height: 100%;
       }
     }
-  }
-
-  & h1 {
-    font-size: 5.6rem;
-    color: $color-off-white;
-    // color: $color-dark-grey;
-    text-transform: none;
-    font-weight: 300;
-
-    & span {
-      // font-size: 7rem;
-    }
-  }
-
-  & p span {
-    font-size: 2.4rem;
   }
 
   &__heading {
@@ -125,10 +164,33 @@
   }
 }
 
-.hover-texts {
-  @media only screen and (max-width: $bp-small) {
-    display: none;
+.outro-gifs {
+  text-align: center;
+  margin-top: 2rem;
+
+  & .gif {
+    margin: 6.5rem 0;
+    width: 40rem;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
   }
+
+  & p {
+    font-size: 2rem;
+    text-transform: none;
+
+    & span {
+      // class =  hover-text-1 & hover-text-2
+      // FOR THE GIFS OVER HOVER TEXTS
+      // font-size: 2.4rem;
+    }
+  }
+}
+
+.cursor img {
+  width: 38rem;
 }
 
 .you-smart-gif-mobile {
