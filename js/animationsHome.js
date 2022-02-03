@@ -33,7 +33,7 @@ if (window.innerWidth <= 1200) {
       ease: Expo.easeInOut,
     })
     .from(
-      projectsHeading,
+      [projectsHeading],
       {
         // delay: -0.1,
         y: 60,
@@ -50,7 +50,7 @@ if (window.innerWidth <= 1200) {
         opacity: 0,
         duration: 0.8,
         ease: '"power3.out"',
-        stagger: 0.2,
+        stagger: 0.1,
       },
       "-=0.6"
     );
@@ -159,7 +159,7 @@ if (window.innerWidth > 1200) {
 
   ////////////////////////////////////////////////////////////////////////////////
   // Project 3
-  const project3TL = gsap.timeline();
+  // const project3TL = gsap.timeline();
 
   project3TL
     .from(projectCard03, {
@@ -188,7 +188,7 @@ if (window.innerWidth > 1200) {
 
   ////////////////////////////////////////////////////////////////////////////////
   // Project 4
-  const project4TL = gsap.timeline();
+  // const project4TL = gsap.timeline();
 
   project4TL
     .from(projectCard04, {

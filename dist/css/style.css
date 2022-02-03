@@ -1313,10 +1313,6 @@ nav {
   }
 }
 
-.projects__card:hover {
-  transform: scale(0.97);
-}
-
 .projects__card__container {
   width: 100%;
   padding: 0 2vw;
@@ -1357,6 +1353,10 @@ nav {
   }
 }
 
+.projects__card__img:hover {
+  transform: scale(1.05);
+}
+
 .projects__card__img img {
   width: 100%;
   height: 100%;
@@ -1395,7 +1395,6 @@ nav {
   margin-bottom: 0.2rem;
   font-weight: 300;
   font-size: 4.2rem;
-  font-size: 2rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -1405,14 +1404,47 @@ nav {
   }
 }
 
-.projects__card__subheading {
+.projects__card__buttons {
   display: flex;
+  align-items: center;
+  margin-bottom: 1.9rem;
+}
+
+.projects__card__buttons--more-info {
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.projects__card__buttons--more-info p {
+  margin-left: 0.5rem;
+}
+
+.projects__card__buttons a {
+  color: inherit;
+}
+
+.projects__card__buttons a:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.projects__card__buttons a i {
+  transition: all 0.3s ease-in-out;
+}
+
+.projects__card__buttons a i:hover {
+  transform: scale(1.25);
+}
+
+.projects__card__subheading p > i {
+  margin-right: 0.6rem;
 }
 
 .projects__card__subheading h4 {
   color: #171717;
   color: #faf9f6;
   margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 56.25em) {
