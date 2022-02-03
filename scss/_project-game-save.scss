@@ -413,7 +413,7 @@
 
     h2 {
       margin: 0;
-      opacity: 0.8;
+
       transition: opacity 0.2s ease;
 
       @media only screen and (max-width: $bp-x-medium) {
@@ -422,10 +422,6 @@
 
       @media only screen and (max-width: $bp-small) {
         line-height: 5rem;
-      }
-
-      &:hover {
-        opacity: 1;
       }
     }
 
