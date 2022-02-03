@@ -76,6 +76,13 @@
 .contacts {
   display: flex;
 
+  &__header {
+    display: none;
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+    }
+  }
+
   & a {
     color: inherit;
     color: $color-off-white;
@@ -85,7 +92,6 @@
 
     position: relative;
     overflow: hidden;
-    opacity: 0.7;
 
     @media only screen and (max-width: $bp-small) {
       opacity: 1;
@@ -97,6 +103,7 @@
 
     & p {
       margin: 0;
+
       // line-height: 1.1;
       color: $color-off-white;
       // color: $color-dark-grey;
@@ -111,7 +118,6 @@
   }
 
   & a .footer__icon {
-    opacity: 0;
     font-size: 2.5rem;
     margin-top: 1rem;
     margin-right: 1.3rem;
@@ -127,5 +133,6 @@
 
   & a:hover .footer__icon {
     opacity: 1;
+    transform: scale(1.25);
   }
 }
