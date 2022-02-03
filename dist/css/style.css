@@ -369,12 +369,9 @@ p {
   }
 }
 
-.scroll-to-top:hover {
-  opacity: 0.5;
-}
-
 .scroll-to-top svg {
   width: 3rem;
+  transition: all 0.3s ease-in;
 }
 
 html {
@@ -748,12 +745,9 @@ p {
   }
 }
 
-.scroll-to-top:hover {
-  opacity: 0.5;
-}
-
 .scroll-to-top svg {
   width: 3rem;
+  transition: all 0.3s ease-in;
 }
 
 .home__hamburger-btn,

@@ -383,11 +383,8 @@ p {
     display: none;
   }
 
-  &:hover {
-    opacity: 0.5;
-  }
-
   & svg {
     width: 3rem;
+    transition: all 0.3s ease-in;
   }
 }
