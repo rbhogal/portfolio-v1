@@ -20,7 +20,7 @@ const loadingLastName = document.querySelector(
 const bodyContainer = document.querySelector(".container");
 
 // Header
-const header = document.querySelector(".home__header");
+const header = document.querySelector(".header");
 const navLink = document.querySelectorAll(".nav__link");
 
 const loadingCoverTop = document.querySelector(".loading-intro__cover--top");
@@ -184,7 +184,7 @@ if (window.innerWidth > 1200) {
         duration: 0.25,
         ease: "power3.inOut",
       },
-      "-=.5"
+      "-=.4"
     )
     .from(
       [
@@ -201,8 +201,8 @@ if (window.innerWidth > 1200) {
         opacity: 0,
         duration: 0.25,
         ease: '"power3.out"',
-        // stagger: 0.1,
-      }
+      },
+      "-=.1"
     );
 
   //////////////////////////////////////////////////////////////////////////////

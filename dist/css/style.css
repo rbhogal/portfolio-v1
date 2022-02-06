@@ -742,33 +742,18 @@ p {
   transition: all 0.3s ease-in;
 }
 
-.home__hamburger-btn,
-.home__hamburger-btn::after,
-.home__hamburger-btn:before {
+.header__hamburger-btn,
+.header__hamburger-btn::after,
+.header__hamburger-btn:before {
   width: 3rem;
   height: 0.4rem;
 }
 
-.home {
+.header {
   width: 100%;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   margin-top: 3rem;
-}
-
-.home__intro {
-  margin-bottom: 10rem;
-  padding: 0 4.5vw;
-  text-align: center;
-}
-
-.home__intro h1 {
-  font-size: 5rem;
-  font-weight: 300;
-  margin: 0;
-}
-
-.home__header {
   width: 100%;
   border-bottom: 1.5px solid #faf9f6;
   padding-bottom: 2rem;
@@ -778,13 +763,25 @@ p {
 }
 
 @media only screen and (max-width: 31.25em) {
-  .home__header {
+  .header {
     border-bottom: unset;
     padding-bottom: unset;
   }
 }
 
-.home__folio {
+.header__intro {
+  margin-bottom: 10rem;
+  padding: 0 4.5vw;
+  text-align: center;
+}
+
+.header__intro h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.header__folio {
   margin: 0;
   font-family: "Bebas Neue", sans-serif;
   font-family: mono45-headline, monospace;
@@ -798,12 +795,12 @@ p {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .home__folio {
+  .header__folio {
     display: none;
   }
 }
 
-.home__hamburger-btn {
+.header__hamburger-btn {
   position: relative;
   transform: translateY(1rem);
   background: #faf9f6;
@@ -812,7 +809,7 @@ p {
   -webkit-tap-highlight-color: transparent;
 }
 
-.home__hamburger-btn__container {
+.header__hamburger-btn__container {
   display: none;
   grid-column: 3 / 4;
   grid-row: 1 / -1;
@@ -823,28 +820,28 @@ p {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .home__hamburger-btn__container {
+  .header__hamburger-btn__container {
     display: block;
   }
 }
 
-.home__hamburger-btn.animate-btn {
+.header__hamburger-btn.animate-btn {
   background: rgba(250, 249, 246, 0);
 }
 
-.home__hamburger-btn.animate-btn:after {
+.header__hamburger-btn.animate-btn:after {
   top: 0;
   transform: rotate(45deg);
   transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.home__hamburger-btn.animate-btn:before {
+.header__hamburger-btn.animate-btn:before {
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.home__hamburger-btn::before {
+.header__hamburger-btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -853,7 +850,7 @@ p {
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.home__hamburger-btn::after {
+.header__hamburger-btn::after {
   content: "";
   position: absolute;
   left: 0;
@@ -862,7 +859,7 @@ p {
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.home__heading {
+.header__heading {
   margin: 0;
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.4rem;
@@ -872,23 +869,23 @@ p {
   width: fit-content;
 }
 
-.home__heading__container {
+.header__heading__container {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
 }
 
-.home__heading__container a {
+.header__heading__container a {
   text-decoration: none;
   color: inherit;
 }
 
 @media only screen and (max-width: 31.25em) {
-  .home__heading__container {
+  .header__heading__container {
     grid-column: 1 / -1;
   }
 }
 
-.home__subheading {
+.header__subheading {
   margin: 0;
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
@@ -896,7 +893,7 @@ p {
   letter-spacing: 0.2em;
 }
 
-.home__subheading div {
+.header__subheading div {
   width: fit-content;
 }
 
@@ -1062,50 +1059,6 @@ nav a:hover .nav__arrow-icon--download {
   transition: all 0.2s ease;
 }
 
-/* 
-.header {
-  padding: 2.5rem 0;
-  position: fixed;
-  top: 0;
-  right: 6rem;
-  width: 100%;
-  z-index: 9000;
-  width: min-content;
-}
-
-
-nav {
-
-  & a {
-    color: $color-off-white;
-    text-decoration: none;
-
-    &:hover p {
-      // font-weight: 600;
-    }   
-    
-    & p {
-      pointer-events: none;
-      transition: transform 0.1s linear;
-    }
-  }
- 
-  &__cover {
-    height: 12px;
-    width: 40px;
-    background-color: $color-dark-grey;
-    margin-left: auto;
-    position: fixed;
-    top: 9rem;
-    right: 6rem;
-    z-index: 9001;
-  }
-
-  &__about {
-    margin-left: auto;
-  }
-}
- */
 .footer {
   width: 100%;
   padding: 2.5rem 0;

@@ -164,9 +164,9 @@ if (location.pathname === "/about.html") {
 //Hamburger Menu
 
 const hamburgerMenuContainer = document.querySelector(
-  ".home__hamburger-btn__container"
+  ".header__hamburger-btn__container"
 );
-const hamburgerBtn = document.querySelector(".home__hamburger-btn");
+const hamburgerBtn = document.querySelector(".header__hamburger-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const body = document.querySelector(".container");
 

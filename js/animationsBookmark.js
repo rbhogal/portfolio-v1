@@ -6,7 +6,7 @@ const loadingScreenAddition = document.querySelector(
 const bodyContainer = document.querySelector(".container");
 
 // Header
-const header = document.querySelector(".home__header");
+const header = document.querySelector(".header");
 const navLink = document.querySelectorAll(".nav__link");
 
 const scrollToTopBtn = document.querySelector(".scroll-to-top");
