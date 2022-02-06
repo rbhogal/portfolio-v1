@@ -757,30 +757,15 @@ p {
 }
 
 .home__intro {
-  font-size: 2.4rem;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 0.5rem;
-  letter-spacing: 0.322vw;
-  width: 100%;
-  height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 10rem;
+  padding: 0 4.5vw;
+  text-align: center;
 }
 
-.home__intro__heading {
-  font-size: 12rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home__intro__subheading {
-  width: 92%;
-}
-
-.home__intro .emoji {
+.home__intro h1 {
   font-size: 5rem;
+  font-weight: 300;
+  margin: 0;
 }
 
 .home__header {
