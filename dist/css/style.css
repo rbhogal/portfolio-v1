@@ -1519,6 +1519,7 @@ nav {
   font-weight: 400;
   margin: 0;
   padding-left: 3rem;
+  list-style-type: square;
 }
 
 .about__intro__content h2 {
