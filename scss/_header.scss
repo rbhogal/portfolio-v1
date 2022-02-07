@@ -42,9 +42,6 @@ $bar-spacing: 1rem;
     }
   }
 
-  &__header {
-  }
-
   &__folio {
     margin: 0;
     font-family: $font-intro-text;
@@ -127,7 +124,6 @@ $bar-spacing: 1rem;
   &__heading {
     margin: 0;
     font-family: $font-intro-text;
-    // font-family: $font-heading;
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
@@ -163,7 +159,6 @@ $bar-spacing: 1rem;
 }
 
 .content {
-  // padding-left: 55%;
   padding-top: 5rem;
   display: flex;
   justify-content: space-between;
@@ -183,9 +178,6 @@ $bar-spacing: 1rem;
 
     & h2 {
       font-size: 2.4rem;
-      // letter-spacing: 0;
-      // vertical-align: middle;
-      // line-height: 3.8;
       font-family: europa, sans-serif;
       font-weight: 400;
     }
@@ -193,40 +185,13 @@ $bar-spacing: 1rem;
   &__subtext {
     padding-left: 0.7rem;
     max-width: 56rem;
-    // font-size: 1.5rem;
   }
 }
 
-// .number {
-//   font-family: $font-heading;
-//   font-style: normal;
-
-//   &__01 {
-//     font-size: 19rem;
-//     margin: 0;
-//     font-weight: 300;
-//     line-height: 0.8;
-//     border-bottom: 5px solid $color-off-white;
-//     width: min-content;
-//     padding-bottom: 3rem;
-//     // margin-bottom: 5rem;
-//   }
-// }
-
 .name {
   margin: 0;
-  // line-height: 0.8;
   font-size: 19rem;
-  // letter-spacing: 0.3rem;
   padding-left: 14rem;
-
-  // Option 2
-  // font-family: "Bebas Neue", cursive;
-  // letter-spacing: 1.5rem;
-  // line-height: normal;
-  // font-size: 12rem;
-
-  //Option 3
   font-family: europa, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -344,11 +309,13 @@ nav {
 
 .nav {
   &__links {
-    // display: flex;
+    display: flex;
+    width: 100%;
   }
 
   &__link {
     display: flex;
+    margin: 0 2rem;
   }
 
   &__arrow-icon {

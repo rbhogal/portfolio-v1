@@ -1039,8 +1039,14 @@ nav a:hover .nav__arrow-icon--download {
   }
 }
 
+.nav__links {
+  display: flex;
+  width: 100%;
+}
+
 .nav__link {
   display: flex;
+  margin: 0 2rem;
 }
 
 .nav__arrow-icon {
@@ -1566,7 +1572,7 @@ nav a:hover .nav__arrow-icon--download {
 
 .outro-gifs {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .outro-gifs .gif {
