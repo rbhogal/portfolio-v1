@@ -163,14 +163,8 @@
           margin-left: 1rem;
         }
 
-        & p {
-          // border: solid 1px $color-off-white;
-          // border-radius: 2px;
-          // padding: 1 2rem;
-        }
-
         & i {
-          transition: all 0.3s ease-in-out;
+          transition: all 0.1s ease-in-out;
 
           &:hover {
             transform: scale(1.25);

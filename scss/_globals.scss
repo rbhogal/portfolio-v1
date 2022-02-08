@@ -375,6 +375,14 @@ p {
   justify-content: center;
   align-items: center;
 
+  // &__link {
+  //   opacity: 0.4;
+
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
+
   @media only screen and (max-width: $bp-small) {
     display: none;
   }

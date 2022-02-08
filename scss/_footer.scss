@@ -16,23 +16,23 @@
     }
   }
 
+  &__email {
+    font-size: 11rem;
+    font-weight: 300;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 7rem;
+    }
+    @media only screen and (max-width: $bp-x-medium) {
+      font-size: 3rem;
+    }
+  }
+
   &__link {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 1rem;
-
-    &--email {
-      font-size: 11rem;
-      font-weight: 300;
-
-      @media only screen and (max-width: $bp-large) {
-        font-size: 7rem;
-      }
-      @media only screen and (max-width: $bp-x-medium) {
-        font-size: 3rem;
-      }
-    }
 
     &--email-border {
       width: 100%;
@@ -48,7 +48,7 @@
 
   &__icon {
     width: 1.1rem;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 
     &--download {
       margin-right: 0.2rem;
@@ -77,9 +77,17 @@
   display: flex;
 
   &__header {
-    display: none;
-    @media only screen and (max-width: $bp-small) {
-      display: block;
+    // display: none;
+    // @media only screen and (max-width: $bp-small) {
+    //   display: block;
+    // }
+  }
+
+  &:hover .footer__link {
+    opacity: 0.2;
+
+    &:hover {
+      opacity: 1;
     }
   }
 
@@ -87,17 +95,12 @@
     color: inherit;
     color: $color-off-white;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     // transition: color .3s cubic-bezier(0.11, 0.7, 0, 1);
-
     position: relative;
     overflow: hidden;
 
     @media only screen and (max-width: $bp-small) {
-      opacity: 1;
-    }
-
-    &:hover {
       opacity: 1;
     }
 
@@ -133,6 +136,6 @@
 
   & a:hover .footer__icon {
     opacity: 1;
-    transform: scale(1.25);
+    // transform: scale(1.25);
   }
 }

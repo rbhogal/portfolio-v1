@@ -929,30 +929,6 @@ p {
   max-width: 56rem;
 }
 
-.name {
-  margin: 0;
-  font-size: 19rem;
-  padding-left: 14rem;
-  font-family: europa, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
-}
-
-.name__first {
-  font-weight: 300;
-  padding-top: 8%;
-  font-family: abolition, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.name__last {
-  font-weight: 300;
-  opacity: 0.6;
-  font-size: 5.6rem;
-}
-
 .projects__btn {
   width: fit-content;
   text-align: center;
@@ -1005,32 +981,29 @@ p {
   z-index: 9003;
 }
 
+.nav-wrapper:hover span {
+  opacity: 0.2;
+}
+
+.nav-wrapper:hover span:hover {
+  opacity: 1;
+}
+
 .nav-wrapper span {
-  font-family: "Heebo", sans-serif;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #faf9f6;
-  pointer-events: none;
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
+  transition: all 0.1s ease;
 }
 
 nav a {
   text-decoration: none;
   display: inline-block;
   color: inherit;
-}
-
-nav a:hover .nav__arrow-icon {
-  opacity: 1;
-}
-
-nav a:hover .nav__arrow-icon--download {
-  opacity: 1;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1047,22 +1020,6 @@ nav a:hover .nav__arrow-icon--download {
 .nav__link {
   display: flex;
   margin: 0 2rem;
-}
-
-.nav__arrow-icon {
-  width: 2rem;
-  transform: rotate(-45deg);
-  margin-right: 0.2rem;
-  margin-top: 0.4rem;
-  opacity: 0;
-  transition: all 0.2s ease;
-}
-
-.nav__arrow-icon--download {
-  width: 2rem;
-  margin-right: 0.2rem;
-  opacity: 0;
-  transition: all 0.2s ease;
 }
 
 .footer {
@@ -1084,28 +1041,28 @@ nav a:hover .nav__arrow-icon--download {
   }
 }
 
-.footer__link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 1rem;
-}
-
-.footer__link--email {
+.footer__email {
   font-size: 11rem;
   font-weight: 300;
 }
 
 @media only screen and (max-width: 75em) {
-  .footer__link--email {
+  .footer__email {
     font-size: 7rem;
   }
 }
 
 @media only screen and (max-width: 40.625em) {
-  .footer__link--email {
+  .footer__email {
     font-size: 3rem;
   }
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
 }
 
 .footer__link--email-border {
@@ -1121,7 +1078,7 @@ nav a:hover .nav__arrow-icon--download {
 
 .footer__icon {
   width: 1.1rem;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .footer__icon--download {
@@ -1148,21 +1105,19 @@ nav a:hover .nav__arrow-icon--download {
   display: flex;
 }
 
-.contacts__header {
-  display: none;
+.contacts:hover .footer__link {
+  opacity: 0.2;
 }
 
-@media only screen and (max-width: 31.25em) {
-  .contacts__header {
-    display: block;
-  }
+.contacts:hover .footer__link:hover {
+  opacity: 1;
 }
 
 .contacts a {
   color: inherit;
   color: #faf9f6;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   position: relative;
   overflow: hidden;
 }
@@ -1171,10 +1126,6 @@ nav a:hover .nav__arrow-icon--download {
   .contacts a {
     opacity: 1;
   }
-}
-
-.contacts a:hover {
-  opacity: 1;
 }
 
 .contacts a p {
@@ -1204,7 +1155,6 @@ nav a:hover .nav__arrow-icon--download {
 
 .contacts a:hover .footer__icon {
   opacity: 1;
-  transform: scale(1.25);
 }
 
 .projects {
@@ -1379,7 +1329,7 @@ nav a:hover .nav__arrow-icon--download {
 }
 
 .projects__card__buttons a i {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .projects__card__buttons a i:hover {
@@ -1592,7 +1542,7 @@ nav a:hover .nav__arrow-icon--download {
 }
 
 .cursor img {
-  width: 38rem;
+  width: 30rem;
 }
 
 .you-smart-gif-mobile {

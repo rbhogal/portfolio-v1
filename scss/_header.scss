@@ -188,35 +188,6 @@ $bar-spacing: 1rem;
   }
 }
 
-.name {
-  margin: 0;
-  font-size: 19rem;
-  padding-left: 14rem;
-  font-family: europa, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
-
-  &__container {
-    // width: 50%;
-  }
-
-  &__first {
-    font-weight: 300;
-    padding-top: 8%;
-    //Abolition
-    font-family: abolition, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  &__last {
-    font-weight: 300;
-    opacity: 0.6;
-    font-size: 5.6rem;
-  }
-}
-
 .projects__btn {
   width: fit-content;
   text-align: center;
@@ -258,6 +229,14 @@ $bar-spacing: 1rem;
   }
 }
 
+// .nav-wrapper:hover span {
+//   opacity: 0.5;
+// }
+
+// .nav-wrapper:hover span:hover {
+//   opacity: 1;
+// }
+
 .nav-wrapper {
   position: fixed;
   padding: 3rem 0;
@@ -268,22 +247,24 @@ $bar-spacing: 1rem;
   mix-blend-mode: difference;
   z-index: 9003;
 
+  &:hover span {
+    opacity: 0.2;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   & span {
-    font-family: $font-secondary;
-    font-family: $font-intro-text;
-    font-weight: 400;
     font-size: 1.2rem;
-    // font-size: 2rem;
-    // letter-spacing: .2rem;
     text-transform: uppercase;
     color: $color-off-white;
-    pointer-events: none;
-    // transition: transform 0.1s linear;
-
+    // pointer-events: none;
     font-family: $font-intro-text;
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
+    transition: all 0.1s ease;
   }
 }
 
@@ -292,14 +273,6 @@ nav {
     text-decoration: none;
     display: inline-block;
     color: inherit;
-
-    &:hover .nav__arrow-icon {
-      opacity: 1;
-    }
-
-    &:hover .nav__arrow-icon--download {
-      opacity: 1;
-    }
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -316,21 +289,5 @@ nav {
   &__link {
     display: flex;
     margin: 0 2rem;
-  }
-
-  &__arrow-icon {
-    width: 2rem;
-    transform: rotate(-45deg);
-    margin-right: 0.2rem;
-    margin-top: 0.4rem;
-    opacity: 0;
-    transition: all 0.2s ease;
-
-    &--download {
-      width: 2rem;
-      margin-right: 0.2rem;
-      opacity: 0;
-      transition: all 0.2s ease;
-    }
   }
 }
