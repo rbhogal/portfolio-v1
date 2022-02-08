@@ -981,14 +981,6 @@ p {
   z-index: 9003;
 }
 
-.nav-wrapper:hover span {
-  opacity: 0.2;
-}
-
-.nav-wrapper:hover span:hover {
-  opacity: 1;
-}
-
 .nav-wrapper span {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -998,6 +990,14 @@ p {
   font-weight: 400;
   letter-spacing: 1.2rem;
   transition: all 0.1s ease;
+}
+
+nav:hover span {
+  opacity: 0.2;
+}
+
+nav:hover span:hover {
+  opacity: 1;
 }
 
 nav a {

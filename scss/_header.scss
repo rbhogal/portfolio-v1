@@ -247,14 +247,6 @@ $bar-spacing: 1rem;
   mix-blend-mode: difference;
   z-index: 9003;
 
-  &:hover span {
-    opacity: 0.2;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
   & span {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -269,6 +261,13 @@ $bar-spacing: 1rem;
 }
 
 nav {
+  &:hover span {
+    opacity: 0.2;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
   & a {
     text-decoration: none;
     display: inline-block;

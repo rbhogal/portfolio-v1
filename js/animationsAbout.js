@@ -140,6 +140,8 @@ if (window.innerWidth <= 1200) {
 
 // Desktop
 if (window.innerWidth > 1200) {
+  const scrollToTop = document.querySelector(".scroll-to-top");
+
   loadingNameEnterTL
     .from(loadingFirstName, {
       duration: 1.5,
@@ -193,7 +195,7 @@ if (window.innerWidth > 1200) {
         aboutSubheading,
         aboutLineBreak,
         listItems,
-        easterEggsHint,
+        scrollToTop,
       ],
       {
         delay: 0,
@@ -236,7 +238,7 @@ if (window.innerWidth > 1200) {
 //////////////////////////////////////////////////////////////////////////////
 // Easter Eggs Hint
 
-const easterEggsHintText = document.querySelector(".easter-eggs-hint--text");
+// const easterEggsHintText = document.querySelector(".easter-eggs-hint--text");
 
 easterEggsHint.addEventListener("mouseover", () => {
   easterEggsHintText.classList.add("open");
