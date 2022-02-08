@@ -1019,7 +1019,10 @@ nav a {
 
 .nav__link {
   display: flex;
-  margin: 0 2rem;
+}
+
+.nav__link:not(:last-child) {
+  margin-right: 3rem;
 }
 
 .footer {
