@@ -288,6 +288,8 @@ nav {
 
   &__link {
     display: flex;
-    margin: 0 2rem;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
   }
 }
