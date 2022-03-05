@@ -4,26 +4,37 @@ $bar-width: 3rem;
 $bar-height: 0.4rem;
 $bar-spacing: 1rem;
 
-.header__hamburger-btn,
-.header__hamburger-btn::after,
-.header__hamburger-btn:before {
+.home-header__hamburger-btn,
+.home-header__hamburger-btn::after,
+.home-header__hamburger-btn:before {
   width: $bar-width;
   height: $bar-height;
 }
 
-.header {
+.home-header {
   width: 100%;
-  grid-row: 1 / 2;
+  grid-row: 2 / 3;
   grid-column: 2 / 3;
-  margin-top: 3rem;
+  padding-top: 3rem;
+  // mix-blend-mode: difference;
+  background-color: rgba(23, 23, 23, 0.98);
 
   width: 100%;
-  border-bottom: 1.5px solid $color-off-white;
-  padding-bottom: 2rem;
+  // border-bottom: 1.5px solid $color-off-white;
+  // padding-bottom: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   // visibility: hidden;
+
+  &__bottom-border {
+    grid-column: 1 / 5;
+    margin-top: 1rem;
+    width: 100%;
+    height: 1px;
+    background-color: $color-off-white;
+    // mix-blend-mode: difference;
+  }
 
   @media only screen and (max-width: $bp-small) {
     border-bottom: unset;
@@ -158,77 +169,6 @@ $bar-spacing: 1rem;
   }
 }
 
-.content {
-  padding-top: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__hero {
-    margin-left: 15%;
-    & h1 {
-      font-size: 25rem;
-      font-weight: 300;
-    }
-  }
-
-  &__subcontent {
-    width: 50rem;
-    margin-right: 15%;
-
-    & h2 {
-      font-size: 2.4rem;
-      font-family: europa, sans-serif;
-      font-weight: 400;
-    }
-  }
-  &__subtext {
-    padding-left: 0.7rem;
-    max-width: 56rem;
-  }
-}
-
-.projects__btn {
-  width: fit-content;
-  text-align: center;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 2rem;
-  left: 0;
-  right: 0;
-
-  &__cover {
-    position: absolute;
-    width: 75px;
-    height: 25px;
-    bottom: -2.2rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: $color-dark-grey;
-  }
-
-  & p {
-    margin: 0;
-  }
-
-  & a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  &--arrow-down-icon {
-    width: 1.6rem;
-    color: inherit;
-    transition: all 0.2s ease;
-  }
-
-  &:hover .projects__btn--arrow-down-icon {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-}
-
 // .nav-wrapper:hover span {
 //   opacity: 0.5;
 // }
@@ -237,7 +177,7 @@ $bar-spacing: 1rem;
 //   opacity: 1;
 // }
 
-.nav-wrapper {
+.home-header__nav-wrapper {
   position: fixed;
   padding: 3rem 0;
   top: 0;
@@ -246,7 +186,9 @@ $bar-spacing: 1rem;
   width: min-content;
   mix-blend-mode: difference;
   z-index: 9003;
-  // visibility: hidden;
+  grid-column: 2 / 4;
+  justify-self: flex-end;
+  align-items: flex-start;
 
   & span {
     font-size: 1.2rem;
@@ -280,7 +222,7 @@ nav {
   }
 }
 
-.nav {
+.home-header__nav {
   &__links {
     display: flex;
     width: 100%;
@@ -292,4 +234,17 @@ nav {
       margin-right: 3rem;
     }
   }
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+
+.projects-sticky-padding {
+  padding-top: 9.65rem;
 }
