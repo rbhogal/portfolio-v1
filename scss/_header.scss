@@ -63,7 +63,7 @@ $bar-spacing: 1rem;
     position: relative;
     transform: translateY($bar-spacing);
     background: rgba(250, 249, 246, 1);
-    transition: all 0ms 300ms;
+    transition: all 0ms 200ms;
     z-index: 9002;
     -webkit-tap-highlight-color: transparent;
 
@@ -88,15 +88,15 @@ $bar-spacing: 1rem;
       &:after {
         top: 0;
         transform: rotate(45deg);
-        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
-          transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: top 200ms cubic-bezier(0.23, 1, 0.32, 1),
+          transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
       }
 
       &:before {
         bottom: 0;
         transform: rotate(-45deg);
-        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
-          transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        transition: bottom 200ms cubic-bezier(0.23, 1, 0.32, 1),
+          transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
       }
     }
 
@@ -106,8 +106,8 @@ $bar-spacing: 1rem;
       left: 0;
       bottom: $bar-spacing;
       background: rgba(250, 249, 246, 1);
-      transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      transition: bottom 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
     &::after {
@@ -116,8 +116,8 @@ $bar-spacing: 1rem;
       left: 0;
       top: $bar-spacing;
       background: rgba(250, 249, 246, 1);
-      transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      transition: top 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
     }
   }
 

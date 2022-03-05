@@ -189,11 +189,14 @@ const scrollUnlock = () => {
 hamburgerMenuContainer.addEventListener("click", () => {
   // Close
   if (mobileMenu.classList.contains("open")) {
-    hamburgerBtn.classList.toggle("animate-btn");
     mobileMenu.classList.remove("open");
+
+    hamburgerBtn.classList.toggle("animate-btn");
+    mobileMenu.classList.add("animate-menu-up");
     body.classList.remove("scroll-lock");
-    mobileLink1.classList.remove("fade-in-links--about");
-    mobileLink2.classList.remove("fade-in-links--projects");
+
+    // mobileLink1.classList.remove("fade-in-links--about");
+    // mobileLink2.classList.remove("fade-in-links--projects");
     scrollUnlock();
 
     return;
@@ -203,7 +206,10 @@ hamburgerMenuContainer.addEventListener("click", () => {
   hamburgerBtn.classList.toggle("animate-btn");
   mobileMenu.classList.add("open");
   body.classList.add("scroll-lock");
-  mobileLink1.classList.add("fade-in-links--about");
-  mobileLink2.classList.add("fade-in-links--projects");
+  mobileMenu.classList.remove("animate-menu-up");
+  mobileMenu.classList.add("animate-menu-down");
+
+  // mobileLink1.classList.add("fade-in-links--about");
+  // mobileLink2.classList.add("fade-in-links--projects");
   scrollLock();
 });

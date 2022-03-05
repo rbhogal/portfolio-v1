@@ -41,6 +41,10 @@
     height: min-content;
     overflow: hidden;
 
+    &--01 {
+      border-top: 1px $color-off-white;
+    }
+
     @media only screen and (max-width: $bp-large) {
       display: block;
       margin-bottom: 0;
@@ -188,13 +192,13 @@
   }
 }
 
-.number__02 {
-  font-size: 19rem;
-  font-weight: 300;
-  margin: 0;
-  margin-bottom: 5rem;
-  border-bottom: 5px solid $color-off-white;
-  padding-bottom: 3rem;
-  line-height: 0.8;
-  width: min-content;
-}
+// .number__02 {
+//   font-size: 19rem;
+//   font-weight: 300;
+//   margin: 0;
+//   margin-bottom: 5rem;
+//   border-bottom: 5px solid $color-off-white;
+//   padding-bottom: 3rem;
+//   line-height: 0.8;
+//   width: min-content;
+// }

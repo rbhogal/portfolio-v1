@@ -255,7 +255,7 @@ p {
 }
 
 .mobile-menu {
-  display: none;
+  // display: none;
   background-color: rgba(23, 23, 23, 1);
   position: fixed;
   top: 0;
@@ -265,6 +265,7 @@ p {
   z-index: 9002;
   padding: 2.5rem;
   padding-top: 7rem;
+  // background-color: blue;
 
   &__content {
     & a {
@@ -284,6 +285,32 @@ p {
   &.open {
     display: block;
   }
+}
+
+@keyframes slide-down-menu {
+  0% {
+    transform: translateY((-110vh));
+  }
+  100% {
+    transform: translateY((0vh));
+  }
+}
+
+@keyframes slide-up-menu {
+  0% {
+    transform: translateY((0vh));
+  }
+  100% {
+    transform: translateY((-110vh));
+  }
+}
+
+.animate-menu-down {
+  animation: slide-down-menu 0.2s linear forwards;
+}
+
+.animate-menu-up {
+  animation: slide-up-menu 0.2s linear forwards;
 }
 
 @keyframes fade-in-links {
