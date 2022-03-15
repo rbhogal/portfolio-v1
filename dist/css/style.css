@@ -1117,6 +1117,10 @@ nav a {
   width: 100%;
 }
 
+.nav__link {
+  display: flex;
+}
+
 .nav__link:not(:last-child) {
   margin-right: 3rem;
 }
