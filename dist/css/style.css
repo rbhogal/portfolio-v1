@@ -445,18 +445,6 @@ p {
   width: 2.4rem;
 }
 
-#cityBgVideo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 0;
-  opacity: 0.5;
-  height: 100%;
-  width: 100%;
-}
-
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -1129,12 +1117,20 @@ nav a {
   width: 100%;
 }
 
-.nav__link {
-  display: flex;
-}
-
 .nav__link:not(:last-child) {
   margin-right: 3rem;
+}
+
+.nav__link span {
+  padding-bottom: 0.5rem;
+}
+
+.nav__link__subheading {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
 }
 
 html {
@@ -2091,7 +2087,7 @@ nav a {
 .projects__card__subheading h4 {
   color: #171717;
   color: #faf9f6;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 0;
 }
 

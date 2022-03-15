@@ -287,9 +287,22 @@ nav {
   }
 
   &__link {
-    display: flex;
+    // display: flex;
+
     &:not(:last-child) {
       margin-right: 3rem;
+    }
+
+    & span {
+      padding-bottom: 0.5rem;
+    }
+
+    &__subheading {
+      margin: 0;
+      font-family: $font-intro-text;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
     }
   }
 }
