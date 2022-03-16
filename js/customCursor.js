@@ -1,11 +1,13 @@
 //Custom Cursor
 const link = document.querySelectorAll(".hover-this");
 const linkViewSite = document.querySelectorAll(".hover-view-site");
+const linkViewDemo = document.querySelectorAll(".hover-view-demo");
 const linkBig = document.querySelectorAll(".hover-this-big");
 
 let cursor = document.querySelector(".cursor"); // The small one
 let cursor2 = document.querySelector(".cursor-2"); // The large one
 let cursorText = document.querySelector(".cursor-view-site-text");
+let cursorTextDemo = document.querySelector(".cursor-view-demo-text");
 
 let currentX = 0;
 let currentY = 0;
@@ -93,19 +95,18 @@ linkViewSite.forEach((link) => {
   });
 });
 
-// Cursor animations or View Project inks
-// linkViewSite.forEach((link) => {
-//   link.addEventListener("mouseover", () => {
-//     cursor.classList.add("animate-cursor-view-project");
-//     cursor2.classList.add("animate-cursor-2");
-//     cursorText.classList.add("cursor-view-project-text-active");
-//   });
-//   link.addEventListener("mouseleave", () => {
-//     cursor.classList.remove("animate-cursor-view-project");
-//     cursor2.classList.remove("animate-cursor-2");
-//     cursorText.classList.remove("cursor-view-project-text-active");
-//   });
-// });
+linkViewDemo.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor-view-demo");
+    cursor2.classList.add("animate-cursor-2");
+    cursorTextDemo.classList.add("cursor-view-demo-text-active");
+  });
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor-view-demo");
+    cursor2.classList.remove("animate-cursor-2");
+    cursorTextDemo.classList.remove("cursor-view-demo-text-active");
+  });
+});
 
 // Cursor animations for BIG Cursor - footer email & next project link
 

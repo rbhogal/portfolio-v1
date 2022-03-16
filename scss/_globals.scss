@@ -79,7 +79,24 @@ body {
   font-size: 1.1rem;
 }
 
+.cursor-view-demo-text {
+  display: none;
+  transition: transform 0.3s ease;
+  text-align: center;
+  color: $color-dark-grey;
+  font-family: $font-intro-text;
+  position: absolute;
+  line-height: 1rem;
+  top: -0.4rem;
+  left: 0;
+  font-size: 1.1rem;
+}
+
 .cursor-view-site-text-active {
+  display: block;
+}
+
+.cursor-view-demo-text-active {
   display: block;
 }
 
@@ -104,7 +121,15 @@ body {
   opacity: 1;
 }
 
-.hover-view-site {
+.animate-cursor-view-demo {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.hover-view-site,
+.hover-view-demo {
   cursor: none;
 }
 

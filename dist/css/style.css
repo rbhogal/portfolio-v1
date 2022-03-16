@@ -76,7 +76,24 @@ body {
   font-size: 1.1rem;
 }
 
+.cursor-view-demo-text {
+  display: none;
+  transition: transform 0.3s ease;
+  text-align: center;
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  line-height: 1rem;
+  top: -0.4rem;
+  left: 0;
+  font-size: 1.1rem;
+}
+
 .cursor-view-site-text-active {
+  display: block;
+}
+
+.cursor-view-demo-text-active {
   display: block;
 }
 
@@ -101,7 +118,15 @@ body {
   opacity: 1;
 }
 
-.hover-view-site {
+.animate-cursor-view-demo {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.hover-view-site,
+.hover-view-demo {
   cursor: none;
 }
 
@@ -534,7 +559,24 @@ body {
   font-size: 1.1rem;
 }
 
+.cursor-view-demo-text {
+  display: none;
+  transition: transform 0.3s ease;
+  text-align: center;
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  line-height: 1rem;
+  top: -0.4rem;
+  left: 0;
+  font-size: 1.1rem;
+}
+
 .cursor-view-site-text-active {
+  display: block;
+}
+
+.cursor-view-demo-text-active {
   display: block;
 }
 
@@ -559,7 +601,15 @@ body {
   opacity: 1;
 }
 
-.hover-view-site {
+.animate-cursor-view-demo {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.hover-view-site,
+.hover-view-demo {
   cursor: none;
 }
 
@@ -1237,7 +1287,24 @@ body {
   font-size: 1.1rem;
 }
 
+.cursor-view-demo-text {
+  display: none;
+  transition: transform 0.3s ease;
+  text-align: center;
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  line-height: 1rem;
+  top: -0.4rem;
+  left: 0;
+  font-size: 1.1rem;
+}
+
 .cursor-view-site-text-active {
+  display: block;
+}
+
+.cursor-view-demo-text-active {
   display: block;
 }
 
@@ -1262,7 +1329,15 @@ body {
   opacity: 1;
 }
 
-.hover-view-site {
+.animate-cursor-view-demo {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.hover-view-site,
+.hover-view-demo {
   cursor: none;
 }
 
@@ -2036,6 +2111,10 @@ nav a {
 
 .projects__card__img:hover {
   transform: scale(1.05);
+}
+
+.projects__card__img--no-hover:hover {
+  transform: scale(1);
 }
 
 .projects__card__img img {
