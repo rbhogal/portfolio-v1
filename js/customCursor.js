@@ -1,11 +1,11 @@
 //Custom Cursor
 const link = document.querySelectorAll(".hover-this");
-const linkViewProject = document.querySelectorAll(".hover-view-project");
+const linkViewSite = document.querySelectorAll(".hover-view-site");
 const linkBig = document.querySelectorAll(".hover-this-big");
 
 let cursor = document.querySelector(".cursor"); // The small one
 let cursor2 = document.querySelector(".cursor-2"); // The large one
-let cursorText = document.querySelector(".cursor-view-project-text");
+let cursorText = document.querySelector(".cursor-view-site-text");
 
 let currentX = 0;
 let currentY = 0;
@@ -80,8 +80,21 @@ link.forEach((link) => {
   });
 });
 
+linkViewSite.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    cursor.classList.add("animate-cursor-view-site");
+    cursor2.classList.add("animate-cursor-2");
+    cursorText.classList.add("cursor-view-site-text-active");
+  });
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("animate-cursor-view-site");
+    cursor2.classList.remove("animate-cursor-2");
+    cursorText.classList.remove("cursor-view-site-text-active");
+  });
+});
+
 // Cursor animations or View Project inks
-// linkViewProject.forEach((link) => {
+// linkViewSite.forEach((link) => {
 //   link.addEventListener("mouseover", () => {
 //     cursor.classList.add("animate-cursor-view-project");
 //     cursor2.classList.add("animate-cursor-2");

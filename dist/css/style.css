@@ -63,13 +63,20 @@ body {
   mix-blend-mode: difference;
 }
 
-.cursor-view-project-text {
-  text-align: center;
+.cursor-view-site-text {
   display: none;
   transition: transform 0.3s ease;
+  text-align: center;
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  line-height: 1rem;
+  top: -0.4rem;
+  left: 0;
+  font-size: 1.1rem;
 }
 
-.cursor-view-project-text-active {
+.cursor-view-site-text-active {
   display: block;
 }
 
@@ -85,6 +92,17 @@ body {
 .animate-cursor-big {
   transform: translate(-50%, -50%) scale(15);
   opacity: 1;
+}
+
+.animate-cursor-view-site {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.hover-view-site {
+  cursor: none;
 }
 
 .you-smart-gif {
@@ -134,13 +152,6 @@ body {
   background-color: transparent;
   padding: 0;
   display: block;
-}
-
-.animate-cursor-view-project {
-  transform: translate(-50%, -50%) scale(3);
-  mix-blend-mode: unset;
-  padding: 0.7rem;
-  opacity: 1;
 }
 
 .cursors div {
@@ -510,13 +521,20 @@ body {
   mix-blend-mode: difference;
 }
 
-.cursor-view-project-text {
-  text-align: center;
+.cursor-view-site-text {
   display: none;
   transition: transform 0.3s ease;
+  text-align: center;
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  line-height: 1rem;
+  top: -0.4rem;
+  left: 0;
+  font-size: 1.1rem;
 }
 
-.cursor-view-project-text-active {
+.cursor-view-site-text-active {
   display: block;
 }
 
@@ -532,6 +550,17 @@ body {
 .animate-cursor-big {
   transform: translate(-50%, -50%) scale(15);
   opacity: 1;
+}
+
+.animate-cursor-view-site {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.hover-view-site {
+  cursor: none;
 }
 
 .you-smart-gif {
@@ -581,13 +610,6 @@ body {
   background-color: transparent;
   padding: 0;
   display: block;
-}
-
-.animate-cursor-view-project {
-  transform: translate(-50%, -50%) scale(3);
-  mix-blend-mode: unset;
-  padding: 0.7rem;
-  opacity: 1;
 }
 
 .cursors div {
@@ -1202,13 +1224,20 @@ body {
   mix-blend-mode: difference;
 }
 
-.cursor-view-project-text {
-  text-align: center;
+.cursor-view-site-text {
   display: none;
   transition: transform 0.3s ease;
+  text-align: center;
+  color: #171717;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  line-height: 1rem;
+  top: -0.4rem;
+  left: 0;
+  font-size: 1.1rem;
 }
 
-.cursor-view-project-text-active {
+.cursor-view-site-text-active {
   display: block;
 }
 
@@ -1224,6 +1253,17 @@ body {
 .animate-cursor-big {
   transform: translate(-50%, -50%) scale(15);
   opacity: 1;
+}
+
+.animate-cursor-view-site {
+  transform: translate(-50%, -50%) scale(3);
+  mix-blend-mode: unset;
+  padding: 1.5rem;
+  opacity: 1;
+}
+
+.hover-view-site {
+  cursor: none;
 }
 
 .you-smart-gif {
@@ -1273,13 +1313,6 @@ body {
   background-color: transparent;
   padding: 0;
   display: block;
-}
-
-.animate-cursor-view-project {
-  transform: translate(-50%, -50%) scale(3);
-  mix-blend-mode: unset;
-  padding: 0.7rem;
-  opacity: 1;
 }
 
 .cursors div {
