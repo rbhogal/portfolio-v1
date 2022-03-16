@@ -86,7 +86,7 @@ if (window.innerWidth <= 1200) {
     .to([loadingScreen, loadingIntro], {
       duration: 1.5,
       delay: 1.5,
-      top: "-110%",
+      top: "-150%",
       ease: Expo.easeInOut,
     })
     .from(
@@ -175,7 +175,7 @@ if (window.innerWidth > 1200) {
     .to([loadingScreen, loadingIntro], {
       duration: 0.8,
       delay: 1.5,
-      top: "-110%",
+      top: "-150%",
       ease: Expo.easeInOut,
     })
     .from(

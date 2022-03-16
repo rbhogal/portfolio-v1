@@ -42,7 +42,7 @@ if (window.innerWidth <= 1200) {
     .to(loadingScreen, {
       duration: 0.75,
       delay: 0.75,
-      top: "-110%",
+      top: "-150%",
       ease: Expo.easeInOut,
     })
 
@@ -283,7 +283,7 @@ if (window.innerWidth > 1200) {
     .to(loadingScreen, {
       duration: 0.25,
       delay: 0.25,
-      top: "-110%",
+      top: "-150%",
       ease: Expo.easeInOut,
     })
     .from([header, navLink], {
