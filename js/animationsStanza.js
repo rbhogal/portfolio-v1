@@ -209,21 +209,13 @@ if (window.innerWidth > 1200) {
       duration: 0.25,
       ease: '"power3.out"',
     })
-    .from([projectStanzaHeading, scrollToTopBtn], {
+    .from([projectStanzaHeading, scrollToTopBtn, projectStanzaContentP], {
       delay: 0,
       y: 16,
       opacity: 0,
       duration: 0.25,
       ease: '"power3.out"',
       stagger: 0.1,
-    })
-    .from([projectStanzaContentP], {
-      delay: 0,
-      y: 16,
-      opacity: 0,
-      duration: 0.25,
-      ease: '"power3.out"',
-      // stagger: 0.1,
     })
     .from(
       projectStanzaBanner,
@@ -235,8 +227,7 @@ if (window.innerWidth > 1200) {
       },
       "-=1.8"
     );
-}
-/*  
+
   ////////////////////////////////////////////////////////////////////////////////
   // Dashboard Analytics
   const dashboardTL = gsap.timeline();
@@ -352,4 +343,3 @@ if (window.innerWidth > 1200) {
     .setTween(footerTL)
     .addTo(controller);
 }
- */
