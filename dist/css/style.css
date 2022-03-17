@@ -2113,10 +2113,6 @@ nav a {
   transform: scale(1.05);
 }
 
-.projects__card__img--no-hover:hover {
-  transform: scale(1);
-}
-
 .projects__card__img img {
   width: 100%;
   height: 100%;
