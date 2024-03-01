@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
@@ -18,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/rbhogal/rbhogal.github.io/issues"
   },
-  "homepage": "https://rbhogal.github.io/"
+  "homepage": "https://rbhogal.github.io/",
+  "description": ""
 }
